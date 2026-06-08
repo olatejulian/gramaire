@@ -1,43 +1,99 @@
-\documentclass[
-    12pt, % font size
-    a4paper, % paper size
-]{book}
+\documentclass[12pt,a4paper,twoside]{book}
 
-\usepackage{amsfonts, amsmath, amssymb, amsthm}
-\usepackage[portuguese]{babel}
-\usepackage{backref, hyperref}
+% Estilo e formatação
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage[
+    a4paper,
+    inner=3cm,
+    outer=2cm,
+    top=3cm,
+    bottom=2cm
+]{geometry}
+\usepackage{setspace}
+
+\setmainfont{Times New Roman}
+\onehalfspacing\setlength{\parindent}{1.25cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\thepage}
+\fancyhead[LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Codificação e idioma
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+% Matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% Estrutura do documento
 \usepackage{subfiles}
 
+% Referências cruzadas
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% Bibliografia moderna
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    sorting=nyt,
+    backref=true
+]{biblatex}
+
+\addbibresource{bibliography.bib}
+
+% Índices
+\usepackage{imakeidx}
+
+\makeindex[
+    title=Índice Remissivo,
+    columns=2
+]
+
+% Informações do PDF
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=cyan,
     pdftitle={Grimório de Matemática e Filosofia Natural},
-    pdfpagemode=FullScreen,
-    }
+    pdfauthor={Julian Lucas Faria Olate}
+}
 
-\urlstyle{same}
+% Blocos conceituais
+\theoremstyle{definition}
 
-\bibliographystyle{apalike}
+\newtheorem{axiom}{Axioma}[section]
 
+\newtheorem{defn}{Definição}[section]
+
+\theoremstyle{plain}
+
+\newtheorem{prop}{Proposição}[section]
+
+\theoremstyle{remark}
+
+\newtheorem{example}{Exemplo}[section]
+\newtheorem*{obs}{Observação}
+
+% Comandos
+\newcommand{\Set}[1]{\mathbb{#1}}
+
+% Documento
 \title{Grimório de Matemática e Filosofia Natural}
 \author{Julian Lucas Faria Olate}
 
-\newtheorem{defi}{Definição}[section]
-\newtheorem{prop}{Proposição}[section]
-
-\newcommand{\Set}[1]{\mathbb{#1}}
-
 \begin{document}
-    \maketitle
-    \tableofcontents
 
-    \subfile{fundamentos_matematicos/@fundamentos_matematicos}
+\maketitle
+\tableofcontents
 
-    \subfile{aplicacoes/@aplicacoes}
+\subfile{matematica/index}
+\subfile{fisica/index}
+\subfile{quimica/index}
+\subfile{biologia/index}
 
-    \bibliography{bibliography}
+\printbibliography\printindex
 \end{document}
