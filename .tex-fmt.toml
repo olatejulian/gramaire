@@ -1,0 +1,52 @@
+# CLI options
+# OPTION                ALIA    SDEFAULT    DESCRIPTION
+# --args                                    View arguments passed to tex-fmt
+# --check               -c                  Check formatting, do not modify files
+# --completion <SHELL>                      Generate a shell completion script
+# --config <PATH>                           Path to config file
+# --fail-on-change      -f                  Fail if files are modified
+# --help                -h                  Print help
+# --man                                     Generate a man page
+# --noconfig                                Do not read any config file
+# --nowrap              -n                  Do not wrap long lines
+# --print               -p                  Print to stdout, do not modify files
+# --quiet               -q                  Hide warning messages
+# --recursive           -r                  Recursively search for files to format
+# --stdin               -s                  Process stdin as a single file, output to stdout
+# --tabsize <N>         -t       2          Number of characters to use as tab size
+# --trace                                   Show trace messages
+# --usetabs                                 Use tabs instead of spaces for indentation
+# --verbose             -v                  Show info messages
+# --version             -V                  Print version
+# --wraplen <N>         -l       80         Line length for wrapping
+
+# Configuration file options
+# OPTION            TYPE        EXAMPLES            DESCRIPTION
+# check             bool        false               Check formatting, do not modify files
+# fail-on-change    bool        false               Fail if files are modified
+# lists             arr[str]    [], ["myitemize"]   Extra list environments to be formatted as itemize
+# no-indent-envs    arr[str]    [], ["mydocument"]  Environments which are not indented
+# print             bool        false               Print to stdout, do not modify files
+# stdin             bool        false               Process stdin as a single file, output to stdout
+# tabchar           str         "space", "tab"      Character to use for indentation
+# tabsize           int         2, 4                Number of characters to use as tab size
+# verbatims         arr[str]    [], ["myverbatim"]  Extra verbatim environments
+# verbosity         str         "warn", "error"     Verbosity level for terminal logging
+# wrap              bool        true                Wrap long lines
+# wrap-chars        arr[str]    [], ["。"]          Characters after which lines may be wrapped
+# wrapmax           int         80, 100             Line length for wrapping
+# wrapmin           int         70, 90              Target minimum length for line wrapping
+check = false
+fail-on-change = false
+lists = []
+no-indent-envs = []
+print = false
+stdin = false
+tabchar = "space"
+tabsize = 4
+verbatims = []
+verbosity = "warn"
+wrap = true
+wrap-chars = []
+wrapmax = 120
+wrapmin = 100
