@@ -1,0 +1,136 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Propriedades das Relações}
+\label{sec:matematica:relacoes:propriedades}
+
+\begin{defn}[Relação Reflexiva]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é reflexiva quando
+
+  \[
+    (\forall a\in A)
+    (aRa).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Irreflexiva]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é irreflexiva quando
+
+  \[
+    (\forall a\in A)
+    \neg(aRa).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Simétrica]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é simétrica quando
+
+  \[
+    (\forall a,b\in A)
+    (aRb \Rightarrow bRa).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Antissimétrica]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é antissimétrica quando
+
+  \[
+    (\forall a,b\in A)
+    \bigl(
+      (aRb)
+      \land
+      (bRa)
+      \Rightarrow
+      a=b
+    \bigr).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Assimétrica]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é assimétrica quando
+
+  \[
+    (\forall a,b\in A)
+    (aRb \Rightarrow \neg(bRa)).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Transitiva]
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é transitiva quando
+
+  \[
+    (\forall a,b,c\in A)
+    \bigl(
+      (aRb)
+      \land
+      (bRc)
+      \Rightarrow
+      aRc
+    \bigr).
+  \]
+
+\end{defn}
+
+\begin{defn}[Relação Total]
+  \label{def:matematica:relacoes:propriedades:total}
+
+  Seja \(R\subseteq A\times A\).
+
+  Dizemos que \(R\) é total quando
+
+  \[
+    (\forall a,b\in A)
+    (a\neq b
+      \Rightarrow
+    (aRb \lor bRa)).
+  \]
+
+\end{defn}
+
+\begin{prop}
+
+  Toda relação assimétrica é irreflexiva.
+
+\end{prop}
+
+\begin{proof}
+
+  Suponha que exista \(a\in A\) tal que \(aRa\).
+
+  Pela assimetria,
+
+  \[
+    aRa
+    \Rightarrow
+    \neg(aRa),
+  \]
+
+  contradição.
+
+\end{proof}
+
+\end{document}

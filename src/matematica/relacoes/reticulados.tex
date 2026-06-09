@@ -1,0 +1,246 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Reticulados}
+\label{sec:matematica:relacoes:reticulados}
+
+\begin{defn}[Majorante]
+  \label{def:matematica:relacoes:reticulados:majorante}
+
+  Seja ((P,\le)) um conjunto parcialmente ordenado e seja
+  (A\subseteq P).
+
+  Um elemento (u\in P) é denominado majorante de (A) quando
+
+  [
+    (\forall a\in A)
+    (a\le u).
+  ]
+
+\end{defn}
+
+\begin{defn}[Minorante]
+  \label{def:matematica:relacoes:reticulados:minorante}
+
+  Seja (A\subseteq P).
+
+  Um elemento (l\in P) é denominado minorante de (A) quando
+
+  [
+    (\forall a\in A)
+    (l\le a).
+  ]
+
+\end{defn}
+
+\begin{defn}[Supremo]
+  \label{def:matematica:relacoes:reticulados:supremo}
+
+  Seja (A\subseteq P).
+
+  O supremo de (A), quando existe, é o menor dos majorantes de (A).
+
+  É denotado por
+
+  [
+    \sup(A).
+  ]
+
+\end{defn}
+
+\begin{defn}[Ínfimo]
+  \label{def:matematica:relacoes:reticulados:infimo}
+
+  Seja (A\subseteq P).
+
+  O ínfimo de (A), quando existe, é o maior dos minorantes de (A).
+
+  É denotado por
+
+  [
+    \inf(A).
+  ]
+
+\end{defn}
+
+\begin{defn}[Junção]
+  \label{def:matematica:relacoes:reticulados:juncao}
+
+  Sejam (a,b\in P).
+
+  A junção de (a) e (b), quando existe, é definida por
+
+  [
+    a\vee b
+    =
+    \sup{a,b}.
+  ]
+
+\end{defn}
+
+\begin{defn}[Encontro]
+  \label{def:matematica:relacoes:reticulados:encontro}
+
+  Sejam (a,b\in P).
+
+  O encontro de (a) e (b), quando existe, é definido por
+
+  [
+    a\wedge b
+    =
+    \inf{a,b}.
+  ]
+
+\end{defn}
+
+\begin{defn}[Reticulado]
+  \label{def:matematica:relacoes:reticulados:reticulado}
+
+  Um reticulado é um conjunto parcialmente ordenado
+  ((P,\le)) tal que, para quaisquer elementos
+  (a,b\in P),
+
+  [
+    a\vee b
+  ]
+
+  e
+
+  [
+    a\wedge b
+  ]
+
+  existem.
+
+\end{defn}
+
+\begin{prop}[Idempotência]
+
+  Para quaisquer (a,b\in P),
+
+  [
+    a\vee a=a
+  ]
+
+  e
+
+  [
+    a\wedge a=a.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Decorre diretamente da definição de supremo e ínfimo.
+
+\end{proof}
+
+\begin{prop}[Comutatividade]
+
+  Para quaisquer (a,b\in P),
+
+  [
+    a\vee b
+    =
+    b\vee a
+  ]
+
+  e
+
+  [
+    a\wedge b
+    =
+    b\wedge a.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Os conjuntos ({a,b}) e ({b,a}) coincidem.
+
+\end{proof}
+
+\begin{prop}[Associatividade]
+
+  Para quaisquer (a,b,c\in P),
+
+  [
+    (a\vee b)\vee c
+    =
+    a\vee(b\vee c)
+  ]
+
+  e
+
+  [
+    (a\wedge b)\wedge c
+    =
+    a\wedge(b\wedge c).
+  ]
+
+\end{prop}
+
+\begin{prop}[Leis de Absorção]
+
+  Para quaisquer (a,b\in P),
+
+  [
+    a\vee(a\wedge b)
+    =
+    a
+  ]
+
+  e
+
+  [
+    a\wedge(a\vee b)
+    =
+    a.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue das propriedades universais de supremo e ínfimo.
+
+\end{proof}
+
+\begin{ex}
+
+  O conjunto das partes
+
+  [
+    \mathcal P(A)
+  ]
+
+  munido da inclusão
+
+  [
+    \subseteq
+  ]
+
+  forma um reticulado.
+
+  Nesse caso,
+
+  [
+    X\vee Y
+    =
+    X\cup Y
+  ]
+
+  e
+
+  [
+    X\wedge Y
+    =
+    X\cap Y.
+  ]
+
+\end{ex}
+
+\end{document}
