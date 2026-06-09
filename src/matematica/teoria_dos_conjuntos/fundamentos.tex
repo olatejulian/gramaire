@@ -1,0 +1,230 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Fundamentos}
+\label{sec:matematica:teoria-conjuntos:fundamentos}
+
+\begin{defn}[Conjunto]
+  \label{def:matematica:teoria-conjuntos:fundamentos:conjunto}
+
+  Um conjunto é um conceito primitivo que representa uma coleção bem
+  definida de objetos, denominados elementos do conjunto.
+\end{defn}
+
+\begin{defn}[Elemento]
+  \label{def:matematica:teoria-conjuntos:fundamentos:elemento}
+
+  Um elemento é um objeto pertencente a um conjunto.
+\end{defn}
+
+\begin{defn}[Pertinência]
+  \label{def:matematica:teoria-conjuntos:fundamentos:pertinencia}
+
+  A pertinência é a relação entre um elemento e um conjunto.
+
+  Dados um elemento \(x\) e um conjunto \(A\),
+
+  \[
+    x \in A
+  \]
+
+  significa que \(x\) pertence a \(A\).
+
+  Analogamente,
+
+  \[
+    x \notin A
+  \]
+
+  significa que \(x\) não pertence a \(A\).
+\end{defn}
+
+\begin{defn}[Inclusão]
+  \label{def:matematica:teoria-conjuntos:fundamentos:inclusao}
+
+  Sejam \(A\) e \(B\) conjuntos.
+
+  Dizemos que \(A\) está contido em \(B\), ou que \(A\) é um subconjunto
+  de \(B\), quando todo elemento de \(A\) também pertence a \(B\).
+
+  Formalmente,
+
+  \[
+    A \subseteq B
+    \iff
+    (\forall x)
+    (x \in A \Rightarrow x \in B).
+  \]
+\end{defn}
+
+\begin{defn}[Subconjunto Próprio]
+  \label{def:matematica:teoria-conjuntos:fundamentos:subconjunto-proprio}
+
+  Sejam \(A\) e \(B\) conjuntos.
+
+  Dizemos que \(A\) é um subconjunto próprio de \(B\) quando
+
+  \[
+    A \subseteq B
+  \]
+
+  e
+
+  \[
+    A \neq B.
+  \]
+
+  Neste caso escrevemos
+
+  \[
+    A \subset B.
+  \]
+\end{defn}
+
+\begin{defn}[Igualdade de Conjuntos]
+  \label{def:matematica:teoria-conjuntos:fundamentos:igualdade-conjuntos}
+
+  Dois conjuntos são iguais quando possuem exatamente os mesmos
+  elementos.
+
+  Formalmente,
+
+  \[
+    A = B
+    \iff
+    (\forall x)
+    (x \in A \Leftrightarrow x \in B).
+  \]
+\end{defn}
+
+\begin{prop}[Princípio da Extensionalidade]
+  \label{prop:matematica:teoria-conjuntos:fundamentos:extensionalidade}
+
+  Dois conjuntos são iguais se, e somente se, possuem exatamente os
+  mesmos elementos.
+
+  Em símbolos,
+
+  \[
+    (\forall x)
+    (x \in A \Leftrightarrow x \in B)
+    \Rightarrow
+    A = B.
+  \]
+\end{prop}
+
+\begin{proof}
+
+  A afirmação decorre diretamente da definição de igualdade de
+  conjuntos.
+
+\end{proof}
+
+\begin{defn}[Conjunto Vazio]
+  \label{def:matematica:teoria-conjuntos:fundamentos:conjunto-vazio}
+
+  O conjunto vazio é o conjunto que não possui elementos.
+
+  É representado por
+
+  \[
+    \varnothing.
+  \]
+
+  Formalmente,
+
+  \[
+    (\forall x)
+    (x \notin \varnothing).
+  \]
+\end{defn}
+
+\begin{prop}[Unicidade do Conjunto Vazio]
+  \label{prop:matematica:teoria-conjuntos:fundamentos:unicidade-conjunto-vazio}
+
+  Existe um único conjunto vazio.
+\end{prop}
+
+\begin{proof}
+
+  Sejam \(A\) e \(B\) conjuntos vazios.
+
+  Como nenhum elemento pertence a \(A\) e nenhum elemento pertence a
+  \(B\),
+
+  \[
+    (\forall x)
+    (x \in A \Leftrightarrow x \in B).
+  \]
+
+  Pelo princípio da extensionalidade,
+
+  \[
+    A = B.
+  \]
+
+  Portanto o conjunto vazio é único.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:teoria-conjuntos:fundamentos:vazio-subconjunto}
+
+  O conjunto vazio é subconjunto de qualquer conjunto.
+\end{prop}
+
+\begin{proof}
+
+  Seja \(A\) um conjunto.
+
+  Deve-se mostrar que
+
+  \[
+    (\forall x)
+    (x \in \varnothing \Rightarrow x \in A).
+  \]
+
+  Como não existem elementos em \(\varnothing\), a implicação é
+  verdadeira para todo \(x\).
+
+  Logo,
+
+  \[
+    \varnothing \subseteq A.
+  \]
+
+\end{proof}
+
+\begin{defn}[Descrição por Extensão]
+  \label{def:matematica:teoria-conjuntos:fundamentos:extensao}
+
+  Um conjunto pode ser descrito pela enumeração explícita de seus
+  elementos.
+
+  Exemplo:
+
+  \[
+    A = \{1,2,3\}.
+  \]
+\end{defn}
+
+\begin{defn}[Descrição por Compreensão]
+  \label{def:matematica:teoria-conjuntos:fundamentos:compreensao}
+
+  Um conjunto pode ser descrito por uma propriedade satisfeita por seus
+  elementos.
+
+  Exemplo:
+
+  \[
+    A =
+    \{
+      x \in \mathbb{N}
+      \mid
+      x < 4
+    \}.
+  \]
+\end{defn}
+
+\end{document}

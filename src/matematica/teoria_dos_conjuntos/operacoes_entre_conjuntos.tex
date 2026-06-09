@@ -1,0 +1,401 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Operações entre Conjuntos}
+\label{sec:matematica:teoria-conjuntos:operacoes-entre-conjuntos}
+
+\begin{defn}[União]
+  \label{def:matematica:teoria-conjuntos:operacoes:uniao}
+
+  Sejam (A) e (B) conjuntos.
+
+  A união de (A) e (B), denotada por
+
+  [
+    A \cup B,
+  ]
+
+  é o conjunto definido por
+
+  [
+    A \cup B
+    =
+    {
+      x
+      \mid
+      x \in A
+      \lor
+      x \in B
+    }.
+  ]
+
+\end{defn}
+
+\begin{defn}[Interseção]
+  \label{def:matematica:teoria-conjuntos:operacoes:intersecao}
+
+  Sejam (A) e (B) conjuntos.
+
+  A interseção de (A) e (B), denotada por
+
+  [
+    A \cap B,
+  ]
+
+  é o conjunto definido por
+
+  [
+    A \cap B
+    =
+    {
+      x
+      \mid
+      x \in A
+      \land
+      x \in B
+    }.
+  ]
+
+\end{defn}
+
+\begin{defn}[Diferença]
+  \label{def:matematica:teoria-conjuntos:operacoes:diferenca}
+
+  Sejam (A) e (B) conjuntos.
+
+  A diferença entre (A) e (B), denotada por
+
+  [
+    A \setminus B,
+  ]
+
+  é definida por
+
+  [
+    A \setminus B
+    =
+    {
+      x
+      \mid
+      x \in A
+      \land
+      x \notin B
+    }.
+  ]
+
+\end{defn}
+
+\begin{defn}[Diferença Simétrica]
+  \label{def:matematica:teoria-conjuntos:operacoes:diferenca-simetrica}
+
+  Sejam (A) e (B) conjuntos.
+
+  A diferença simétrica de (A) e (B) é definida por
+
+  [
+    A \triangle B
+    =
+    (A \setminus B)
+    \cup
+    (B \setminus A).
+  ]
+
+\end{defn}
+
+\begin{defn}[Complemento]
+  \label{def:matematica:teoria-conjuntos:operacoes:complemento}
+
+  Seja (U) um conjunto universal e seja (A \subseteq U).
+
+  O complemento de (A) em (U), denotado por
+
+  [
+    A^{c},
+  ]
+
+  é definido por
+
+  [
+    A^{c}
+    =
+    U \setminus A.
+  ]
+
+\end{defn}
+
+\subsection{Propriedades Fundamentais}
+
+\begin{prop}[Idempotência da União]
+
+  Para todo conjunto (A),
+
+  [
+    A \cup A = A.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Para todo elemento (x),
+
+  [
+    x \in A \cup A
+    \Leftrightarrow
+    (x \in A \lor x \in A).
+  ]
+
+  Pela idempotência da disjunção,
+
+  [
+    x \in A \cup A
+    \Leftrightarrow
+    x \in A.
+  ]
+
+  Pelo princípio da extensionalidade,
+
+  [
+    A \cup A = A.
+  ]
+
+\end{proof}
+
+\begin{prop}[Idempotência da Interseção]
+
+  Para todo conjunto (A),
+
+  [
+    A \cap A = A.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Análoga à demonstração anterior.
+
+\end{proof}
+
+\begin{prop}[Comutatividade da União]
+
+  Para quaisquer conjuntos (A) e (B),
+
+  [
+    A \cup B = B \cup A.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja (x).
+
+  Então
+
+  [
+    x \in A \cup B
+    \Leftrightarrow
+    (x \in A \lor x \in B).
+  ]
+
+  Pela comutatividade da disjunção,
+
+  [
+    x \in A \cup B
+    \Leftrightarrow
+    (x \in B \lor x \in A).
+  ]
+
+  Portanto
+
+  [
+    x \in A \cup B
+    \Leftrightarrow
+    x \in B \cup A.
+  ]
+
+  Pela extensionalidade,
+
+  [
+    A \cup B = B \cup A.
+  ]
+
+\end{proof}
+
+\begin{prop}[Comutatividade da Interseção]
+
+  Para quaisquer conjuntos (A) e (B),
+
+  [
+    A \cap B = B \cap A.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Análoga à demonstração anterior.
+
+\end{proof}
+
+\begin{prop}[Associatividade da União]
+
+  Para quaisquer conjuntos (A), (B) e (C),
+
+  [
+    (A \cup B)\cup C
+    =
+    A\cup(B\cup C).
+  ]
+
+\end{prop}
+
+\begin{prop}[Associatividade da Interseção]
+
+  Para quaisquer conjuntos (A), (B) e (C),
+
+  [
+    (A \cap B)\cap C
+    =
+    A\cap(B\cap C).
+  ]
+
+\end{prop}
+
+\begin{prop}[Distributividade da União]
+
+  Para quaisquer conjuntos (A), (B) e (C),
+
+  [
+    A \cup (B \cap C)
+    =
+    (A \cup B)
+    \cap
+    (A \cup C).
+  ]
+
+\end{prop}
+
+\begin{prop}[Distributividade da Interseção]
+
+  Para quaisquer conjuntos (A), (B) e (C),
+
+  [
+    A \cap (B \cup C)
+    =
+    (A \cap B)
+    \cup
+    (A \cap C).
+  ]
+
+\end{prop}
+
+\begin{prop}[Leis do Conjunto Vazio]
+
+  Para todo conjunto (A),
+
+  [
+    A \cup \varnothing = A,
+  ]
+
+  e
+
+  [
+    A \cap \varnothing = \varnothing.
+  ]
+
+\end{prop}
+
+\begin{prop}[Leis do Complemento]
+
+  Para todo conjunto (A \subseteq U),
+
+  [
+    A \cup A^{c}
+    =
+    U,
+  ]
+
+  e
+
+  [
+    A \cap A^{c}
+    =
+    \varnothing.
+  ]
+
+\end{prop}
+
+\begin{prop}[Primeira Lei de De Morgan]
+
+  Para quaisquer conjuntos (A) e (B),
+
+  [
+    (A \cup B)^c
+    =
+    A^c \cap B^c.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja (x\in U).
+
+  Então
+
+  [
+    x \in (A\cup B)^c
+  ]
+
+  se, e somente se,
+
+  [
+    x \notin A\cup B.
+  ]
+
+  Pela definição de união,
+
+  [
+    \neg(x\in A \lor x\in B).
+  ]
+
+  Pela Lei de De Morgan da lógica proposicional,
+
+  [
+    (x\notin A)
+    \land
+    (x\notin B).
+  ]
+
+  Logo,
+
+  [
+    x \in A^c \cap B^c.
+  ]
+
+  Portanto,
+
+  [
+    (A\cup B)^c
+    =
+    A^c\cap B^c.
+  ]
+
+\end{proof}
+
+\begin{prop}[Segunda Lei de De Morgan]
+
+  Para quaisquer conjuntos (A) e (B),
+
+  [
+    (A \cap B)^c
+    =
+    A^c \cup B^c.
+  ]
+
+\end{prop}
+
+\end{document}

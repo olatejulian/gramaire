@@ -1,0 +1,237 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Conjunto das Partes}
+\label{sec:matematica:teoria-conjuntos:conjunto-das-partes}
+
+\begin{defn}[Conjunto das Partes]
+  \label{def:matematica:teoria-conjuntos:conjunto-das-partes:conjunto-das-partes}
+
+  Seja (A) um conjunto.
+
+  O conjunto das partes de (A), denotado por
+
+  [
+    \mathcal{P}(A),
+  ]
+
+  é o conjunto formado por todos os subconjuntos de (A).
+
+  Formalmente,
+
+  [
+    \mathcal{P}(A)
+    =
+    {
+      X
+      \mid
+      X\subseteq A
+    }.
+  ]
+
+\end{defn}
+
+\begin{prop}[Caracterização do Conjunto das Partes]
+  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:caracterizacao}
+
+  Para quaisquer conjuntos (A) e (X),
+
+  [
+    X\in\mathcal{P}(A)
+    \Leftrightarrow
+    X\subseteq A.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  A equivalência segue diretamente da definição.
+
+\end{proof}
+
+\begin{ex}
+
+  Seja
+
+  [
+    A={1,2}.
+  ]
+
+  Então
+
+  [
+    \mathcal{P}(A)
+    =
+    {
+      \varnothing,
+      {1},
+      {2},
+      {1,2}
+    }.
+  ]
+
+\end{ex}
+
+\begin{prop}
+  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:vazio}
+
+  Para todo conjunto (A),
+
+  [
+    \varnothing
+    \in
+    \mathcal{P}(A).
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Como
+
+  [
+    \varnothing\subseteq A,
+  ]
+
+  segue pela definição que
+
+  [
+    \varnothing\in\mathcal{P}(A).
+  ]
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:proprio}
+
+  Para todo conjunto (A),
+
+  [
+    A
+    \in
+    \mathcal{P}(A).
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Todo conjunto é subconjunto de si próprio.
+
+  Portanto
+
+  [
+    A\subseteq A.
+  ]
+
+  Logo
+
+  [
+    A\in\mathcal{P}(A).
+  ]
+
+\end{proof}
+
+\begin{prop}[Monotonicidade]
+  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:monotonicidade}
+
+  Se
+
+  [
+    A\subseteq B,
+  ]
+
+  então
+
+  [
+    \mathcal{P}(A)
+    \subseteq
+    \mathcal{P}(B).
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja
+
+  [
+    X\in\mathcal{P}(A).
+  ]
+
+  Então
+
+  [
+    X\subseteq A.
+  ]
+
+  Como
+
+  [
+    A\subseteq B,
+  ]
+
+  segue que
+
+  [
+    X\subseteq B.
+  ]
+
+  Portanto
+
+  [
+    X\in\mathcal{P}(B).
+  ]
+
+\end{proof}
+
+\begin{prop}[Caracterização da Inclusão]
+  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:inclusao}
+
+  Para quaisquer conjuntos (A) e (B),
+
+  [
+    A\subseteq B
+    \Leftrightarrow
+    \mathcal{P}(A)
+    \subseteq
+    \mathcal{P}(B).
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Já foi demonstrada a implicação direta.
+
+  Para a recíproca, suponha
+
+  [
+    \mathcal{P}(A)
+    \subseteq
+    \mathcal{P}(B).
+  ]
+
+  Como
+
+  [
+    A\in\mathcal{P}(A),
+  ]
+
+  segue que
+
+  [
+    A\in\mathcal{P}(B).
+  ]
+
+  Portanto
+
+  [
+    A\subseteq B.
+  ]
+
+\end{proof}
+
+\end{document}
