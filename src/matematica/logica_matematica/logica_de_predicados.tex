@@ -1,0 +1,221 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Lógica de Predicados}
+\label{sec:matematica:logica-matematica:logica-de-predicados}
+
+\begin{defn}[Predicado]
+  \label{def:matematica:logica-matematica:logica-de-predicados:predicado}
+
+  Um predicado é uma expressão que representa uma propriedade ou uma
+  relação envolvendo uma ou mais variáveis.
+
+  Quando valores são atribuídos às variáveis, o predicado transforma-se
+  em uma proposição, podendo então ser classificado como verdadeiro ou
+  falso.
+\end{defn}
+
+\begin{ex}
+
+  Considere o predicado
+
+  \[
+    P(x): x > 0.
+  \]
+
+  Se atribuirmos \(x=3\), obtemos a proposição
+
+  \[
+    P(3): 3 > 0,
+  \]
+
+  que é verdadeira.
+
+\end{ex}
+
+\begin{defn}[Domínio de Discurso]
+  \label{def:matematica:logica-matematica:logica-de-predicados:dominio-de-discurso}
+
+  O domínio de discurso é o conjunto dos objetos sobre os quais as
+  variáveis de um predicado podem assumir valores.
+\end{defn}
+
+\begin{defn}[Variável Livre]
+  \label{def:matematica:logica-matematica:logica-de-predicados:variavel-livre}
+
+  Uma variável é denominada livre quando não está associada ao escopo de
+  nenhum quantificador.
+\end{defn}
+
+\begin{defn}[Variável Ligada]
+  \label{def:matematica:logica-matematica:logica-de-predicados:variavel-ligada}
+
+  Uma variável é denominada ligada quando aparece no escopo de um
+  quantificador.
+\end{defn}
+
+\begin{defn}[Quantificador]
+  \label{def:matematica:logica-matematica:logica-de-predicados:quantificador}
+
+  Um quantificador é um operador lógico utilizado para especificar sobre
+  quantos elementos do domínio um predicado deve ser considerado.
+\end{defn}
+
+\begin{defn}[Quantificador Universal]
+  \label{def:matematica:logica-matematica:logica-de-predicados:quantificador-universal}
+
+  Seja \(P(x)\) um predicado definido sobre um domínio \(D\).
+
+  A expressão
+
+  \[
+    \forall x \, P(x)
+  \]
+
+  afirma que \(P(x)\) é verdadeira para todo elemento
+  \(x \in D\).
+\end{defn}
+
+\begin{defn}[Quantificador Existencial]
+  \label{def:matematica:logica-matematica:logica-de-predicados:quantificador-existencial}
+
+  Seja \(P(x)\) um predicado definido sobre um domínio \(D\).
+
+  A expressão
+
+  \[
+    \exists x \, P(x)
+  \]
+
+  afirma que existe pelo menos um elemento
+  \(x \in D\) para o qual \(P(x)\) é verdadeira.
+\end{defn}
+
+\begin{prop}[Negação do Quantificador Universal]
+  \label{prop:matematica:logica-matematica:logica-de-predicados:negacao-quantificador-universal}
+
+  Para todo predicado \(P(x)\),
+
+  \[
+    \neg(\forall x\,P(x))
+    \Leftrightarrow
+    \exists x\,\neg P(x).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  A afirmação
+
+  \[
+    \forall x\,P(x)
+  \]
+
+  significa que todos os elementos do domínio satisfazem \(P\).
+
+  Sua negação afirma que existe pelo menos um elemento que não satisfaz
+  \(P\).
+
+  Portanto,
+
+  \[
+    \neg(\forall x\,P(x))
+    \Leftrightarrow
+    \exists x\,\neg P(x).
+  \]
+
+\end{proof}
+
+\begin{prop}[Negação do Quantificador Existencial]
+  \label{prop:matematica:logica-matematica:logica-de-predicados:negacao-quantificador-existencial}
+
+  Para todo predicado \(P(x)\),
+
+  \[
+    \neg(\exists x\,P(x))
+    \Leftrightarrow
+    \forall x\,\neg P(x).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  A afirmação
+
+  \[
+    \exists x\,P(x)
+  \]
+
+  significa que existe ao menos um elemento do domínio para o qual
+  \(P\) é verdadeira.
+
+  Sua negação afirma que nenhum elemento satisfaz \(P\).
+
+  Portanto,
+
+  \[
+    \neg(\exists x\,P(x))
+    \Leftrightarrow
+    \forall x\,\neg P(x).
+  \]
+
+\end{proof}
+
+\begin{prop}[Distribuição do Quantificador Universal sobre a Conjunção]
+  \label{prop:matematica:logica-matematica:logica-de-predicados:universal-conjuncao}
+
+  Para quaisquer predicados \(P(x)\) e \(Q(x)\),
+
+  \[
+    \forall x \bigl(P(x)\land Q(x)\bigr)
+    \Leftrightarrow
+    (\forall x\,P(x))
+    \land
+    (\forall x\,Q(x)).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  A proposição da esquerda afirma que todo elemento do domínio satisfaz
+  simultaneamente \(P\) e \(Q\).
+
+  Isso ocorre exatamente quando todo elemento satisfaz \(P\) e todo
+  elemento satisfaz \(Q\).
+
+  Portanto as duas expressões são logicamente equivalentes.
+
+\end{proof}
+
+\begin{prop}[Distribuição do Quantificador Existencial sobre a Disjunção]
+  \label{prop:matematica:logica-matematica:logica-de-predicados:existencial-disjuncao}
+
+  Para quaisquer predicados \(P(x)\) e \(Q(x)\),
+
+  \[
+    \exists x \bigl(P(x)\lor Q(x)\bigr)
+    \Leftrightarrow
+    (\exists x\,P(x))
+    \lor
+    (\exists x\,Q(x)).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  A expressão da esquerda afirma que existe um elemento que satisfaz
+  \(P\) ou \(Q\).
+
+  Isso ocorre exatamente quando existe um elemento que satisfaz \(P\) ou
+  existe um elemento que satisfaz \(Q\).
+
+  Portanto as duas expressões são equivalentes.
+
+\end{proof}
+
+\end{document}

@@ -1,0 +1,350 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Lógica Proposicional}
+\label{sec:matematica:logica-matematica:logica-proposicional}
+
+\begin{defn}[Conectivo Lógico]
+  \label{def:matematica:logica-matematica:logica-proposicional:conectivo-logico}
+
+  Um conectivo lógico é um operador utilizado para construir novas
+  proposições a partir de proposições previamente dadas.
+\end{defn}
+
+\begin{defn}[Negação]
+  \label{def:matematica:logica-matematica:logica-proposicional:negacao}
+
+  Seja (P) uma proposição.
+
+  A negação de (P), denotada por
+
+  [
+    \neg P,
+  ]
+
+  é verdadeira se, e somente se, (P) é falsa.
+\end{defn}
+
+\begin{defn}[Conjunção]
+  \label{def:matematica:logica-matematica:logica-proposicional:conjuncao}
+
+  Sejam (P) e (Q) proposições.
+
+  A conjunção
+
+  [
+    P \land Q
+  ]
+
+  é verdadeira se, e somente se, (P) e (Q) são verdadeiras.
+\end{defn}
+
+\begin{defn}[Disjunção]
+  \label{def:matematica:logica-matematica:logica-proposicional:disjuncao}
+
+  Sejam (P) e (Q) proposições.
+
+  A disjunção
+
+  [
+    P \lor Q
+  ]
+
+  é verdadeira se, e somente se, pelo menos uma das proposições é
+  verdadeira.
+\end{defn}
+
+\begin{defn}[Implicação]
+  \label{def:matematica:logica-matematica:logica-proposicional:implicacao}
+
+  Sejam (P) e (Q) proposições.
+
+  A implicação
+
+  [
+    P \Rightarrow Q
+  ]
+
+  é falsa se, e somente se, (P) é verdadeira e (Q) é falsa.
+\end{defn}
+
+\begin{defn}[Equivalência Lógica]
+  \label{def:matematica:logica-matematica:logica-proposicional:equivalencia-logica}
+
+  Sejam (P) e (Q) proposições.
+
+  A equivalência lógica
+
+  [
+    P \Leftrightarrow Q
+  ]
+
+  é verdadeira se, e somente se, (P) e (Q) possuem o mesmo valor de
+  verdade.
+\end{defn}
+
+\begin{defn}[Tautologia]
+  \label{def:matematica:logica-matematica:logica-proposicional:tautologia}
+
+  Uma tautologia é uma proposição composta que é verdadeira para toda
+  atribuição possível de valores de verdade.
+\end{defn}
+
+\begin{defn}[Contradição]
+  \label{def:matematica:logica-matematica:logica-proposicional:contradicao}
+
+  Uma contradição é uma proposição composta que é falsa para toda
+  atribuição possível de valores de verdade.
+\end{defn}
+
+\begin{defn}[Contingência]
+  \label{def:matematica:logica-matematica:logica-proposicional:contingencia}
+
+  Uma contingência é uma proposição composta que não é nem uma tautologia
+  nem uma contradição.
+\end{defn}
+
+\subsection{Tabelas-Verdade}
+
+\begin{prop}[Tabela-Verdade da Negação]
+
+  [
+    \begin{array}{c|c}
+      P & \neg P \
+      \hline
+      V & F \
+      F & V
+    \end{array}
+  ]
+
+\end{prop}
+
+\begin{prop}[Tabela-Verdade da Conjunção]
+
+  [
+    \begin{array}{c|c|c}
+      P & Q & P \land Q \
+      \hline
+      V & V & V \
+      V & F & F \
+      F & V & F \
+      F & F & F
+    \end{array}
+  ]
+
+\end{prop}
+
+\begin{prop}[Tabela-Verdade da Disjunção]
+
+  [
+    \begin{array}{c|c|c}
+      P & Q & P \lor Q \
+      \hline
+      V & V & V \
+      V & F & V \
+      F & V & V \
+      F & F & F
+    \end{array}
+  ]
+
+\end{prop}
+
+\begin{prop}[Tabela-Verdade da Implicação]
+
+  [
+    \begin{array}{c|c|c}
+      P & Q & P \Rightarrow Q \
+      \hline
+      V & V & V \
+      V & F & F \
+      F & V & V \
+      F & F & V
+    \end{array}
+  ]
+
+\end{prop}
+
+\begin{prop}[Tabela-Verdade da Equivalência]
+
+  [
+    \begin{array}{c|c|c}
+      P & Q & P \Leftrightarrow Q \
+      \hline
+      V & V & V \
+      V & F & F \
+      F & V & F \
+      F & F & V
+    \end{array}
+  ]
+
+\end{prop}
+
+\subsection{Leis Fundamentais}
+
+\begin{prop}[Lei da Dupla Negação]
+  \label{prop:matematica:logica-matematica:logica-proposicional:dupla-negacao}
+
+  Para toda proposição (P),
+
+  [
+    \neg(\neg P)
+    \Leftrightarrow
+    P.
+  ]
+\end{prop}
+
+\begin{proof}
+
+  Pela tabela-verdade da negação:
+
+  [
+    \begin{array}{c|c|c}
+      P & \neg P & \neg(\neg P) \
+      \hline
+      V & F & V \
+      F & V & F
+    \end{array}
+  ]
+
+  As colunas correspondentes a (P) e (\neg(\neg P)) coincidem.
+
+\end{proof}
+
+\begin{prop}[Primeira Lei de De Morgan]
+  \label{prop:matematica:logica-matematica:logica-proposicional:primeira-lei-de-morgan}
+
+  Para quaisquer proposições (P) e (Q),
+
+  [
+    \neg(P \land Q)
+    \Leftrightarrow
+    (\neg P)\lor(\neg Q).
+  ]
+\end{prop}
+
+\begin{proof}
+
+  Pela tabela-verdade:
+
+  [
+    \begin{array}{c|c|c|c}
+      P & Q & \neg(P \land Q) &
+      (\neg P)\lor(\neg Q) \
+      \hline
+      V & V & F & F \
+      V & F & V & V \
+      F & V & V & V \
+      F & F & V & V
+    \end{array}
+  ]
+
+  As duas últimas colunas coincidem.
+
+\end{proof}
+
+\begin{prop}[Segunda Lei de De Morgan]
+  \label{prop:matematica:logica-matematica:logica-proposicional:segunda-lei-de-morgan}
+
+  Para quaisquer proposições (P) e (Q),
+
+  [
+    \neg(P \lor Q)
+    \Leftrightarrow
+    (\neg P)\land(\neg Q).
+  ]
+\end{prop}
+
+\begin{proof}
+
+  Pela tabela-verdade:
+
+  [
+    \begin{array}{c|c|c|c}
+      P & Q & \neg(P \lor Q) &
+      (\neg P)\land(\neg Q) \
+      \hline
+      V & V & F & F \
+      V & F & F & F \
+      F & V & F & F \
+      F & F & V & V
+    \end{array}
+  ]
+
+  As duas últimas colunas coincidem.
+
+\end{proof}
+
+\begin{prop}[Comutatividade da Conjunção]
+
+  Para quaisquer proposições (P) e (Q),
+
+  [
+    P \land Q
+    \Leftrightarrow
+    Q \land P.
+  ]
+
+\end{prop}
+
+\begin{prop}[Comutatividade da Disjunção]
+
+  Para quaisquer proposições (P) e (Q),
+
+  [
+    P \lor Q
+    \Leftrightarrow
+    Q \lor P.
+  ]
+
+\end{prop}
+
+\begin{prop}[Associatividade da Conjunção]
+
+  Para quaisquer proposições (P), (Q) e (R),
+
+  [
+    (P \land Q)\land R
+    \Leftrightarrow
+    P\land(Q\land R).
+  ]
+
+\end{prop}
+
+\begin{prop}[Associatividade da Disjunção]
+
+  Para quaisquer proposições (P), (Q) e (R),
+
+  [
+    (P \lor Q)\lor R
+    \Leftrightarrow
+    P\lor(Q\lor R).
+  ]
+
+\end{prop}
+
+\begin{prop}[Distributividade da Conjunção sobre a Disjunção]
+
+  Para quaisquer proposições (P), (Q) e (R),
+
+  [
+    P\land(Q\lor R)
+    \Leftrightarrow
+    (P\land Q)\lor(P\land R).
+  ]
+
+\end{prop}
+
+\begin{prop}[Distributividade da Disjunção sobre a Conjunção]
+
+  Para quaisquer proposições (P), (Q) e (R),
+
+  [
+    P\lor(Q\land R)
+    \Leftrightarrow
+    (P\lor Q)\land(P\lor R).
+  ]
+
+\end{prop}
+
+\end{document}
