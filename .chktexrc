@@ -1,0 +1,71 @@
+# ===============================
+# GENERAL BEHAVIOR
+# ===============================
+
+# Don't warn about lines that are too long
+Silent 8
+
+# Ignore multiple spaces after periods (common in TeX formatting)
+Silent 2
+
+# Don't complain about missing ~ in references (we often write custom spacing)
+Silent 13
+
+# Ignore warning about punctuation after display math
+Silent 36
+
+# Ignore “command terminated with space” (common in macros)
+Silent 24
+
+# ===============================
+# MATH MODE TUNING
+# ===============================
+
+# Allow \[ ... \] without warnings
+Silent 44
+
+# Don't warn about $$ (only if you REALLY need it — otherwise remove this)
+# Silent 3
+
+# ===============================
+# ENVIRONMENT CUSTOMIZATION
+# ===============================
+
+# Tell ChkTeX that these behave like verbatim/code
+VerbEnvir {minted}{lstlisting}{verbatim}{Verbatim}
+
+# Don't check spelling or spacing inside these
+NoSpell {minted}{lstlisting}
+
+# ===============================
+# CUSTOM COMMANDS (optional)
+# ===============================
+
+# If you define macros that take arguments, declare them:
+# Format: Command {name}{number_of_arguments}
+Command \vect 1
+Command \norm 1
+Command \abs 1
+
+# ===============================
+# SUPPRESS COMMON FALSE POSITIVES
+# ===============================
+
+# Spacing around \cite
+Silent 1
+
+# Spacing around \ref
+Silent 11
+
+# Missing space after control word
+Silent 17
+
+# ===============================
+# FILE HANDLING
+# ===============================
+
+# Ignore generated files
+Ignore {
+    build/*
+    dist/*
+}
