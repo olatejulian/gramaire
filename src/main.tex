@@ -4,21 +4,17 @@
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \usepackage[
-    a4paper,
-    inner=3cm,
-    outer=2cm,
-    top=3cm,
-    bottom=2cm
+  a4paper,
+  inner=3cm,
+  outer=2cm,
+  top=3cm,
+  bottom=2cm
 ]{geometry}
 \usepackage{setspace}
 
+\onehalfspacing\pagestyle{fancy}
+\setlength{\parindent}{1.25cm}
 \setmainfont{Times New Roman}
-\onehalfspacing\setlength{\parindent}{1.25cm}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[RO]{\thepage}
-\fancyhead[LE]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
 
 % Codificação e idioma
 \usepackage[T1]{fontenc}
@@ -26,10 +22,11 @@
 \usepackage[portuguese]{babel}
 
 % Matemática
+\usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{amsfonts}
 \usepackage{amsthm}
+\usepackage{thmtools}
 
 % Estrutura do documento
 \usepackage{subfiles}
@@ -40,10 +37,10 @@
 
 % Bibliografia moderna
 \usepackage[
-    backend=biber,
-    style=alphabetic,
-    sorting=nyt,
-    backref=true
+  backend=biber,
+  style=alphabetic,
+  sorting=nyt,
+  backref=true
 ]{biblatex}
 
 \addbibresource{bibliography.bib}
@@ -52,31 +49,22 @@
 \usepackage{imakeidx}
 
 \makeindex[
-    title=Índice Remissivo,
-    columns=2
+  title=Índice Remissivo,
+  columns=2
 ]
 
 % Informações do PDF
 \hypersetup{
-    pdftitle={Grimório de Matemática e Filosofia Natural},
-    pdfauthor={Julian Lucas Faria Olate}
+  pdftitle={Grimório de Matemática e Filosofia Natural},
+  pdfauthor={Julian Lucas Faria Olate}
 }
 
 % Blocos conceituais
-\theoremstyle{definition}
-
-\newtheorem{axiom}{Axioma}[section]
-
-\newtheorem{defn}{Definição}[section]
-
-\theoremstyle{plain}
-
-\newtheorem{prop}{Proposição}[section]
-
-\theoremstyle{remark}
-
-\newtheorem{example}{Exemplo}[section]
-\newtheorem*{obs}{Observação}
+\declaretheorem[style=definition,name=Postulado, parent=section]{axiom}
+\declaretheorem[style=definition,name=Definição, sibling=axiom]{defn}
+\declaretheorem[style=plain,name=Proposição, parent=section]{prop}
+\declaretheorem[style=definition,name=Exemplo, parent=section]{ex}
+\declaretheorem[style=remark,name=Observação, parent=section]{obs}
 
 % Comandos
 \newcommand{\Set}[1]{\mathbb{#1}}
