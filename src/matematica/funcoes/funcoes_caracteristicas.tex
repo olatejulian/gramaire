@@ -1,0 +1,451 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Funções Características}
+\label{sec:matematica:funcoes:funcoes-caracteristicas}
+
+\subsection{Definição}
+
+\begin{defn}[Função Característica]
+  \label{def:matematica:funcoes:caracteristicas:funcao-caracteristica}
+
+  Seja \(X\) um conjunto e seja
+
+  \[
+    A\subseteq X.
+  \]
+
+  A função característica de \(A\) é a função
+
+  \[
+    \chi_A:X\to\{0,1\}
+  \]
+
+  definida por
+
+  \[
+    \chi_A(x)
+    =
+    \begin{cases}
+      1, & \text{se } x\in A,\\
+      0, & \text{se } x\notin A.
+    \end{cases}
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  Alguns autores utilizam a notação
+
+  \[
+    \mathbf 1_A
+  \]
+
+  em lugar de
+
+  \[
+    \chi_A.
+  \]
+
+\end{obs}
+
+\begin{ex}
+
+  Seja
+
+  \[
+    X=\mathbb Z
+  \]
+
+  e
+
+  \[
+    P
+    =
+    \{
+      n\in\mathbb Z
+      \mid
+      n \text{ é par}
+    \}.
+  \]
+
+  Então
+
+  \[
+    \chi_P(n)
+    =
+    \begin{cases}
+      1, & \text{se } n \text{ é par},\\
+      0, & \text{caso contrário}.
+    \end{cases}
+  \]
+
+\end{ex}
+
+\subsection{Correspondência com Subconjuntos}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:recuperacao}
+
+  Seja
+
+  \[
+    A\subseteq X.
+  \]
+
+  Então
+
+  \[
+    A
+    =
+    \chi_A^{-1}[\{1\}].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja \(x\in X\).
+
+  Temos
+
+  \[
+    x\in\chi_A^{-1}[\{1\}]
+  \]
+
+  se, e somente se,
+
+  \[
+    \chi_A(x)=1.
+  \]
+
+  Pela definição de função característica,
+
+  \[
+    \chi_A(x)=1
+  \]
+
+  se, e somente se,
+
+  \[
+    x\in A.
+  \]
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:bijeccao}
+
+  Seja \(X\) um conjunto.
+
+  A aplicação
+
+  \[
+    \Phi
+    :
+    \mathcal P(X)
+    \to
+    \{0,1\}^X
+  \]
+
+  definida por
+
+  \[
+    \Phi(A)=\chi_A
+  \]
+
+  é uma bijeção.
+
+\end{prop}
+
+\begin{proof}
+
+  Injetividade:
+
+  Se
+
+  \[
+    \chi_A=\chi_B,
+  \]
+
+  então para todo \(x\in X\),
+
+  \[
+    x\in A
+    \iff
+    \chi_A(x)=1
+    \iff
+    \chi_B(x)=1
+    \iff
+    x\in B.
+  \]
+
+  Logo
+
+  \[
+    A=B.
+  \]
+
+  Sobrejetividade:
+
+  Seja
+
+  \[
+    f:X\to\{0,1\}.
+  \]
+
+  Defina
+
+  \[
+    A=f^{-1}[\{1\}].
+  \]
+
+  Então
+
+  \[
+    f=\chi_A.
+  \]
+
+\end{proof}
+
+\begin{cor}
+
+  Para todo conjunto \(X\),
+
+  \[
+    |\mathcal P(X)|
+    =
+    |\{0,1\}^X|.
+  \]
+
+\end{cor}
+
+\subsection{Caracterização da Igualdade}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:igualdade}
+
+  Sejam
+
+  \[
+    A,B\subseteq X.
+  \]
+
+  Então
+
+  \[
+    A=B
+    \iff
+    \chi_A=\chi_B.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Consequência imediata da injetividade de \(\Phi\).
+
+\end{proof}
+
+\subsection{Operações Conjuntistas}
+
+\begin{prop}[Complemento]
+  \label{prop:matematica:funcoes:caracteristicas:complemento}
+
+  Para todo
+
+  \[
+    A\subseteq X,
+  \]
+
+  vale
+
+  \[
+    \chi_{X\setminus A}
+    =
+    1-\chi_A.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Verificação ponto a ponto.
+
+\end{proof}
+
+\begin{prop}[Interseção]
+  \label{prop:matematica:funcoes:caracteristicas:intersecao}
+
+  Para quaisquer
+
+  \[
+    A,B\subseteq X,
+  \]
+
+  vale
+
+  \[
+    \chi_{A\cap B}
+    =
+    \chi_A\chi_B.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Verificação ponto a ponto.
+
+\end{proof}
+
+\begin{prop}[União]
+  \label{prop:matematica:funcoes:caracteristicas:uniao}
+
+  Para quaisquer
+
+  \[
+    A,B\subseteq X,
+  \]
+
+  vale
+
+  \[
+    \chi_{A\cup B}
+    =
+    \chi_A+\chi_B-\chi_A\chi_B.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Verificação ponto a ponto.
+
+\end{proof}
+
+\begin{prop}[Diferença]
+  \label{prop:matematica:funcoes:caracteristicas:diferenca}
+
+  Para quaisquer
+
+  \[
+    A,B\subseteq X,
+  \]
+
+  vale
+
+  \[
+    \chi_{A\setminus B}
+    =
+    \chi_A(1-\chi_B).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Verificação ponto a ponto.
+
+\end{proof}
+
+\subsection{Famílias de Conjuntos}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:intersecao-familia}
+
+  Seja
+
+  \[
+    (A_i)_{i\in I}
+  \]
+
+  uma família de subconjuntos de \(X\).
+
+  Então
+
+  \[
+    \chi_{\bigcap_{i\in I}A_i}
+    =
+    \prod_{i\in I}\chi_{A_i},
+  \]
+
+  sempre que o produto faça sentido.
+
+\end{prop}
+
+\begin{proof}
+
+  Um elemento pertence à interseção precisamente quando pertence a
+  todos os conjuntos da família.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:uniao-familia}
+
+  Seja
+
+  \[
+    (A_i)_{i\in I}
+  \]
+
+  uma família de subconjuntos de \(X\).
+
+  Então
+
+  \[
+    \chi_{\bigcup_{i\in I}A_i}(x)
+    =
+    \sup_{i\in I}
+    \chi_{A_i}(x).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue da definição de união.
+
+\end{proof}
+
+\subsection{Partições}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:caracteristicas:particao}
+
+  Seja
+
+  \[
+    (A_i)_{i\in I}
+  \]
+
+  uma partição de \(X\).
+
+  Então
+
+  \[
+    \sum_{i\in I}
+    \chi_{A_i}(x)
+    =
+    1
+  \]
+
+  para todo
+
+  \[
+    x\in X.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Cada elemento de \(X\) pertence a exatamente um conjunto da
+  partição.
+
+\end{proof}
+
+\end{document}

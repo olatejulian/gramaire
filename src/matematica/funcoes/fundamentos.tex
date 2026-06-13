@@ -1,0 +1,399 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Fundamentos}
+\label{sec:matematica:funcoes:fundamentos}
+
+\begin{defn}[Função]
+  \label{def:matematica:funcoes:fundamentos:funcao}
+
+  Sejam (A) e (B) conjuntos.
+
+  Uma função de (A) em (B) é uma relação
+
+  [
+    f \subseteq A \times B
+  ]
+
+  que satisfaz as seguintes propriedades:
+
+  \begin{enumerate}
+
+      ```
+    \item Para todo \(a\in A\), existe um elemento
+      \(b\in B\) tal que
+
+      \[
+        (a,b)\in f.
+      \]
+
+    \item Para todo \(a\in A\) e para quaisquer
+      \(b,c\in B\),
+
+      \[
+        (a,b)\in f
+        \land
+        (a,c)\in f
+        \Rightarrow
+        b=c.
+      \]
+      ```
+
+  \end{enumerate}
+
+\end{defn}
+
+\begin{obs}
+
+  A primeira condição é denominada
+  \emph{existência da imagem}.
+
+  A segunda condição é denominada
+  \emph{unicidade da imagem}.
+
+  Em conjunto, essas propriedades garantem que cada
+  elemento do domínio possui exatamente uma imagem.
+
+\end{obs}
+
+\begin{notation}
+
+  Quando (f) é uma função de (A) em (B),
+  escreve-se
+
+  [
+    f:A\to B.
+  ]
+
+\end{notation}
+
+\begin{prop}[Caracterização Funcional]
+  \label{prop:matematica:funcoes:fundamentos:caracterizacao}
+
+  Uma relação
+
+  [
+    f\subseteq A\times B
+  ]
+
+  é uma função se, e somente se, para cada
+  (a\in A) existe exatamente um elemento
+  (b\in B) tal que
+
+  [
+    (a,b)\in f.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  A condição de existência fornece pelo menos uma
+  imagem para cada elemento de (A).
+
+  A condição de unicidade garante que essa imagem é
+  única.
+
+  Reciprocamente, a existência de exatamente um
+  elemento (b\in B) para cada (a\in A)
+  implica imediatamente as duas propriedades da
+  definição.
+
+\end{proof}
+
+\begin{defn}[Domínio]
+  \label{def:matematica:funcoes:fundamentos:dominio}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  O conjunto (A) é denominado domínio de (f).
+
+  Escreve-se
+
+  [
+    \operatorname{Dom}(f)=A.
+  ]
+
+\end{defn}
+
+\begin{defn}[Contradomínio]
+  \label{def:matematica:funcoes:fundamentos:contradominio}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  O conjunto (B) é denominado contradomínio de
+  (f).
+
+\end{defn}
+
+\begin{defn}[Imagem de um Elemento]
+  \label{def:matematica:funcoes:fundamentos:imagem-elemento}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  Para cada elemento (a\in A), o único elemento
+  (b\in B) tal que
+
+  [
+    (a,b)\in f
+  ]
+
+  é denominado imagem de (a) por (f).
+
+  Escrevemos
+
+  [
+    f(a)=b.
+  ]
+
+\end{defn}
+
+\begin{prop}[Unicidade da Imagem]
+  \label{prop:matematica:funcoes:fundamentos:unicidade-imagem}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  Para cada (a\in A), existe exatamente um
+  elemento (b\in B) tal que
+
+  [
+    f(a)=b.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue diretamente da definição de função.
+
+\end{proof}
+
+\begin{defn}[Imagem de uma Função]
+  \label{def:matematica:funcoes:fundamentos:imagem}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  A imagem de (f) é o conjunto
+
+  [
+    \operatorname{Im}(f)
+    =
+    {
+      f(a)
+      \mid
+      a\in A
+    }.
+  ]
+
+\end{defn}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:fundamentos:imagem-subconjunto}
+
+  Para toda função
+
+  [
+    f:A\to B,
+  ]
+
+  vale
+
+  [
+    \operatorname{Im}(f)
+    \subseteq
+    B.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Pela definição de função,
+  (f(a)\in B) para todo (a\in A).
+
+  Portanto todo elemento da imagem pertence ao
+  contradomínio.
+
+\end{proof}
+
+\begin{defn}[Gráfico de uma Função]
+  \label{def:matematica:funcoes:fundamentos:grafico}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  O gráfico de (f) é o conjunto
+
+  [
+    G_f
+    =
+    {
+      (a,f(a))
+      \mid
+      a\in A
+    }.
+  ]
+
+\end{defn}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:fundamentos:grafico-subconjunto}
+
+  Para toda função
+
+  [
+    f:A\to B,
+  ]
+
+  vale
+
+  [
+    G_f
+    \subseteq
+    A\times B.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Se
+
+  [
+    (a,f(a))\in G_f,
+  ]
+
+  então (a\in A) e (f(a)\in B).
+
+  Logo
+
+  [
+    (a,f(a))
+    \in
+    A\times B.
+  ]
+
+\end{proof}
+
+\begin{ex}
+
+  Considere
+
+  [
+    f:\mathbb N\to\mathbb N,
+    \qquad
+    f(n)=n^2.
+  ]
+
+  Seu gráfico é
+
+  [
+    G_f
+    =
+    {
+      (0,0),
+      (1,1),
+      (2,4),
+      (3,9),
+      \ldots
+    }.
+  ]
+
+\end{ex}
+
+\begin{prop}[Princípio da Extensionalidade para Funções]
+  \label{prop:matematica:funcoes:fundamentos:extensionalidade}
+
+  Sejam
+
+  [
+    f:A\to B
+    \quad\text{e}\quad
+    g:A\to B.
+  ]
+
+  Então
+
+  [
+    f=g
+  ]
+
+  se, e somente se,
+
+  [
+    (\forall a\in A)
+    \bigl(
+      f(a)=g(a)
+    \bigr).
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Se (f=g), então seus gráficos coincidem e,
+  consequentemente,
+
+  [
+    f(a)=g(a)
+  ]
+
+  para todo (a\in A).
+
+  Reciprocamente, suponha que
+
+  [
+    f(a)=g(a)
+  ]
+
+  para todo (a\in A).
+
+  Então os pares ordenados
+
+  [
+    (a,f(a))
+  ]
+
+  e
+
+  [
+    (a,g(a))
+  ]
+
+  coincidem para todo (a\in A).
+
+  Portanto os gráficos de (f) e (g) são iguais.
+
+  Logo
+
+  [
+    f=g.
+  ]
+
+\end{proof}
+
+\end{document}

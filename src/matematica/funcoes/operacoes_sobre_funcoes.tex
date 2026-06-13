@@ -1,0 +1,430 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Operações sobre Funções}
+\label{sec:matematica:funcoes:operacoes}
+
+\subsection{Operações Induzidas}
+
+\begin{defn}[Operação Induzida]
+  \label{def:matematica:funcoes:operacoes:induzida}
+
+  Sejam
+
+  \[
+    A
+  \]
+
+  um conjunto e
+
+  \[
+    (B,\star)
+  \]
+
+  um conjunto munido de uma operação binária.
+
+  Define-se a operação induzida em
+
+  \[
+    B^A
+  \]
+
+  por
+
+  \[
+    (f\star g)(x)
+    =
+    f(x)\star g(x)
+  \]
+
+  para todo
+
+  \[
+    x\in A.
+  \]
+
+\end{defn}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:operacoes:boa-definicao}
+
+  A operação induzida está bem definida.
+
+\end{prop}
+
+\begin{proof}
+
+  Para cada
+
+  \[
+    x\in A,
+  \]
+
+  temos
+
+  \[
+    f(x),g(x)\in B.
+  \]
+
+  Como
+
+  \[
+    \star:B\times B\to B,
+  \]
+
+  segue que
+
+  \[
+    f(x)\star g(x)\in B.
+  \]
+
+  Portanto
+
+  \[
+    f\star g:A\to B.
+  \]
+
+\end{proof}
+
+\subsection{Igualdade Ponto a Ponto}
+
+\begin{prop}[Princípio da Extensionalidade]
+  \label{prop:matematica:funcoes:operacoes:extensionalidade}
+
+  Sejam
+
+  \[
+    f,g:A\to B.
+  \]
+
+  Então
+
+  \[
+    f=g
+  \]
+
+  se, e somente se,
+
+  \[
+    (\forall x\in A)
+    \;
+    f(x)=g(x).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Trata-se da definição de igualdade de funções.
+
+\end{proof}
+
+\subsection{Soma de Funções}
+
+\begin{defn}[Soma]
+  \label{def:matematica:funcoes:operacoes:soma}
+
+  Seja
+
+  \[
+    (B,+)
+  \]
+
+  um conjunto com operação de soma.
+
+  Para
+
+  \[
+    f,g\in B^A,
+  \]
+
+  define-se
+
+  \[
+    f+g
+  \]
+
+  por
+
+  \[
+    (f+g)(x)
+    =
+    f(x)+g(x).
+  \]
+
+\end{defn}
+
+\begin{ex}
+
+  Se
+
+  \[
+    f(x)=x
+  \]
+
+  e
+
+  \[
+    g(x)=x^2,
+  \]
+
+  então
+
+  \[
+    (f+g)(x)
+    =
+    x+x^2.
+  \]
+
+\end{ex}
+
+\subsection{Produto de Funções}
+
+\begin{defn}[Produto]
+  \label{def:matematica:funcoes:operacoes:produto}
+
+  Seja
+
+  \[
+    (B,\cdot)
+  \]
+
+  um conjunto com operação multiplicativa.
+
+  Define-se
+
+  \[
+    (fg)(x)
+    =
+    f(x)g(x).
+  \]
+
+\end{defn}
+
+\begin{ex}
+
+  Se
+
+  \[
+    f(x)=x
+  \]
+
+  e
+
+  \[
+    g(x)=x^2,
+  \]
+
+  então
+
+  \[
+    (fg)(x)
+    =
+    x^3.
+  \]
+
+\end{ex}
+
+\subsection{Multiplicação por Escalar}
+
+\begin{defn}[Multiplicação por Escalar]
+  \label{def:matematica:funcoes:operacoes:escalar}
+
+  Seja
+
+  \[
+    K
+  \]
+
+  um corpo.
+
+  Para
+
+  \[
+    \lambda\in K
+  \]
+
+  e
+
+  \[
+    f:A\to K,
+  \]
+
+  define-se
+
+  \[
+    \lambda f
+  \]
+
+  por
+
+  \[
+    (\lambda f)(x)
+    =
+    \lambda\,f(x).
+  \]
+
+\end{defn}
+
+\begin{ex}
+
+  Se
+
+  \[
+    f(x)=x^2,
+  \]
+
+  então
+
+  \[
+    (3f)(x)
+    =
+    3x^2.
+  \]
+
+\end{ex}
+
+\subsection{Ordem Ponto a Ponto}
+
+\begin{defn}[Ordem Ponto a Ponto]
+  \label{def:matematica:funcoes:operacoes:ordem}
+
+  Seja
+
+  \[
+    (B,\le)
+  \]
+
+  um conjunto ordenado.
+
+  Para
+
+  \[
+    f,g\in B^A,
+  \]
+
+  define-se
+
+  \[
+    f\le g
+  \]
+
+  quando
+
+  \[
+    f(x)\le g(x)
+  \]
+
+  para todo
+
+  \[
+    x\in A.
+  \]
+
+\end{defn}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:operacoes:ordem-parcial}
+
+  Se
+
+  \[
+    (B,\le)
+  \]
+
+  é um conjunto parcialmente ordenado, então
+
+  \[
+    (B^A,\le)
+  \]
+
+  também é parcialmente ordenado.
+
+\end{prop}
+
+\begin{proof}
+
+  As propriedades de reflexividade, antissimetria e transitividade são
+  verificadas ponto a ponto.
+
+\end{proof}
+
+\subsection{Herança de Estruturas}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:operacoes:grupo}
+
+  Se
+
+  \[
+    (B,\star)
+  \]
+
+  é um grupo, então
+
+  \[
+    (B^A,\star)
+  \]
+
+  também é um grupo.
+
+\end{prop}
+
+\begin{proof}
+
+  Todas as propriedades são herdadas ponto a ponto.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:operacoes:anel}
+
+  Se
+
+  \[
+    B
+  \]
+
+  é um anel, então
+
+  \[
+    B^A
+  \]
+
+  é um anel com as operações ponto a ponto.
+
+\end{prop}
+
+\begin{proof}
+
+  As propriedades seguem diretamente das propriedades de \(B\).
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:operacoes:espaco-vetorial}
+
+  Se
+
+  \[
+    K
+  \]
+
+  é um corpo, então
+
+  \[
+    K^A
+  \]
+
+  é um espaço vetorial.
+
+\end{prop}
+
+\begin{proof}
+
+  Os axiomas de espaço vetorial são satisfeitos ponto a ponto.
+
+\end{proof}
+
+\end{document}

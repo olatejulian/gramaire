@@ -1,0 +1,291 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Famílias de Funções}
+\label{sec:matematica:funcoes:familias-de-funcoes}
+
+\subsection{Famílias Indexadas}
+
+\begin{defn}[Família de Funções]
+  \label{def:matematica:funcoes:familias:familia}
+
+  Sejam \(I\), \(A\) e \(B\) conjuntos.
+
+  Uma família de funções de \(A\) em \(B\)
+  indexada por \(I\) é uma função
+
+  \[
+    F:I\to B^A.
+  \]
+
+  Para cada \(i\in I\), escreve-se
+
+  \[
+    f_i = F(i).
+  \]
+
+  A família é então denotada por
+
+  \[
+    (f_i)_{i\in I}.
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  Cada elemento do conjunto índice determina uma função da família.
+
+\end{obs}
+
+\begin{ex}
+
+  Seja
+
+  \[
+    f_n:\mathbb R\to\mathbb R,
+    \qquad
+    f_n(x)=x^n,
+  \]
+
+  para cada
+
+  \[
+    n\in\mathbb N.
+  \]
+
+  Então
+
+  \[
+    (f_n)_{n\in\mathbb N}
+  \]
+
+  é uma família de funções indexada pelos números naturais.
+
+\end{ex}
+
+\subsection{Famílias Finitas}
+
+\begin{defn}[Família Finita]
+  \label{def:matematica:funcoes:familias:finita}
+
+  Uma família
+
+  \[
+    (f_i)_{i\in I}
+  \]
+
+  é dita finita quando o conjunto índice \(I\) é finito.
+
+\end{defn}
+
+\begin{ex}
+
+  As funções
+
+  \[
+    f_1,f_2,f_3
+  \]
+
+  formam uma família finita indexada por
+
+  \[
+    I=\{1,2,3\}.
+  \]
+
+\end{ex}
+
+\subsection{Sequências de Funções}
+
+\begin{defn}[Sequência de Funções]
+  \label{def:matematica:funcoes:familias:sequencia}
+
+  Uma sequência de funções é uma família indexada por
+
+  \[
+    \mathbb N.
+  \]
+
+  Isto é,
+
+  \[
+    (f_n)_{n\in\mathbb N}.
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  Sequências de funções desempenham papel fundamental em análise
+  matemática, especialmente nos estudos de convergência pontual e
+  convergência uniforme.
+
+\end{obs}
+
+\subsection{Famílias Constantes}
+
+\begin{defn}[Família Constante]
+  \label{def:matematica:funcoes:familias:constante}
+
+  Seja
+
+  \[
+    f:A\to B.
+  \]
+
+  A família
+
+  \[
+    (f_i)_{i\in I}
+  \]
+
+  é dita constante quando
+
+  \[
+    f_i=f
+  \]
+
+  para todo
+
+  \[
+    i\in I.
+  \]
+
+\end{defn}
+
+\begin{ex}
+
+  Seja
+
+  \[
+    f(x)=0.
+  \]
+
+  A família
+
+  \[
+    (f_n)_{n\in\mathbb N}
+  \]
+
+  definida por
+
+  \[
+    f_n=f
+  \]
+
+  para todo \(n\) é constante.
+
+\end{ex}
+
+\subsection{Igualdade de Famílias}
+
+\begin{defn}[Igualdade de Famílias]
+  \label{def:matematica:funcoes:familias:igualdade}
+
+  Sejam
+
+  \[
+    (f_i)_{i\in I}
+  \]
+
+  e
+
+  \[
+    (g_i)_{i\in I}
+  \]
+
+  famílias de funções.
+
+  Diz-se que essas famílias são iguais quando
+
+  \[
+    f_i=g_i
+  \]
+
+  para todo
+
+  \[
+    i\in I.
+  \]
+
+\end{defn}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:familias:extensionalidade}
+
+  Se
+
+  \[
+    f_i(x)
+    =
+    g_i(x)
+  \]
+
+  para todo
+
+  \[
+    i\in I
+  \]
+
+  e para todo
+
+  \[
+    x\in A,
+  \]
+
+  então
+
+  \[
+    (f_i)_{i\in I}
+    =
+    (g_i)_{i\in I}.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Para cada \(i\in I\),
+
+  \[
+    f_i(x)
+    =
+    g_i(x)
+  \]
+
+  para todo \(x\in A\).
+
+  Pelo princípio da extensionalidade das funções,
+
+  \[
+    f_i=g_i.
+  \]
+
+  Como isso vale para todo índice,
+
+  \[
+    (f_i)_{i\in I}
+    =
+    (g_i)_{i\in I}.
+  \]
+
+\end{proof}
+
+\subsection{Famílias de Subconjuntos}
+
+\begin{obs}
+
+  Uma família de subconjuntos de um conjunto \(A\) é um caso
+  particular de família indexada:
+
+  \[
+    F:I\to\mathcal P(A).
+  \]
+
+  Essa observação será útil posteriormente em Topologia,
+  Álgebra e Teoria da Medida.
+
+\end{obs}
+
+\end{document}

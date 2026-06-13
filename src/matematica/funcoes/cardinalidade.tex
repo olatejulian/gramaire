@@ -1,0 +1,416 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Cardinalidade de Espaços de Funções}
+\label{sec:matematica:funcoes:cardinalidade}
+
+\subsection{Número de Funções}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:numero-funcoes}
+
+  Sejam \(A\) e \(B\) conjuntos finitos.
+
+  Então o número de funções
+
+  \[
+    f:A\to B
+  \]
+
+  é dado por
+
+  \[
+    |B|^{|A|}.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Para cada elemento
+
+  \[
+    a\in A
+  \]
+
+  existem
+
+  \[
+    |B|
+  \]
+
+  escolhas possíveis para o valor
+
+  \[
+    f(a).
+  \]
+
+  Como as escolhas são independentes para cada elemento de \(A\),
+  pelo princípio multiplicativo,
+
+  \[
+    |B^A|
+    =
+    |B|^{|A|}.
+  \]
+
+\end{proof}
+
+\begin{ex}
+
+  O número de funções
+
+  \[
+    \{1,2,3\}
+    \to
+    \{0,1\}
+  \]
+
+  é
+
+  \[
+    2^3
+    =
+    8.
+  \]
+
+\end{ex}
+
+\subsection{Número de Funções Injetivas}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:injetivas}
+
+  Sejam \(A\) e \(B\) conjuntos finitos com
+
+  \[
+    |A|=n
+  \]
+
+  e
+
+  \[
+    |B|=m.
+  \]
+
+  Se
+
+  \[
+    n\le m,
+  \]
+
+  então o número de funções injetivas
+
+  \[
+    A\to B
+  \]
+
+  é
+
+  \[
+    m(m-1)\cdots(m-n+1).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  O primeiro elemento de \(A\) possui \(m\) possíveis imagens.
+
+  O segundo possui \(m-1\).
+
+  O terceiro possui \(m-2\).
+
+  Prosseguindo dessa forma,
+
+  \[
+    m(m-1)\cdots(m-n+1)
+  \]
+
+  funções injetivas são obtidas.
+
+\end{proof}
+
+\begin{cor}
+
+  O número de injeções
+
+  \[
+    A\to B
+  \]
+
+  é
+
+  \[
+    \frac{m!}{(m-n)!}.
+  \]
+
+\end{cor}
+
+\subsection{Número de Funções Sobrejetivas}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:sobrejetivas}
+
+  Sejam \(A\) e \(B\) conjuntos finitos com
+
+  \[
+    |A|=n,
+    \qquad
+    |B|=m.
+  \]
+
+  O número de sobrejeções
+
+  \[
+    A\to B
+  \]
+
+  é
+
+  \[
+    \sum_{k=0}^{m}
+    (-1)^k
+    \binom{m}{k}
+    (m-k)^n.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Aplicação do princípio da inclusão-exclusão.
+
+\end{proof}
+
+\begin{obs}
+
+  A demonstração completa requer técnicas de análise combinatória e
+  será apresentada posteriormente.
+
+\end{obs}
+
+\subsection{Número de Bijeções}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:bijecoes}
+
+  Se
+
+  \[
+    |A|
+    =
+    |B|
+    =
+    n,
+  \]
+
+  então o número de bijeções
+
+  \[
+    A\to B
+  \]
+
+  é
+
+  \[
+    n!.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Toda bijeção é uma função injetiva.
+
+  Aplicando o resultado anterior com
+
+  \[
+    m=n,
+  \]
+
+  obtemos
+
+  \[
+    n(n-1)\cdots 2\cdot1
+    =
+    n!.
+  \]
+
+\end{proof}
+
+\begin{cor}
+
+  O número de permutações de um conjunto finito com \(n\) elementos é
+
+  \[
+    n!.
+  \]
+
+\end{cor}
+
+\subsection{Funções Características}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:caracteristicas}
+
+  Seja \(X\) um conjunto finito.
+
+  Então
+
+  \[
+    |\mathcal P(X)|
+    =
+    |\{0,1\}^X|
+    =
+    2^{|X|}.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Pela bijeção
+
+  \[
+    A
+    \mapsto
+    \chi_A,
+  \]
+
+  existe uma correspondência biunívoca entre
+
+  \[
+    \mathcal P(X)
+  \]
+
+  e
+
+  \[
+    \{0,1\}^X.
+  \]
+
+  Como
+
+  \[
+    |\{0,1\}|
+    =
+    2,
+  \]
+
+  segue que
+
+  \[
+    |\{0,1\}^X|
+    =
+    2^{|X|}.
+  \]
+
+\end{proof}
+
+\subsection{Cardinalidade de Famílias Indexadas}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:cardinalidade:familias}
+
+  Seja
+
+  \[
+    I
+  \]
+
+  um conjunto finito e, para cada
+
+  \[
+    i\in I,
+  \]
+
+  seja dado um conjunto finito \(A_i\).
+
+  Então
+
+  \[
+    \left|
+    \prod_{i\in I}
+    A_i
+    \right|
+    =
+    \prod_{i\in I}
+    |A_i|.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Uma família
+
+  \[
+    (a_i)_{i\in I}
+  \]
+
+  corresponde à escolha independente de um elemento em cada conjunto
+  \(A_i\).
+
+  Aplicando o princípio multiplicativo obtém-se o resultado.
+
+\end{proof}
+
+\subsection{Princípio das Gavetas}
+
+\begin{thm}[Princípio das Gavetas]
+  \label{thm:matematica:funcoes:cardinalidade:gavetas}
+
+  Se
+
+  \[
+    |A|
+    >
+    |B|,
+  \]
+
+  então não existe função injetiva
+
+  \[
+    A\to B.
+  \]
+
+\end{thm}
+
+\begin{proof}
+
+  Caso contrário existiria uma injeção de um conjunto maior em um
+  conjunto menor, contradizendo a contagem obtida anteriormente.
+
+\end{proof}
+
+\begin{cor}
+
+  Se
+
+  \[
+    f:A\to B
+  \]
+
+  e
+
+  \[
+    |A|>|B|,
+  \]
+
+  então existem
+
+  \[
+    x\neq y
+  \]
+
+  tais que
+
+  \[
+    f(x)=f(y).
+  \]
+
+\end{cor}
+
+\end{document}

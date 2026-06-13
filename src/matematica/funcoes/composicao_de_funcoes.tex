@@ -1,0 +1,531 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Composição de Funções}
+\label{sec:matematica:funcoes:composicao}
+
+\begin{defn}[Composição de Funções]
+  \label{def:matematica:funcoes:composicao:composicao}
+
+  Sejam
+
+  [
+    f:A\to B
+  ]
+
+  e
+
+  [
+    g:B\to C.
+  ]
+
+  A composição de (g) com (f) é a função
+
+  [
+    g\circ f:A\to C
+  ]
+
+  definida por
+
+  [
+    (g\circ f)(x)
+    =
+    g(f(x))
+  ]
+
+  para todo (x\in A).
+
+\end{defn}
+
+\begin{obs}
+
+  Na expressão
+
+  [
+    g\circ f,
+  ]
+
+  a função (f) é aplicada primeiro e a função (g) é aplicada em
+  seguida.
+
+\end{obs}
+
+\begin{prop}[Boa Definição]
+  \label{prop:matematica:funcoes:composicao:boa-definicao}
+
+  Se
+
+  [
+    f:A\to B
+  ]
+
+  e
+
+  [
+    g:B\to C,
+  ]
+
+  então
+
+  [
+    g\circ f
+  ]
+
+  é uma função de (A) em (C).
+
+\end{prop}
+
+\begin{proof}
+
+  Seja (x\in A).
+
+  Como
+
+  [
+    f:A\to B,
+  ]
+
+  temos
+
+  [
+    f(x)\in B.
+  ]
+
+  Como
+
+  [
+    g:B\to C,
+  ]
+
+  existe um único elemento
+
+  [
+    g(f(x))
+    \in
+    C.
+  ]
+
+  Portanto
+
+  [
+    g\circ f:A\to C
+  ]
+
+  satisfaz as propriedades de existência e unicidade da imagem.
+
+\end{proof}
+
+\begin{prop}[Associatividade]
+  \label{prop:matematica:funcoes:composicao:associatividade}
+
+  Sejam
+
+  [
+    f:A\to B,
+  ]
+
+  [
+    g:B\to C
+  ]
+
+  e
+
+  [
+    h:C\to D.
+  ]
+
+  Então
+
+  [
+    h\circ(g\circ f)
+    =
+    (h\circ g)\circ f.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Para todo (x\in A),
+
+  [
+    (h\circ(g\circ f))(x)
+    =
+    h((g\circ f)(x))
+  ]
+
+  [
+    =
+    h(g(f(x))).
+  ]
+
+  Por outro lado,
+
+  [
+    ((h\circ g)\circ f)(x)
+    =
+    (h\circ g)(f(x))
+  ]
+
+  [
+    =
+    h(g(f(x))).
+  ]
+
+  Portanto as duas funções coincidem em todos os elementos do domínio.
+
+  Pelo princípio da extensionalidade,
+
+  [
+    h\circ(g\circ f)
+    =
+    (h\circ g)\circ f.
+  ]
+
+\end{proof}
+
+\subsection{Funções Identidade}
+
+\begin{defn}[Função Identidade]
+  \label{def:matematica:funcoes:composicao:identidade}
+
+  Seja (A) um conjunto.
+
+  A função identidade de (A) é a função
+
+  [
+    \operatorname{id}_A:A\to A
+  ]
+
+  definida por
+
+  [
+    \operatorname{id}_A(x)=x
+  ]
+
+  para todo (x\in A).
+
+\end{defn}
+
+\begin{prop}[Neutro à Esquerda]
+  \label{prop:matematica:funcoes:composicao:neutro-esquerda}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  Então
+
+  [
+    \operatorname{id}_B
+    \circ
+    f
+    =
+    f.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Para todo (x\in A),
+
+  [
+    (\operatorname{id}_B\circ f)(x)
+    =
+    \operatorname{id}_B(f(x))
+    =
+    f(x).
+  ]
+
+  Pelo princípio da extensionalidade,
+
+  [
+    \operatorname{id}_B\circ f=f.
+  ]
+
+\end{proof}
+
+\begin{prop}[Neutro à Direita]
+  \label{prop:matematica:funcoes:composicao:neutro-direita}
+
+  Seja
+
+  [
+    f:A\to B.
+  ]
+
+  Então
+
+  [
+    f
+    \circ
+    \operatorname{id}_A
+    =
+    f.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Para todo (x\in A),
+
+  [
+    (f\circ\operatorname{id}_A)(x)
+    =
+    f(\operatorname{id}_A(x))
+    =
+    f(x).
+  ]
+
+  Pelo princípio da extensionalidade,
+
+  [
+    f\circ\operatorname{id}_A=f.
+  ]
+
+\end{proof}
+
+\subsection{Potências de Endofunções}
+
+\begin{defn}[Potência de uma Endofunção]
+  \label{def:matematica:funcoes:composicao:potencia}
+
+  Seja
+
+  [
+    f:A\to A.
+  ]
+
+  Define-se recursivamente
+
+  [
+    f^0
+    =
+    \operatorname{id}_A,
+  ]
+
+  e
+
+  [
+    f^{n+1}
+    =
+    f\circ f^n.
+  ]
+
+\end{defn}
+
+\begin{ex}
+
+  [
+    f^1=f,
+  ]
+
+  [
+    f^2=f\circ f,
+  ]
+
+  [
+    f^3=f\circ f\circ f.
+  ]
+
+\end{ex}
+
+\begin{prop}[Lei das Potências]
+  \label{prop:matematica:funcoes:composicao:lei-potencias}
+
+  Para quaisquer
+
+  [
+    m,n\in\mathbb N,
+  ]
+
+  vale
+
+  [
+    f^m\circ f^n
+    =
+    f^{m+n}.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Procedemos por indução em (m).
+
+  Para (m=0),
+
+  [
+    f^0\circ f^n
+    =
+    \operatorname{id}_A\circ f^n
+    =
+    f^n.
+  ]
+
+  Portanto
+
+  [
+    f^0\circ f^n
+    =
+    f^{0+n}.
+  ]
+
+  Suponha
+
+  [
+    f^m\circ f^n
+    =
+    f^{m+n}.
+  ]
+
+  Então
+
+  [
+    f^{m+1}\circ f^n
+    =
+    (f\circ f^m)\circ f^n.
+  ]
+
+  Pela associatividade,
+
+  [
+    =
+    f\circ(f^m\circ f^n).
+  ]
+
+  Pela hipótese de indução,
+
+  [
+    =
+    f\circ f^{m+n}.
+  ]
+
+  Logo
+
+  [
+    =
+    f^{m+n+1}
+    =
+    f^{(m+1)+n}.
+  ]
+
+\end{proof}
+
+\subsection{Cancelamento}
+
+\begin{prop}[Cancelamento à Esquerda]
+  \label{prop:matematica:funcoes:composicao:cancelamento-esquerda}
+
+  Seja
+
+  [
+    f:A\to B
+  ]
+
+  uma função injetiva.
+
+  Se
+
+  [
+    f\circ g
+    =
+    f\circ h,
+  ]
+
+  então
+
+  [
+    g=h.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Para todo elemento (x),
+
+  [
+    f(g(x))
+    =
+    f(h(x)).
+  ]
+
+  Como (f) é injetiva,
+
+  [
+    g(x)=h(x).
+  ]
+
+  Pelo princípio da extensionalidade,
+
+  [
+    g=h.
+  ]
+
+\end{proof}
+
+\begin{prop}[Cancelamento à Direita]
+  \label{prop:matematica:funcoes:composicao:cancelamento-direita}
+
+  Seja
+
+  [
+    f:A\to B
+  ]
+
+  uma função sobrejetiva.
+
+  Se
+
+  [
+    g\circ f
+    =
+    h\circ f,
+  ]
+
+  então
+
+  [
+    g=h.
+  ]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja (y\in B).
+
+  Como (f) é sobrejetiva, existe
+  (x\in A) tal que
+
+  [
+    f(x)=y.
+  ]
+
+  Logo
+
+  [
+    g(y)
+    =
+    g(f(x))
+    =
+    h(f(x))
+    =
+    h(y).
+  ]
+
+  Pelo princípio da extensionalidade,
+
+  [
+    g=h.
+  ]
+
+\end{proof}
+
+\end{document}

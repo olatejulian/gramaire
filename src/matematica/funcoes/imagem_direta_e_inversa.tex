@@ -1,0 +1,677 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Imagem Direta e Imagem Inversa}
+\label{sec:matematica:funcoes:imagem-direta-e-inversa}
+
+\subsection{Imagem Direta}
+
+\begin{defn}[Imagem Direta]
+  \label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-direta}
+
+  Seja
+
+  \[
+    f:A\to B
+  \]
+
+  e seja
+
+  \[
+    X\subseteq A.
+  \]
+
+  A imagem direta de \(X\) por \(f\) é o conjunto
+
+  \[
+    f[X]
+    =
+    \{
+      f(x)
+      \mid
+      x\in X
+    \}.
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  Alguns autores utilizam a notação
+
+  \[
+    f(X)
+  \]
+
+  em lugar de
+
+  \[
+    f[X].
+  \]
+
+\end{obs}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-direta-subconjunto}
+
+  Para todo
+
+  \[
+    X\subseteq A,
+  \]
+
+  vale
+
+  \[
+    f[X]
+    \subseteq
+    B.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Se
+
+  \[
+    y\in f[X],
+  \]
+
+  então existe
+
+  \[
+    x\in X
+  \]
+
+  tal que
+
+  \[
+    y=f(x).
+  \]
+
+  Como
+
+  \[
+    f:A\to B,
+  \]
+
+  segue que
+
+  \[
+    y\in B.
+  \]
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-direta}
+
+  Se
+
+  \[
+    X\subseteq Y\subseteq A,
+  \]
+
+  então
+
+  \[
+    f[X]
+    \subseteq
+    f[Y].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja
+
+  \[
+    z\in f[X].
+  \]
+
+  Então existe
+
+  \[
+    x\in X
+  \]
+
+  tal que
+
+  \[
+    z=f(x).
+  \]
+
+  Como
+
+  \[
+    X\subseteq Y,
+  \]
+
+  temos
+
+  \[
+    x\in Y.
+  \]
+
+  Logo
+
+  \[
+    z\in f[Y].
+  \]
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-direta}
+
+  Para quaisquer
+
+  \[
+    X,Y\subseteq A,
+  \]
+
+  vale
+
+  \[
+    f[X\cup Y]
+    =
+    f[X]
+    \cup
+    f[Y].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue diretamente das definições.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-direta}
+
+  Para quaisquer
+
+  \[
+    X,Y\subseteq A,
+  \]
+
+  vale
+
+  \[
+    f[X\cap Y]
+    \subseteq
+    f[X]\cap f[Y].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja
+
+  \[
+    z\in f[X\cap Y].
+  \]
+
+  Então existe
+
+  \[
+    x\in X\cap Y
+  \]
+
+  tal que
+
+  \[
+    z=f(x).
+  \]
+
+  Como
+
+  \[
+    x\in X
+  \]
+
+  e
+
+  \[
+    x\in Y,
+  \]
+
+  segue que
+
+  \[
+    z\in f[X]
+  \]
+
+  e
+
+  \[
+    z\in f[Y].
+  \]
+
+  Portanto
+
+  \[
+    z\in f[X]\cap f[Y].
+  \]
+
+\end{proof}
+
+\begin{obs}
+
+  Em geral,
+
+  \[
+    f[X\cap Y]
+    \neq
+    f[X]\cap f[Y].
+  \]
+
+\end{obs}
+
+\subsection{Imagem Inversa}
+
+\begin{defn}[Imagem Inversa]
+  \label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa}
+
+  Seja
+
+  \[
+    f:A\to B
+  \]
+
+  e
+
+  \[
+    Y\subseteq B.
+  \]
+
+  A imagem inversa de \(Y\) por \(f\) é o conjunto
+
+  \[
+    f^{-1}[Y]
+    =
+    \{
+      x\in A
+      \mid
+      f(x)\in Y
+    \}.
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  A notação
+
+  \[
+    f^{-1}[Y]
+  \]
+
+  não pressupõe que \(f\) possua função inversa.
+
+\end{obs}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa-subconjunto}
+
+  Para todo
+
+  \[
+    Y\subseteq B,
+  \]
+
+  vale
+
+  \[
+    f^{-1}[Y]
+    \subseteq
+    A.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue imediatamente da definição.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-inversa}
+
+  Se
+
+  \[
+    Y_1\subseteq Y_2,
+  \]
+
+  então
+
+  \[
+    f^{-1}[Y_1]
+    \subseteq
+    f^{-1}[Y_2].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Seja
+
+  \[
+    x\in f^{-1}[Y_1].
+  \]
+
+  Então
+
+  \[
+    f(x)\in Y_1.
+  \]
+
+  Como
+
+  \[
+    Y_1\subseteq Y_2,
+  \]
+
+  segue que
+
+  \[
+    f(x)\in Y_2.
+  \]
+
+  Portanto
+
+  \[
+    x\in f^{-1}[Y_2].
+  \]
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-inversa}
+
+  Para quaisquer
+
+  \[
+    Y_1,Y_2\subseteq B,
+  \]
+
+  vale
+
+  \[
+    f^{-1}[Y_1\cup Y_2]
+    =
+    f^{-1}[Y_1]
+    \cup
+    f^{-1}[Y_2].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue diretamente da definição.
+
+\end{proof}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-inversa}
+
+  Para quaisquer
+
+  \[
+    Y_1,Y_2\subseteq B,
+  \]
+
+  vale
+
+  \[
+    f^{-1}[Y_1\cap Y_2]
+    =
+    f^{-1}[Y_1]
+    \cap
+    f^{-1}[Y_2].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue diretamente da definição.
+
+\end{proof}
+
+\begin{prop}[Complemento]
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:complemento}
+
+  Para todo
+
+  \[
+    Y\subseteq B,
+  \]
+
+  vale
+
+  \[
+    f^{-1}[B\setminus Y]
+    =
+    A\setminus f^{-1}[Y].
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Segue da definição de imagem inversa.
+
+\end{proof}
+
+\subsection{Caracterizações}
+
+\begin{prop}[Caracterização da Injetividade]
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-injetividade}
+
+  Seja
+
+  \[
+    f:A\to B.
+  \]
+
+  Então
+
+  \[
+    f
+    \text{ é injetiva}
+  \]
+
+  se, e somente se,
+
+  \[
+    f^{-1}[f[X]]
+    =
+    X
+  \]
+
+  para todo
+
+  \[
+    X\subseteq A.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  (\(\Rightarrow\))
+
+  Seja
+
+  \[
+    x\in f^{-1}[f[X]].
+  \]
+
+  Então existe
+
+  \[
+    y\in X
+  \]
+
+  tal que
+
+  \[
+    f(x)=f(y).
+  \]
+
+  Pela injetividade,
+
+  \[
+    x=y.
+  \]
+
+  Logo
+
+  \[
+    x\in X.
+  \]
+
+  Portanto
+
+  \[
+    f^{-1}[f[X]]
+    \subseteq
+    X.
+  \]
+
+  A inclusão oposta é sempre válida.
+
+  Logo há igualdade.
+
+  (\(\Leftarrow\))
+
+  Aplicar a hipótese ao conjunto
+
+  \[
+    X=\{x\}.
+  \]
+
+  A demonstração segue imediatamente.
+
+\end{proof}
+
+\begin{prop}[Caracterização da Sobrejetividade]
+  \label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-sobrejetividade}
+
+  Seja
+
+  \[
+    f:A\to B.
+  \]
+
+  Então
+
+  \[
+    f
+    \text{ é sobrejetiva}
+  \]
+
+  se, e somente se,
+
+  \[
+    f[f^{-1}[Y]]
+    =
+    Y
+  \]
+
+  para todo
+
+  \[
+    Y\subseteq B.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  (\(\Rightarrow\))
+
+  Seja
+
+  \[
+    y\in Y.
+  \]
+
+  Pela sobrejetividade existe
+
+  \[
+    x\in A
+  \]
+
+  tal que
+
+  \[
+    f(x)=y.
+  \]
+
+  Então
+
+  \[
+    x\in f^{-1}[Y].
+  \]
+
+  Consequentemente
+
+  \[
+    y\in f[f^{-1}[Y]].
+  \]
+
+  Logo
+
+  \[
+    Y
+    \subseteq
+    f[f^{-1}[Y]].
+  \]
+
+  A inclusão oposta é sempre válida.
+
+  (\(\Leftarrow\))
+
+  Tomando
+
+  \[
+    Y=B,
+  \]
+
+  obtemos
+
+  \[
+    f[f^{-1}[B]]
+    =
+    B.
+  \]
+
+  Como
+
+  \[
+    f^{-1}[B]=A,
+  \]
+
+  segue que
+
+  \[
+    f[A]=B.
+  \]
+
+  Portanto \(f\) é sobrejetiva.
+
+\end{proof}
+
+\end{document}

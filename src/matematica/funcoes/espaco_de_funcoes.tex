@@ -1,0 +1,300 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Espaços de Funções}
+\label{sec:matematica:funcoes:espacos-de-funcoes}
+
+\subsection{Definição}
+
+\begin{defn}[Espaço de Funções]
+  \label{def:matematica:funcoes:espacos:espaco-funcoes}
+
+  Sejam \(A\) e \(B\) conjuntos.
+
+  O espaço de funções de \(A\) em \(B\) é o conjunto
+
+  \[
+    B^A
+    =
+    \{
+      f
+      \mid
+      f:A\to B
+    \}.
+  \]
+
+  Ou seja, \(B^A\) é o conjunto de todas as funções com domínio
+  \(A\) e contradomínio \(B\).
+
+\end{defn}
+
+\begin{obs}
+
+  Os elementos de \(B^A\) são funções.
+
+\end{obs}
+
+\begin{ex}
+
+  Seja
+
+  \[
+    A=\{1,2\}
+  \]
+
+  e
+
+  \[
+    B=\{0,1\}.
+  \]
+
+  Então
+
+  \[
+    B^A
+  \]
+
+  possui quatro elementos:
+
+  \[
+    \begin{aligned}
+      f_1(1)&=0, & f_1(2)&=0,\\
+      f_2(1)&=0, & f_2(2)&=1,\\
+      f_3(1)&=1, & f_3(2)&=0,\\
+      f_4(1)&=1, & f_4(2)&=1.
+    \end{aligned}
+  \]
+
+\end{ex}
+
+\subsection{Notação Exponencial}
+
+\begin{obs}
+
+  A notação
+
+  \[
+    B^A
+  \]
+
+  não é arbitrária.
+
+  Quando \(A\) e \(B\) são conjuntos finitos,
+
+  \[
+    |B^A|
+    =
+    |B|^{|A|}.
+  \]
+
+\end{obs}
+
+\begin{prop}
+  \label{prop:matematica:funcoes:espacos:cardinalidade-finita}
+
+  Se \(A\) e \(B\) são conjuntos finitos, então
+
+  \[
+    |B^A|
+    =
+    |B|^{|A|}.
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Para cada elemento de \(A\) existem
+
+  \[
+    |B|
+  \]
+
+  possíveis escolhas para sua imagem.
+
+  Como as escolhas são independentes,
+
+  pelo princípio multiplicativo,
+
+  \[
+    |B^A|
+    =
+    |B|^{|A|}.
+  \]
+
+\end{proof}
+
+\begin{ex}
+
+  Como
+
+  \[
+    |\{0,1\}^{\{1,2,3\}}|
+    =
+    2^3,
+  \]
+
+  existem exatamente
+
+  \[
+    8
+  \]
+
+  funções de
+
+  \[
+    \{1,2,3\}
+  \]
+
+  em
+
+  \[
+    \{0,1\}.
+  \]
+
+\end{ex}
+
+\subsection{Função de Avaliação}
+
+\begin{defn}[Função de Avaliação]
+  \label{def:matematica:funcoes:espacos:avaliacao}
+
+  Sejam \(A\) e \(B\) conjuntos.
+
+  Define-se a função de avaliação
+
+  \[
+    \operatorname{ev}
+    :
+    B^A\times A
+    \to
+    B
+  \]
+
+  por
+
+  \[
+    \operatorname{ev}(f,x)
+    =
+    f(x).
+  \]
+
+\end{defn}
+
+\begin{prop}
+
+  A função de avaliação está bem definida.
+
+\end{prop}
+
+\begin{proof}
+
+  Se
+
+  \[
+    (f,x)
+    \in
+    B^A\times A,
+  \]
+
+  então
+
+  \[
+    f:A\to B.
+  \]
+
+  Logo
+
+  \[
+    f(x)\in B.
+  \]
+
+  Portanto
+
+  \[
+    \operatorname{ev}(f,x)
+  \]
+
+  é um elemento bem definido de \(B\).
+
+\end{proof}
+
+\begin{obs}
+
+  A avaliação é a operação fundamental que permite recuperar valores
+  de uma função considerada como elemento do espaço \(B^A\).
+
+\end{obs}
+
+\subsection{Caracterização Extensional}
+
+\begin{prop}[Extensionalidade]
+  \label{prop:matematica:funcoes:espacos:extensionalidade}
+
+  Se
+
+  \[
+    f,g\in B^A,
+  \]
+
+  então
+
+  \[
+    f=g
+  \]
+
+  se, e somente se,
+
+  \[
+    (\forall x\in A)
+    \;
+    f(x)=g(x).
+  \]
+
+\end{prop}
+
+\begin{proof}
+
+  Trata-se do princípio da extensionalidade para funções.
+
+\end{proof}
+
+\subsection{Espaços de Funções Constantes}
+
+\begin{defn}[Função Constante]
+  \label{def:matematica:funcoes:espacos:constante}
+
+  Seja
+
+  \[
+    b\in B.
+  \]
+
+  A função constante associada a \(b\) é a função
+
+  \[
+    c_b:A\to B
+  \]
+
+  definida por
+
+  \[
+    c_b(x)=b
+  \]
+
+  para todo
+
+  \[
+    x\in A.
+  \]
+
+\end{defn}
+
+\begin{obs}
+
+  Cada elemento de \(B\) determina uma função constante em \(B^A\).
+
+\end{obs}
+
+\end{document}
