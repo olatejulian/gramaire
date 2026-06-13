@@ -1,0 +1,99 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Homomorfismos de Estruturas Algébricas}
+\label{sec:matematica:algebra:estruturas-algebricas:homomorfismos}
+
+Nesta seção consideramos estruturas algébricas como modelos de uma assinatura
+\[
+  \Sigma = \{\sigma_i : n_i\}_{i \in I},
+\]
+e introduzimos aplicações que preservam sua estrutura.
+
+\subsection{Definição geral de homomorfismo}
+
+Sejam $(A, \Sigma)$ e $(B, \Sigma)$ duas estruturas algébricas sobre a mesma assinatura.
+
+Uma função
+\[
+  f : A \to B
+\]
+é chamada de \textbf{homomorfismo} se preserva todas as operações da assinatura, isto é:
+\[
+  f(\sigma_i^A(a_1,\dots,a_{n_i})) =
+  \sigma_i^B(f(a_1),\dots,f(a_{n_i})),
+\]
+para todo símbolo $\sigma_i \in \Sigma$ e todos $a_1,\dots,a_{n_i} \in A$.
+
+\subsection{Interpretação estrutural}
+
+Um homomorfismo é uma aplicação que preserva a interpretação das operações da assinatura.
+
+Em outras palavras, ele respeita a forma como as operações são realizadas em cada estrutura.
+
+\subsection{Homomorfismos de anéis}
+
+Se $A$ e $B$ são anéis, isto é, estruturas sobre a assinatura
+\[
+  \Sigma = \{+, \cdot : 2\},
+\]
+uma função $f : A \to B$ é um homomorfismo de anéis se:
+
+\begin{itemize}
+  \item preserva a adição:
+    \[
+      f(a+b) = f(a) + f(b);
+    \]
+
+  \item preserva a multiplicação:
+    \[
+      f(a \cdot b) = f(a) \cdot f(b);
+    \]
+
+  \item (caso unitário) preserva o elemento neutro multiplicativo:
+    \[
+      f(1_A) = 1_B.
+    \]
+\end{itemize}
+
+\subsection{Núcleo e imagem}
+
+Se $f : A \to B$ é um homomorfismo de anéis, define-se:
+
+\textbf{Núcleo:}
+\[
+  \ker(f) = \{a \in A \mid f(a) = 0\}.
+\]
+
+\textbf{Imagem:}
+\[
+  \mathrm{Im}(f) = \{f(a) \mid a \in A\}.
+\]
+
+\subsection{Propriedades estruturais}
+
+\begin{itemize}
+  \item O núcleo de um homomorfismo é um ideal de $A$;
+  \item A imagem de um homomorfismo é um subanel de $B$.
+\end{itemize}
+
+\subsection{Ideia de compatibilidade estrutural}
+
+Homomorfismos são aplicações que respeitam a assinatura da estrutura, preservando todas as operações definidas em $\Sigma$.
+
+Assim, eles permitem comparar estruturas algébricas de forma coerente.
+
+\subsection{Observação conceitual}
+
+A noção de homomorfismo unifica diversas construções algébricas:
+
+\begin{itemize}
+  \item em grupos, preserva a operação binária;
+  \item em anéis, preserva adição e multiplicação;
+  \item em corpos, preserva ambas as operações com inversos.
+\end{itemize}
+
+Essa generalidade será essencial para a formulação dos teoremas de isomorfismo e para a estruturação categórica da álgebra.
+
+\end{document}

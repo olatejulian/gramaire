@@ -1,0 +1,86 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Subestruturas Algébricas}
+\label{sec:matematica:algebra:estruturas-algebricas:subestruturas}
+
+Nesta seção consideramos estruturas algébricas como modelos de uma assinatura
+\[
+  \Sigma = \{\sigma_i : n_i\}_{i \in I},
+\]
+e introduzimos a noção de subestrutura como subconjunto compatível com todas as operações da assinatura.
+
+\subsection{Definição geral de subestrutura}
+
+Seja $(A, \Sigma)$ uma estrutura algébrica e seja $B \subseteq A$ um subconjunto não vazio.
+
+Diz-se que $B$ é uma \textbf{subestrutura} de $A$ se, para toda operação $\sigma_i \in \Sigma$, vale:
+\[
+  \sigma_i^A(b_1,\dots,b_{n_i}) \in B,
+  \quad \forall b_1,\dots,b_{n_i} \in B.
+\]
+
+Nesse caso, a restrição das operações de $A$ a $B$ induz uma estrutura algébrica $(B, \Sigma)$.
+
+\subsection{Interpretação estrutural}
+
+Uma subestrutura é um subconjunto fechado sob todas as operações da assinatura.
+
+Em outras palavras, a estrutura algébrica é preservada ao restringir o domínio das operações.
+
+\subsection{Subgrupos}
+
+Se $(G,\ast)$ é um grupo, um subconjunto $H \subseteq G$ é um \textbf{subgrupo} se:
+
+\begin{itemize}
+  \item $H$ é não vazio;
+  \item para todo $a,b \in H$, tem-se $a \ast b \in H$;
+  \item para todo $a \in H$, tem-se $a^{-1} \in H$.
+\end{itemize}
+
+Equivalente: $(H,\ast)$ é um grupo com a operação herdada de $G$.
+
+\subsection{Subanéis}
+
+Se $(A,+,\cdot)$ é um anel, um subconjunto $B \subseteq A$ é um \textbf{subanel} se:
+
+\begin{itemize}
+  \item $B$ é não vazio;
+  \item para todo $a,b \in B$, tem-se $a-b \in B$;
+  \item para todo $a,b \in B$, tem-se $a \cdot b \in B$.
+\end{itemize}
+
+Assim, $(B,+,\cdot)$ é um anel com operações restritas.
+
+\subsection{Subcorpos}
+
+Um subconjunto $K \subseteq F$ de um corpo $F$ é um \textbf{subcorpo} se:
+
+\begin{itemize}
+  \item $K$ contém $0$ e $1$;
+  \item é fechado sob adição e multiplicação;
+  \item todo elemento não nulo de $K$ possui inverso em $K$.
+\end{itemize}
+
+\subsection{Subestruturas como restrição de assinaturas}
+
+Em geral, uma subestrutura preserva a mesma assinatura $\Sigma$, mas restringe o domínio das operações:
+
+\[
+  \sigma_i^B = \sigma_i^A|_{B^{n_i}}.
+\]
+
+Isso garante que todas as identidades válidas em $A$ continuam válidas em $B$.
+
+\subsection{Propriedade fundamental}
+
+Se $B$ é uma subestrutura de $A$, então toda identidade algébrica satisfeita em $A$ também é satisfeita em $B$.
+
+\subsection{Observação conceitual}
+
+Subestruturas permitem analisar partes internas de uma estrutura algébrica sem perder sua coerência operacional.
+
+Essa noção será essencial para a construção de quocientes, bem como para a análise de invariantes em estruturas algébricas.
+
+\end{document}

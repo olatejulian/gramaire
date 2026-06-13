@@ -1,0 +1,95 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Estruturas Algébricas como Modelos de Assinaturas}
+\label{sec:matematica:algebra:estruturas-algebricas:modelos}
+
+Nesta seção formalizamos o conceito de estrutura algébrica como uma interpretação de uma assinatura, juntamente com um conjunto de axiomas que restringem o comportamento das operações.
+
+\subsection{Interpretação de assinaturas}
+
+Seja $\Sigma = \{\sigma_i\}_{i \in I}$ uma assinatura algébrica, onde cada símbolo $\sigma_i$ possui aridade $n_i$.
+
+Uma \textbf{interpretação} de $\Sigma$ em um conjunto não vazio $A$ é uma família de funções
+\[
+  \sigma_i^A : A^{n_i} \to A,
+\]
+que associa a cada símbolo de operação uma função concreta em $A$.
+
+Essa interpretação substitui os símbolos abstratos por operações efetivas no conjunto.
+
+\subsection{Estrutura algébrica}
+
+Uma \textbf{estrutura algébrica} é um par
+\[
+  (A, \Sigma),
+\]
+onde:
+
+\begin{itemize}
+  \item $A$ é um conjunto não vazio;
+  \item $\Sigma$ é uma assinatura;
+  \item cada símbolo $\sigma \in \Sigma$ possui uma interpretação em $A$.
+\end{itemize}
+
+Equivalentemente, pode-se escrever a estrutura como
+\[
+  (A, (\sigma_i^A)_{i \in I}).
+\]
+
+\subsection{Termos algébricos}
+
+A partir de uma assinatura $\Sigma$, é possível construir expressões formais chamadas \textbf{termos algébricos}.
+
+Esses termos são obtidos recursivamente a partir de variáveis e aplicações de símbolos de operação.
+
+Exemplos de termos:
+\begin{itemize}
+  \item $\sigma(x,y)$;
+  \item $\sigma(x, \sigma(y,z))$;
+  \item expressões compostas de forma finita.
+\end{itemize}
+
+Os termos representam combinações formais de operações sem ainda depender de uma interpretação específica.
+
+\subsection{Axiomas algébricos}
+
+Um \textbf{axioma algébrico} é uma sentença da forma equacional, isto é, uma igualdade entre dois termos construídos a partir da assinatura.
+
+Exemplo geral:
+\[
+  t_1(x_1,\dots,x_n) = t_2(x_1,\dots,x_n).
+\]
+
+Os axiomas impõem restrições sobre as interpretações das operações em um conjunto.
+
+\subsection{Modelos de uma assinatura}
+
+Seja $\Sigma$ uma assinatura e $\mathcal{A}$ um conjunto de axiomas sobre $\Sigma$.
+
+Uma estrutura algébrica $(A, \Sigma)$ é um \textbf{modelo} de $\mathcal{A}$ se todas as igualdades especificadas em $\mathcal{A}$ são satisfeitas em $A$.
+
+Escreve-se:
+\[
+  (A, \Sigma) \vDash \mathcal{A}.
+\]
+
+\subsection{Separação sintática e semântica}
+
+A teoria das estruturas algébricas separa dois níveis fundamentais:
+
+\begin{itemize}
+  \item \textbf{nível sintático:} assinatura $\Sigma$ e axiomas $\mathcal{A}$, que descrevem formalmente as regras;
+  \item \textbf{nível semântico:} conjunto $A$ e interpretações das operações, que realizam concretamente a estrutura.
+\end{itemize}
+
+Essa separação permite comparar estruturas distintas que obedecem aos mesmos axiomas.
+
+\subsection{Observação estrutural}
+
+A noção de estrutura algébrica como modelo de uma assinatura permite unificar diversas construções matemáticas sob um mesmo formalismo.
+
+Grupos, anéis, corpos e outras estruturas serão definidos posteriormente como modelos de assinaturas específicas com conjuntos particulares de axiomas.
+
+\end{document}

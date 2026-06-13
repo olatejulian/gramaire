@@ -1,0 +1,78 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Ideais e Estruturas Quociente em Anéis}
+\label{sec:matematica:algebra:estruturas-algebricas:ideais-quocientes}
+
+Nesta seção consideramos anéis como estruturas sobre a assinatura
+\[
+  \Sigma = \{+, \cdot : 2\},
+\]
+e introduzimos subestruturas compatíveis com suas operações, permitindo a construção de novos anéis a partir de relações de equivalência.
+
+\subsection{Ideais}
+
+Seja $(A,+,\cdot)$ um anel. Um subconjunto $I \subseteq A$ é chamado de \textbf{ideal} se satisfaz:
+
+\begin{itemize}
+  \item $(I,+)$ é um subgrupo de $(A,+)$, isto é:
+    \begin{itemize}
+      \item $0 \in I$;
+      \item se $a,b \in I$, então $a-b \in I$;
+    \end{itemize}
+
+  \item absorção pela multiplicação:
+    \[
+      \forall a \in A,\ \forall x \in I,\quad a \cdot x \in I \ \text{e}\ x \cdot a \in I.
+    \]
+\end{itemize}
+
+Um ideal captura a noção de “subestrutura compatível com a assinatura do anel”.
+
+\subsection{Ideais e congruências}
+
+Todo ideal $I \subseteq A$ induz uma relação de equivalência em $A$ definida por:
+\[
+  a \sim b \iff a - b \in I.
+\]
+
+Essa relação é compatível com as operações do anel, isto é:
+\begin{itemize}
+  \item se $a \sim b$ e $c \sim d$, então $a+c \sim b+d$;
+  \item se $a \sim b$ e $c \sim d$, então $a \cdot c \sim b \cdot d$.
+\end{itemize}
+
+\subsection{Anel quociente}
+
+Dado um ideal $I \subseteq A$, o conjunto das classes de equivalência é denotado por:
+\[
+  A/I = \{[a] : a \in A\}.
+\]
+
+Definem-se as operações:
+\[
+  [a] + [b] = [a+b], \quad [a]\cdot[b] = [a \cdot b].
+\]
+
+Essas operações são bem definidas devido à compatibilidade do ideal com a estrutura do anel.
+
+Assim, $(A/I, +, \cdot)$ é novamente um anel.
+
+\subsection{Interpretação estrutural}
+
+O anel quociente $A/I$ pode ser interpretado como a estrutura obtida ao identificar elementos de $A$ que diferem por elementos do ideal $I$.
+
+Isso permite “colapsar” partes do anel preservando sua estrutura algébrica.
+
+\subsection{Ideais e preservação estrutural}
+
+Ideais podem ser vistos como o núcleo de homomorfismos de anéis. Essa relação será formalizada posteriormente, quando introduzirmos morfismos entre estruturas algébricas.
+
+\subsection{Observação conceitual}
+
+A construção de anéis quociente mostra que estruturas algébricas não são apenas conjuntos com operações, mas também objetos que podem ser transformados de forma controlada, preservando sua assinatura e axiomas.
+
+Essa ideia será central para toda a teoria de homomorfismos e para a construção de novos objetos algébricos a partir de estruturas existentes.
+
+\end{document}

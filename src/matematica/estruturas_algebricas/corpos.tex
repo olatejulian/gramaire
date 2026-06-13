@@ -1,0 +1,92 @@
+\documentclass[../../main]{subfiles}
+
+\begin{document}
+
+\section{Corpos}
+\label{sec:matematica:algebra:estruturas-algebricas:corpos}
+
+Nesta seção consideramos estruturas algébricas sobre a assinatura
+\[
+  \Sigma = \{+, \cdot : 2\},
+\]
+isto é, as mesmas operações de um anel comutativo unitário, acrescidas da exigência de inversibilidade multiplicativa para elementos não nulos.
+
+\subsection{Definição de corpo}
+
+Um corpo é um anel comutativo unitário $(F,+,\cdot)$ tal que:
+
+\begin{itemize}
+  \item $(F,+,\cdot)$ satisfaz todos os axiomas de anel comutativo unitário;
+
+  \item existe um elemento $1 \in F$, com $1 \neq 0$, tal que:
+    \[
+      \forall a \in F,\quad a \cdot 1 = 1 \cdot a = a;
+    \]
+
+  \item todo elemento não nulo possui inverso multiplicativo:
+    \[
+      \forall a \in F \setminus \{0\},\ \exists a^{-1} \in F \text{ tal que }
+      a \cdot a^{-1} = a^{-1} \cdot a = 1.
+    \]
+\end{itemize}
+
+\subsection{Estrutura multiplicativa}
+
+Em um corpo $(F,+,\cdot)$, o conjunto $F \setminus \{0\}$ munido da multiplicação forma um grupo abeliano:
+\[
+  (F \setminus \{0\}, \cdot).
+\]
+
+Isto significa que:
+
+\begin{itemize}
+  \item a multiplicação é associativa;
+  \item existe elemento neutro $1$;
+  \item todo elemento não nulo é invertível;
+  \item a multiplicação é comutativa.
+\end{itemize}
+
+\subsection{Estrutura aditiva}
+
+O par $(F,+)$ é um grupo abeliano, isto é:
+
+\begin{itemize}
+  \item a adição é associativa e comutativa;
+  \item existe elemento neutro $0$;
+  \item todo elemento possui inverso aditivo.
+\end{itemize}
+
+\subsection{Domínio de integridade}
+
+Um anel comutativo unitário $(A,+,\cdot)$ é um domínio de integridade se:
+\[
+  \forall a,b \in A,\quad a \cdot b = 0 \Rightarrow a = 0 \ \text{ou}\ b = 0.
+\]
+
+\subsection{Relação entre corpos e domínios de integridade}
+
+Todo corpo é um domínio de integridade.
+
+\textit{Demonstração:}
+Se $a \cdot b = 0$ e $a \neq 0$, então existe $a^{-1}$ e:
+\[
+  a^{-1}(a \cdot b) = (a^{-1}a)\cdot b = 1 \cdot b = b,
+\]
+logo $b = 0$.
+
+\subsection{Exemplos fundamentais}
+
+\begin{itemize}
+  \item $(\mathbb{Q}, +, \cdot)$ é um corpo;
+  \item $(\mathbb{R}, +, \cdot)$ é um corpo;
+  \item $(\mathbb{C}, +, \cdot)$ é um corpo;
+  \item $(\mathbb{Z}_p, +, \cdot)$ é um corpo se $p$ é primo.
+\end{itemize}
+
+\subsection{Observação estrutural}
+
+Um corpo pode ser visto como um anel comutativo unitário no qual a operação multiplicativa restrita a $F \setminus \{0\}$ forma um grupo abeliano.
+
+Essa propriedade torna possível a noção de divisão entre elementos não nulos e é a base para a construção de espaços vetoriais.
+
+\end{document}
