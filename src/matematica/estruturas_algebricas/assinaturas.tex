@@ -14,22 +14,22 @@ Um \textbf{símbolo de operação} é um símbolo abstrato associado a uma arida
 A aridade indica o número de argumentos da operação.
 
 \begin{itemize}
-  \item aridade $1$: operações unárias;
-  \item aridade $2$: operações binárias;
-  \item aridade $n$: operações n-árias.
+	\item aridade $1$: operações unárias;
+	\item aridade $2$: operações binárias;
+	\item aridade $n$: operações n-árias.
 \end{itemize}
 
 \subsection{Definição de assinatura}
 
 Uma \textbf{assinatura algébrica} é um conjunto
 \[
-  \Sigma = \{\sigma_i\}_{i \in I},
+	\Sigma = \{\sigma_i\}_{i \in I},
 \]
 onde cada símbolo $\sigma_i$ possui uma aridade fixa $n_i$.
 
 Cada símbolo $\sigma_i$ será interpretado como uma operação:
 \[
-  \sigma_i^A : A^{n_i} \to A,
+	\sigma_i^A : A^{n_i} \to A,
 \]
 quando aplicado a um conjunto $A$.
 
@@ -37,13 +37,13 @@ quando aplicado a um conjunto $A$.
 
 Dada uma assinatura $\Sigma$, uma \textbf{estrutura algébrica de assinatura $\Sigma$} é um par
 \[
-  (A, \Sigma),
+	(A, \Sigma),
 \]
 onde:
 
 \begin{itemize}
-  \item $A$ é um conjunto não vazio;
-  \item cada símbolo $\sigma \in \Sigma$ é interpretado como uma operação em $A$ com a aridade correspondente.
+	\item $A$ é um conjunto não vazio;
+	\item cada símbolo $\sigma \in \Sigma$ é interpretado como uma operação em $A$ com a aridade correspondente.
 \end{itemize}
 
 Ou seja, uma estrutura algébrica consiste em um conjunto juntamente com interpretações concretas dos símbolos de operação.
@@ -51,26 +51,26 @@ Ou seja, uma estrutura algébrica consiste em um conjunto juntamente com interpr
 \subsection{Exemplos de assinaturas}
 
 \begin{itemize}
-  \item Grupos:
-    \[
-      \Sigma = \{\ast : 2\}
-    \]
+	\item Grupos:
+	      \[
+		      \Sigma = \{\ast : 2\}
+	      \]
 
-  \item Anéis:
-    \[
-      \Sigma = \{+, \cdot : 2\}
-    \]
+	\item Anéis:
+	      \[
+		      \Sigma = \{+, \cdot : 2\}
+	      \]
 
-  \item Anéis com unidade:
-    \[
-      \Sigma = \{+, \cdot : 2, 0 : 0, 1 : 0\}
-    \]
+	\item Anéis com unidade:
+	      \[
+		      \Sigma = \{+, \cdot : 2, 0 : 0, 1 : 0\}
+	      \]
 
-  \item Espaços vetoriais (estrutura posterior):
-    envolve operações internas e externas:
-    \[
-      \Sigma = \{+, \cdot_{\text{ext}}\}
-    \]
+	\item Espaços vetoriais (estrutura posterior):
+	      envolve operações internas e externas:
+	      \[
+		      \Sigma = \{+, \cdot_{\text{ext}}\}
+	      \]
 \end{itemize}
 
 \subsection{Observação estrutural}
@@ -84,8 +84,8 @@ As propriedades (axiomas) serão introduzidas posteriormente como restrições a
 A noção de assinatura permite separar dois níveis fundamentais da álgebra:
 
 \begin{itemize}
-  \item \textbf{nível sintático:} símbolos de operação e suas aridades;
-  \item \textbf{nível semântico:} interpretações desses símbolos em um conjunto.
+	\item \textbf{nível sintático:} símbolos de operação e suas aridades;
+	\item \textbf{nível semântico:} interpretações desses símbolos em um conjunto.
 \end{itemize}
 
 Essa separação será essencial para a definição de homomorfismos e para a comparação entre estruturas algébricas distintas.

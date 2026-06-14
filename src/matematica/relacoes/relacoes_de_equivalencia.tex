@@ -6,215 +6,215 @@
 \label{sec:matematica:relacoes:relacoes-de-equivalencia}
 
 \begin{defn}[Relação de Equivalência]
-  \label{def:matematica:relacoes:equivalencia}
+	\label{def:matematica:relacoes:equivalencia}
 
-  Seja (A) um conjunto e seja (R) uma relação binária sobre (A).
+	Seja (A) um conjunto e seja (R) uma relação binária sobre (A).
 
-  Dizemos que (R) é uma relação de equivalência quando satisfaz:
+	Dizemos que (R) é uma relação de equivalência quando satisfaz:
 
-  \begin{enumerate}
-    \item reflexividade;
+	\begin{enumerate}
+		\item reflexividade;
 
-      ```
-    \item simetria;
+		      ```
+		\item simetria;
 
-    \item transitividade.
-      ```
+		\item transitividade.
+		      ```
 
-  \end{enumerate}
+	\end{enumerate}
 
-  Isto é,
+	Isto é,
 
-  [
-    (\forall x \in A)
-    (xRx),
-  ]
+	[
+			(\forall x \in A)
+			(xRx),
+		]
 
-  [
-    (\forall x,y \in A)
-    (xRy \Rightarrow yRx),
-  ]
+		[
+			(\forall x,y \in A)
+			(xRy \Rightarrow yRx),
+		]
 
-  e
+	e
 
-  [
-    (\forall x,y,z \in A)
-    \bigl(
-      (xRy \land yRz)
-      \Rightarrow
-      xRz
-    \bigr).
-  ]
+		[
+			(\forall x,y,z \in A)
+			\bigl(
+			(xRy \land yRz)
+			\Rightarrow
+			xRz
+			\bigr).
+		]
 
 \end{defn}
 
 \begin{defn}[Classe de Equivalência]
-  \label{def:matematica:relacoes:classe-equivalencia}
+	\label{def:matematica:relacoes:classe-equivalencia}
 
-  Seja (R) uma relação de equivalência sobre (A).
+	Seja (R) uma relação de equivalência sobre (A).
 
-  A classe de equivalência de um elemento (a \in A) é o conjunto
+	A classe de equivalência de um elemento (a \in A) é o conjunto
 
-  [
-    [a]
-    =
-    {
-      x \in A
-      \mid
-      xRa
-    }.
-  ]
+		[
+			[a]
+				=
+				{
+					x \in A
+					\mid
+					xRa
+				}.
+		]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:classe-contem-elemento}
+	\label{prop:matematica:relacoes:classe-contem-elemento}
 
-  Para todo (a \in A),
+	Para todo (a \in A),
 
-  [
-    a \in [a].
-  ]
+	[
+			a \in [a].
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Pela reflexividade,
+	Pela reflexividade,
 
-  [
-    aRa.
-  ]
+	[
+			aRa.
+		]
 
-  Logo,
+	Logo,
 
-  [
-    a \in [a].
-  ]
+	[
+			a \in [a].
+		]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:classes-iguais-ou-disjuntas}
+	\label{prop:matematica:relacoes:classes-iguais-ou-disjuntas}
 
-  Se (R) é uma relação de equivalência sobre (A), então para
-  quaisquer (a,b \in A),
+	Se (R) é uma relação de equivalência sobre (A), então para
+	quaisquer (a,b \in A),
 
-  [
-    [a]=[b]
-  ]
+	[
+			[a]=[b]
+		]
 
-  ou
+	ou
 
-  [
-    [a]\cap[b]=\varnothing.
-  ]
+		[
+			[a]\cap[b]=\varnothing.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Suponha
+	Suponha
 
-  [
-    [a]\cap[b]\neq\varnothing.
-  ]
+	[
+	[a]\cap[b]\neq\varnothing.
+	]
 
-  Seja
+	Seja
 
-  [
-    x\in[a]\cap[b].
-  ]
+		[
+			x\in[a]\cap[b].
+		]
 
-  Então
+	Então
 
-  [
-    xRa
-    \quad\text{e}\quad
-    xRb.
-  ]
+	[
+	xRa
+	\quad\text{e}\quad
+	xRb.
+	]
 
-  Pela simetria,
+	Pela simetria,
 
-  [
-    aRx.
-  ]
+	[
+			aRx.
+		]
 
-  Pela transitividade,
+	Pela transitividade,
 
-  [
-    aRb.
-  ]
+	[
+			aRb.
+		]
 
-  Mostra-se então que
+	Mostra-se então que
 
-  [
-    [a]\subseteq[b]
-  ]
+		[
+			[a]\subseteq[b]
+		]
 
-  e
+	e
 
-  [
-    [b]\subseteq[a].
-  ]
+		[
+			[b]\subseteq[a].
+		]
 
-  Portanto,
+	Portanto,
 
-  [
-    [a]=[b].
-  ]
+	[
+			[a]=[b].
+		]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:particao}
+	\label{prop:matematica:relacoes:particao}
 
-  As classes de equivalência de uma relação de equivalência sobre (A)
-  formam uma partição de (A).
+	As classes de equivalência de uma relação de equivalência sobre (A)
+	formam uma partição de (A).
 
 \end{prop}
 
 \begin{proof}
 
-  Toda classe é não vazia pela reflexividade.
+	Toda classe é não vazia pela reflexividade.
 
-  Pela proposição anterior, duas classes são iguais ou disjuntas.
+	Pela proposição anterior, duas classes são iguais ou disjuntas.
 
-  Além disso,
+	Além disso,
 
-  [
-    A
-    =
-    \bigcup_{a\in A}[a].
-  ]
+	[
+			A
+			=
+			\bigcup_{a\in A}[a].
+		]
 
-  Logo as classes formam uma partição de (A).
+	Logo as classes formam uma partição de (A).
 
 \end{proof}
 
 \begin{defn}[Conjunto Quociente]
-  \label{def:matematica:relacoes:conjunto-quociente}
+	\label{def:matematica:relacoes:conjunto-quociente}
 
-  Seja (R) uma relação de equivalência sobre (A).
+	Seja (R) uma relação de equivalência sobre (A).
 
-  O conjunto das classes de equivalência é denominado conjunto
-  quociente de (A) por (R) e é denotado por
+	O conjunto das classes de equivalência é denominado conjunto
+	quociente de (A) por (R) e é denotado por
 
-  [
-    A/R.
-  ]
+		[
+			A/R.
+		]
 
-  Assim,
+	Assim,
 
-  [
-    A/R
-    =
-    {
-      [a]
-      \mid
-      a\in A
-    }.
-  ]
+	[
+			A/R
+				=
+				{
+					[a]
+					\mid
+					a\in A
+				}.
+		]
 
 \end{defn}
 

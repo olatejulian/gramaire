@@ -7,7 +7,7 @@
 
 Nesta seção consideramos estruturas algébricas como modelos de uma assinatura
 \[
-  \Sigma = \{\sigma_i : n_i\}_{i \in I},
+	\Sigma = \{\sigma_i : n_i\}_{i \in I},
 \]
 e introduzimos aplicações que preservam sua estrutura.
 
@@ -17,12 +17,12 @@ Sejam $(A, \Sigma)$ e $(B, \Sigma)$ duas estruturas algébricas sobre a mesma as
 
 Uma função
 \[
-  f : A \to B
+	f : A \to B
 \]
 é chamada de \textbf{homomorfismo} se preserva todas as operações da assinatura, isto é:
 \[
-  f(\sigma_i^A(a_1,\dots,a_{n_i})) =
-  \sigma_i^B(f(a_1),\dots,f(a_{n_i})),
+	f(\sigma_i^A(a_1,\dots,a_{n_i})) =
+	\sigma_i^B(f(a_1),\dots,f(a_{n_i})),
 \]
 para todo símbolo $\sigma_i \in \Sigma$ e todos $a_1,\dots,a_{n_i} \in A$.
 
@@ -36,25 +36,25 @@ Em outras palavras, ele respeita a forma como as operações são realizadas em 
 
 Se $A$ e $B$ são anéis, isto é, estruturas sobre a assinatura
 \[
-  \Sigma = \{+, \cdot : 2\},
+	\Sigma = \{+, \cdot : 2\},
 \]
 uma função $f : A \to B$ é um homomorfismo de anéis se:
 
 \begin{itemize}
-  \item preserva a adição:
-    \[
-      f(a+b) = f(a) + f(b);
-    \]
+	\item preserva a adição:
+	      \[
+		      f(a+b) = f(a) + f(b);
+	      \]
 
-  \item preserva a multiplicação:
-    \[
-      f(a \cdot b) = f(a) \cdot f(b);
-    \]
+	\item preserva a multiplicação:
+	      \[
+		      f(a \cdot b) = f(a) \cdot f(b);
+	      \]
 
-  \item (caso unitário) preserva o elemento neutro multiplicativo:
-    \[
-      f(1_A) = 1_B.
-    \]
+	\item (caso unitário) preserva o elemento neutro multiplicativo:
+	      \[
+		      f(1_A) = 1_B.
+	      \]
 \end{itemize}
 
 \subsection{Núcleo e imagem}
@@ -63,19 +63,19 @@ Se $f : A \to B$ é um homomorfismo de anéis, define-se:
 
 \textbf{Núcleo:}
 \[
-  \ker(f) = \{a \in A \mid f(a) = 0\}.
+	\ker(f) = \{a \in A \mid f(a) = 0\}.
 \]
 
 \textbf{Imagem:}
 \[
-  \mathrm{Im}(f) = \{f(a) \mid a \in A\}.
+	\mathrm{Im}(f) = \{f(a) \mid a \in A\}.
 \]
 
 \subsection{Propriedades estruturais}
 
 \begin{itemize}
-  \item O núcleo de um homomorfismo é um ideal de $A$;
-  \item A imagem de um homomorfismo é um subanel de $B$.
+	\item O núcleo de um homomorfismo é um ideal de $A$;
+	\item A imagem de um homomorfismo é um subanel de $B$.
 \end{itemize}
 
 \subsection{Ideia de compatibilidade estrutural}
@@ -89,9 +89,9 @@ Assim, eles permitem comparar estruturas algébricas de forma coerente.
 A noção de homomorfismo unifica diversas construções algébricas:
 
 \begin{itemize}
-  \item em grupos, preserva a operação binária;
-  \item em anéis, preserva adição e multiplicação;
-  \item em corpos, preserva ambas as operações com inversos.
+	\item em grupos, preserva a operação binária;
+	\item em anéis, preserva adição e multiplicação;
+	\item em corpos, preserva ambas as operações com inversos.
 \end{itemize}
 
 Essa generalidade será essencial para a formulação dos teoremas de isomorfismo e para a estruturação categórica da álgebra.

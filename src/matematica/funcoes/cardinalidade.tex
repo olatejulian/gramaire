@@ -8,408 +8,408 @@
 \subsection{Número de Funções}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:numero-funcoes}
+	\label{prop:matematica:funcoes:cardinalidade:numero-funcoes}
 
-  Sejam \(A\) e \(B\) conjuntos finitos.
+	Sejam \(A\) e \(B\) conjuntos finitos.
 
-  Então o número de funções
+	Então o número de funções
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  é dado por
+	é dado por
 
-  \[
-    |B|^{|A|}.
-  \]
+	\[
+		|B|^{|A|}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Para cada elemento
+	Para cada elemento
 
-  \[
-    a\in A
-  \]
+	\[
+		a\in A
+	\]
 
-  existem
+	existem
 
-  \[
-    |B|
-  \]
+	\[
+		|B|
+	\]
 
-  escolhas possíveis para o valor
+	escolhas possíveis para o valor
 
-  \[
-    f(a).
-  \]
+	\[
+		f(a).
+	\]
 
-  Como as escolhas são independentes para cada elemento de \(A\),
-  pelo princípio multiplicativo,
+	Como as escolhas são independentes para cada elemento de \(A\),
+	pelo princípio multiplicativo,
 
-  \[
-    |B^A|
-    =
-    |B|^{|A|}.
-  \]
+	\[
+		|B^A|
+		=
+		|B|^{|A|}.
+	\]
 
 \end{proof}
 
 \begin{ex}
 
-  O número de funções
+	O número de funções
 
-  \[
-    \{1,2,3\}
-    \to
-    \{0,1\}
-  \]
+	\[
+		\{1,2,3\}
+		\to
+		\{0,1\}
+	\]
 
-  é
+	é
 
-  \[
-    2^3
-    =
-    8.
-  \]
+	\[
+		2^3
+		=
+		8.
+	\]
 
 \end{ex}
 
 \subsection{Número de Funções Injetivas}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:injetivas}
+	\label{prop:matematica:funcoes:cardinalidade:injetivas}
 
-  Sejam \(A\) e \(B\) conjuntos finitos com
+	Sejam \(A\) e \(B\) conjuntos finitos com
 
-  \[
-    |A|=n
-  \]
+	\[
+		|A|=n
+	\]
 
-  e
+	e
 
-  \[
-    |B|=m.
-  \]
+	\[
+		|B|=m.
+	\]
 
-  Se
+	Se
 
-  \[
-    n\le m,
-  \]
+	\[
+		n\le m,
+	\]
 
-  então o número de funções injetivas
+	então o número de funções injetivas
 
-  \[
-    A\to B
-  \]
+	\[
+		A\to B
+	\]
 
-  é
+	é
 
-  \[
-    m(m-1)\cdots(m-n+1).
-  \]
+	\[
+		m(m-1)\cdots(m-n+1).
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  O primeiro elemento de \(A\) possui \(m\) possíveis imagens.
+	O primeiro elemento de \(A\) possui \(m\) possíveis imagens.
 
-  O segundo possui \(m-1\).
+	O segundo possui \(m-1\).
 
-  O terceiro possui \(m-2\).
+	O terceiro possui \(m-2\).
 
-  Prosseguindo dessa forma,
+	Prosseguindo dessa forma,
 
-  \[
-    m(m-1)\cdots(m-n+1)
-  \]
+	\[
+		m(m-1)\cdots(m-n+1)
+	\]
 
-  funções injetivas são obtidas.
+	funções injetivas são obtidas.
 
 \end{proof}
 
 \begin{cor}
 
-  O número de injeções
+	O número de injeções
 
-  \[
-    A\to B
-  \]
+	\[
+		A\to B
+	\]
 
-  é
+	é
 
-  \[
-    \frac{m!}{(m-n)!}.
-  \]
+	\[
+		\frac{m!}{(m-n)!}.
+	\]
 
 \end{cor}
 
 \subsection{Número de Funções Sobrejetivas}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:sobrejetivas}
+	\label{prop:matematica:funcoes:cardinalidade:sobrejetivas}
 
-  Sejam \(A\) e \(B\) conjuntos finitos com
+	Sejam \(A\) e \(B\) conjuntos finitos com
 
-  \[
-    |A|=n,
-    \qquad
-    |B|=m.
-  \]
+	\[
+		|A|=n,
+		\qquad
+		|B|=m.
+	\]
 
-  O número de sobrejeções
+	O número de sobrejeções
 
-  \[
-    A\to B
-  \]
+	\[
+		A\to B
+	\]
 
-  é
+	é
 
-  \[
-    \sum_{k=0}^{m}
-    (-1)^k
-    \binom{m}{k}
-    (m-k)^n.
-  \]
+	\[
+		\sum_{k=0}^{m}
+		(-1)^k
+		\binom{m}{k}
+		(m-k)^n.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Aplicação do princípio da inclusão-exclusão.
+	Aplicação do princípio da inclusão-exclusão.
 
 \end{proof}
 
 \begin{obs}
 
-  A demonstração completa requer técnicas de análise combinatória e
-  será apresentada posteriormente.
+	A demonstração completa requer técnicas de análise combinatória e
+	será apresentada posteriormente.
 
 \end{obs}
 
 \subsection{Número de Bijeções}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:bijecoes}
+	\label{prop:matematica:funcoes:cardinalidade:bijecoes}
 
-  Se
+	Se
 
-  \[
-    |A|
-    =
-    |B|
-    =
-    n,
-  \]
+	\[
+		|A|
+		=
+		|B|
+		=
+		n,
+	\]
 
-  então o número de bijeções
+	então o número de bijeções
 
-  \[
-    A\to B
-  \]
+	\[
+		A\to B
+	\]
 
-  é
+	é
 
-  \[
-    n!.
-  \]
+	\[
+		n!.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Toda bijeção é uma função injetiva.
+	Toda bijeção é uma função injetiva.
 
-  Aplicando o resultado anterior com
+	Aplicando o resultado anterior com
 
-  \[
-    m=n,
-  \]
+	\[
+		m=n,
+	\]
 
-  obtemos
+	obtemos
 
-  \[
-    n(n-1)\cdots 2\cdot1
-    =
-    n!.
-  \]
+	\[
+		n(n-1)\cdots 2\cdot1
+		=
+		n!.
+	\]
 
 \end{proof}
 
 \begin{cor}
 
-  O número de permutações de um conjunto finito com \(n\) elementos é
+	O número de permutações de um conjunto finito com \(n\) elementos é
 
-  \[
-    n!.
-  \]
+	\[
+		n!.
+	\]
 
 \end{cor}
 
 \subsection{Funções Características}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:caracteristicas}
+	\label{prop:matematica:funcoes:cardinalidade:caracteristicas}
 
-  Seja \(X\) um conjunto finito.
+	Seja \(X\) um conjunto finito.
 
-  Então
+	Então
 
-  \[
-    |\mathcal P(X)|
-    =
-    |\{0,1\}^X|
-    =
-    2^{|X|}.
-  \]
+	\[
+		|\mathcal P(X)|
+		=
+		|\{0,1\}^X|
+		=
+		2^{|X|}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Pela bijeção
+	Pela bijeção
 
-  \[
-    A
-    \mapsto
-    \chi_A,
-  \]
+	\[
+		A
+		\mapsto
+		\chi_A,
+	\]
 
-  existe uma correspondência biunívoca entre
+	existe uma correspondência biunívoca entre
 
-  \[
-    \mathcal P(X)
-  \]
+	\[
+		\mathcal P(X)
+	\]
 
-  e
+	e
 
-  \[
-    \{0,1\}^X.
-  \]
+	\[
+		\{0,1\}^X.
+	\]
 
-  Como
+	Como
 
-  \[
-    |\{0,1\}|
-    =
-    2,
-  \]
+	\[
+		|\{0,1\}|
+		=
+		2,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    |\{0,1\}^X|
-    =
-    2^{|X|}.
-  \]
+	\[
+		|\{0,1\}^X|
+		=
+		2^{|X|}.
+	\]
 
 \end{proof}
 
 \subsection{Cardinalidade de Famílias Indexadas}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:cardinalidade:familias}
+	\label{prop:matematica:funcoes:cardinalidade:familias}
 
-  Seja
+	Seja
 
-  \[
-    I
-  \]
+	\[
+		I
+	\]
 
-  um conjunto finito e, para cada
+	um conjunto finito e, para cada
 
-  \[
-    i\in I,
-  \]
+	\[
+		i\in I,
+	\]
 
-  seja dado um conjunto finito \(A_i\).
+	seja dado um conjunto finito \(A_i\).
 
-  Então
+	Então
 
-  \[
-    \left|
-    \prod_{i\in I}
-    A_i
-    \right|
-    =
-    \prod_{i\in I}
-    |A_i|.
-  \]
+	\[
+		\left|
+		\prod_{i\in I}
+		A_i
+		\right|
+		=
+		\prod_{i\in I}
+		|A_i|.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Uma família
+	Uma família
 
-  \[
-    (a_i)_{i\in I}
-  \]
+	\[
+		(a_i)_{i\in I}
+	\]
 
-  corresponde à escolha independente de um elemento em cada conjunto
-  \(A_i\).
+	corresponde à escolha independente de um elemento em cada conjunto
+	\(A_i\).
 
-  Aplicando o princípio multiplicativo obtém-se o resultado.
+	Aplicando o princípio multiplicativo obtém-se o resultado.
 
 \end{proof}
 
 \subsection{Princípio das Gavetas}
 
 \begin{thm}[Princípio das Gavetas]
-  \label{thm:matematica:funcoes:cardinalidade:gavetas}
+	\label{thm:matematica:funcoes:cardinalidade:gavetas}
 
-  Se
+	Se
 
-  \[
-    |A|
-    >
-    |B|,
-  \]
+	\[
+		|A|
+		>
+		|B|,
+	\]
 
-  então não existe função injetiva
+	então não existe função injetiva
 
-  \[
-    A\to B.
-  \]
+	\[
+		A\to B.
+	\]
 
 \end{thm}
 
 \begin{proof}
 
-  Caso contrário existiria uma injeção de um conjunto maior em um
-  conjunto menor, contradizendo a contagem obtida anteriormente.
+	Caso contrário existiria uma injeção de um conjunto maior em um
+	conjunto menor, contradizendo a contagem obtida anteriormente.
 
 \end{proof}
 
 \begin{cor}
 
-  Se
+	Se
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  e
+	e
 
-  \[
-    |A|>|B|,
-  \]
+	\[
+		|A|>|B|,
+	\]
 
-  então existem
+	então existem
 
-  \[
-    x\neq y
-  \]
+	\[
+		x\neq y
+	\]
 
-  tais que
+	tais que
 
-  \[
-    f(x)=f(y).
-  \]
+	\[
+		f(x)=f(y).
+	\]
 
 \end{cor}
 

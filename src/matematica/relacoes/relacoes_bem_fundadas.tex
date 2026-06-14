@@ -6,52 +6,52 @@
 \label{sec:matematica:relacoes:relacoes-bem-fundadas}
 
 \begin{defn}[Elemento Minimal]
-  \label{def:matematica:relacoes:bem-fundadas:minimal}
+	\label{def:matematica:relacoes:bem-fundadas:minimal}
 
-  Seja (R) uma relação sobre (A).
+	Seja (R) uma relação sobre (A).
 
-  Um elemento (m\in A) é denominado minimal quando
+	Um elemento (m\in A) é denominado minimal quando
 
-  [
-    \neg(\exists x\in A)(xRm).
-  ]
+		[
+			\neg(\exists x\in A)(xRm).
+		]
 
 \end{defn}
 
 \begin{defn}[Relação Bem-Fundada]
-  \label{def:matematica:relacoes:bem-fundadas}
+	\label{def:matematica:relacoes:bem-fundadas}
 
-  Uma relação (R) sobre um conjunto (A) é denominada bem-fundada
-  quando todo subconjunto não vazio de (A) possui pelo menos um
-  elemento minimal.
+	Uma relação (R) sobre um conjunto (A) é denominada bem-fundada
+	quando todo subconjunto não vazio de (A) possui pelo menos um
+	elemento minimal.
 
-  Isto é,
+	Isto é,
 
-  [
-    (\forall B\subseteq A)
-    \Bigl(
-      B\neq\varnothing
-      \Rightarrow
-      (\exists m\in B)
-      (\forall b\in B)
-      \neg(bRm)
-    \Bigr).
-  ]
+	[
+			(\forall B\subseteq A)
+			\Bigl(
+			B\neq\varnothing
+			\Rightarrow
+				(\exists m\in B)
+				(\forall b\in B)
+			\neg(bRm)
+			\Bigr).
+		]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:bem-fundada-sem-cadeias}
+	\label{prop:matematica:relacoes:bem-fundada-sem-cadeias}
 
-  Se uma relação não admite cadeias descendentes infinitas, então ela é
-  bem-fundada.
+	Se uma relação não admite cadeias descendentes infinitas, então ela é
+	bem-fundada.
 
 \end{prop}
 
 \begin{obs}
 
-  Em contextos clássicos com escolha dependente, a ausência de cadeias
-  descendentes infinitas é equivalente à bem-fundação.
+	Em contextos clássicos com escolha dependente, a ausência de cadeias
+	descendentes infinitas é equivalente à bem-fundação.
 
 \end{obs}
 
@@ -85,69 +85,69 @@
 % \end{proof}
 
 \begin{prop}[Princípio da Indução Bem-Fundada]
-  \label{prop:matematica:relacoes:inducao-bem-fundada}
+	\label{prop:matematica:relacoes:inducao-bem-fundada}
 
-  Seja (R) uma relação bem-fundada sobre (A).
+	Seja (R) uma relação bem-fundada sobre (A).
 
-  Seja (P(x)) uma proposição definida para todo (x\in A).
+	Seja (P(x)) uma proposição definida para todo (x\in A).
 
-  Se
+	Se
 
-  [
-    (\forall x\in A)
-    \Bigl(
-      (\forall y\in A)
-      (yRx \Rightarrow P(y))
-      \Rightarrow
-      P(x)
-    \Bigr),
-  ]
+		[
+			(\forall x\in A)
+			\Bigl(
+			(\forall y\in A)
+			(yRx \Rightarrow P(y))
+			\Rightarrow
+			P(x)
+			\Bigr),
+		]
 
-  então
+	então
 
-  [
-    (\forall x\in A)
-    P(x).
-  ]
+	[
+	(\forall x\in A)
+	P(x).
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Suponha que exista
+	Suponha que exista
 
-  [
-    a\in A
-  ]
+		[
+			a\in A
+		]
 
-  tal que (P(a)) seja falsa.
+	tal que (P(a)) seja falsa.
 
-  Considere o conjunto
+	Considere o conjunto
 
-  [
-    S
-    =
-    {
-      x\in A
-      \mid
-      \neg P(x)
-    }.
-  ]
+		[
+			S
+				=
+				{
+					x\in A
+					\mid
+					\neg P(x)
+				}.
+		]
 
-  Como (R) é bem-fundada e (S\neq\varnothing), existe um elemento
-  minimal (m\in S).
+	Como (R) é bem-fundada e (S\neq\varnothing), existe um elemento
+	minimal (m\in S).
 
-  Pela minimalidade de (m), todo elemento (y) com (yRm) satisfaz
-  (P(y)).
+	Pela minimalidade de (m), todo elemento (y) com (yRm) satisfaz
+	(P(y)).
 
-  Pela hipótese indutiva, segue que (P(m)) é verdadeira, o que
-  contradiz (m\in S).
+	Pela hipótese indutiva, segue que (P(m)) é verdadeira, o que
+	contradiz (m\in S).
 
-  Portanto,
+	Portanto,
 
-  [
-    (\forall x\in A)P(x).
-  ]
+	[
+			(\forall x\in A)P(x).
+		]
 
 \end{proof}
 

@@ -7,13 +7,13 @@
 
 Nesta seção consideramos estruturas algébricas sobre a assinatura
 \[
-  \Sigma = \{\ast : 2\},
+	\Sigma = \{\ast : 2\},
 \]
 isto é, uma única operação binária.
 
 Uma estrutura desse tipo consiste em um conjunto não vazio $A$ munido de uma interpretação
 \[
-  \ast^A : A \times A \to A.
+	\ast^A : A \times A \to A.
 \]
 
 A partir dessa mesma assinatura, diferentes estruturas são obtidas pela adição de axiomas.
@@ -24,7 +24,7 @@ Um magma é um modelo da assinatura $\Sigma = \{\ast : 2\}$ sem axiomas adiciona
 
 Ou seja, qualquer par $(A,\ast)$ onde
 \[
-  \ast : A \times A \to A
+	\ast : A \times A \to A
 \]
 é uma operação binária.
 
@@ -34,7 +34,7 @@ Não são exigidas propriedades como associatividade, identidade ou inversos.
 
 Um semigrupo é um magma $(S,\ast)$ que satisfaz o axioma de associatividade:
 \[
-  \forall a,b,c \in S,\quad a \ast (b \ast c) = (a \ast b) \ast c.
+	\forall a,b,c \in S,\quad a \ast (b \ast c) = (a \ast b) \ast c.
 \]
 
 Esse axioma garante que a ordem de associação de operações não altera o resultado de expressões finitas.
@@ -43,7 +43,7 @@ Esse axioma garante que a ordem de associação de operações não altera o res
 
 Um monóide é um semigrupo $(M,\ast)$ tal que existe um elemento $e \in M$ satisfazendo:
 \[
-  \forall a \in M,\quad a \ast e = e \ast a = a.
+	\forall a \in M,\quad a \ast e = e \ast a = a.
 \]
 
 O elemento $e$ é chamado elemento neutro.
@@ -52,7 +52,7 @@ O elemento $e$ é chamado elemento neutro.
 
 Um grupo é um monóide $(G,\ast)$ tal que:
 \[
-  \forall a \in G,\ \exists a^{-1} \in G \text{ tal que } a \ast a^{-1} = a^{-1} \ast a = e.
+	\forall a \in G,\ \exists a^{-1} \in G \text{ tal que } a \ast a^{-1} = a^{-1} \ast a = e.
 \]
 
 O elemento $a^{-1}$ é chamado inverso de $a$.
@@ -61,14 +61,14 @@ O elemento $a^{-1}$ é chamado inverso de $a$.
 
 Um grupo $(G,\ast)$ é dito abeliano se adicionalmente satisfaz:
 \[
-  \forall a,b \in G,\quad a \ast b = b \ast a.
+	\forall a,b \in G,\quad a \ast b = b \ast a.
 \]
 
 \subsection{Hierarquia estrutural}
 
 As estruturas definidas nesta seção formam uma cadeia de especialização:
 \[
-  \text{grupo} \subset \text{monóide} \subset \text{semigrupo} \subset \text{magma}.
+	\text{grupo} \subset \text{monóide} \subset \text{semigrupo} \subset \text{magma}.
 \]
 
 Cada nível é obtido pela adição de axiomas à mesma assinatura $\Sigma = \{\ast : 2\}$.

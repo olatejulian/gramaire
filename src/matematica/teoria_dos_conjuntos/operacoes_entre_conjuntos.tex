@@ -6,121 +6,121 @@
 \label{sec:matematica:teoria-conjuntos:operacoes-entre-conjuntos}
 
 \begin{defn}[União]
-  \label{def:matematica:teoria-conjuntos:operacoes:uniao}
+	\label{def:matematica:teoria-conjuntos:operacoes:uniao}
 
-  Sejam (A) e (B) conjuntos.
+	Sejam (A) e (B) conjuntos.
 
-  A união de (A) e (B), denotada por
+	A união de (A) e (B), denotada por
 
-  [
-    A \cup B,
-  ]
+		[
+			A \cup B,
+		]
 
-  é o conjunto definido por
+	é o conjunto definido por
 
-  [
-    A \cup B
-    =
-    {
-      x
-      \mid
-      x \in A
-      \lor
-      x \in B
-    }.
-  ]
+	[
+	A \cup B
+	=
+	{
+	x
+	\mid
+	x \in A
+	\lor
+	x \in B
+	}.
+	]
 
 \end{defn}
 
 \begin{defn}[Interseção]
-  \label{def:matematica:teoria-conjuntos:operacoes:intersecao}
+	\label{def:matematica:teoria-conjuntos:operacoes:intersecao}
 
-  Sejam (A) e (B) conjuntos.
+	Sejam (A) e (B) conjuntos.
 
-  A interseção de (A) e (B), denotada por
+	A interseção de (A) e (B), denotada por
 
-  [
-    A \cap B,
-  ]
+		[
+			A \cap B,
+		]
 
-  é o conjunto definido por
+	é o conjunto definido por
 
-  [
-    A \cap B
-    =
-    {
-      x
-      \mid
-      x \in A
-      \land
-      x \in B
-    }.
-  ]
+	[
+	A \cap B
+	=
+	{
+	x
+	\mid
+	x \in A
+	\land
+	x \in B
+	}.
+	]
 
 \end{defn}
 
 \begin{defn}[Diferença]
-  \label{def:matematica:teoria-conjuntos:operacoes:diferenca}
+	\label{def:matematica:teoria-conjuntos:operacoes:diferenca}
 
-  Sejam (A) e (B) conjuntos.
+	Sejam (A) e (B) conjuntos.
 
-  A diferença entre (A) e (B), denotada por
+	A diferença entre (A) e (B), denotada por
 
-  [
-    A \setminus B,
-  ]
+		[
+			A \setminus B,
+		]
 
-  é definida por
+	é definida por
 
-  [
-    A \setminus B
-    =
-    {
-      x
-      \mid
-      x \in A
-      \land
-      x \notin B
-    }.
-  ]
+	[
+	A \setminus B
+	=
+	{
+	x
+	\mid
+	x \in A
+	\land
+	x \notin B
+	}.
+	]
 
 \end{defn}
 
 \begin{defn}[Diferença Simétrica]
-  \label{def:matematica:teoria-conjuntos:operacoes:diferenca-simetrica}
+	\label{def:matematica:teoria-conjuntos:operacoes:diferenca-simetrica}
 
-  Sejam (A) e (B) conjuntos.
+	Sejam (A) e (B) conjuntos.
 
-  A diferença simétrica de (A) e (B) é definida por
+	A diferença simétrica de (A) e (B) é definida por
 
-  [
-    A \triangle B
-    =
-    (A \setminus B)
-    \cup
-    (B \setminus A).
-  ]
+		[
+			A \triangle B
+			=
+			(A \setminus B)
+			\cup
+			(B \setminus A).
+		]
 
 \end{defn}
 
 \begin{defn}[Complemento]
-  \label{def:matematica:teoria-conjuntos:operacoes:complemento}
+	\label{def:matematica:teoria-conjuntos:operacoes:complemento}
 
-  Seja (U) um conjunto universal e seja (A \subseteq U).
+	Seja (U) um conjunto universal e seja (A \subseteq U).
 
-  O complemento de (A) em (U), denotado por
+	O complemento de (A) em (U), denotado por
 
-  [
-    A^{c},
-  ]
+		[
+			A^{c},
+		]
 
-  é definido por
+	é definido por
 
-  [
-    A^{c}
-    =
-    U \setminus A.
-  ]
+		[
+			A^{c}
+			=
+			U \setminus A.
+		]
 
 \end{defn}
 
@@ -128,273 +128,273 @@
 
 \begin{prop}[Idempotência da União]
 
-  Para todo conjunto (A),
+	Para todo conjunto (A),
 
-  [
-    A \cup A = A.
-  ]
+	[
+			A \cup A = A.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo elemento (x),
+	Para todo elemento (x),
 
-  [
-    x \in A \cup A
-    \Leftrightarrow
-    (x \in A \lor x \in A).
-  ]
+	[
+			x \in A \cup A
+			\Leftrightarrow
+			(x \in A \lor x \in A).
+		]
 
-  Pela idempotência da disjunção,
+	Pela idempotência da disjunção,
 
-  [
-    x \in A \cup A
-    \Leftrightarrow
-    x \in A.
-  ]
+	[
+			x \in A \cup A
+			\Leftrightarrow
+			x \in A.
+		]
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    A \cup A = A.
-  ]
+	[
+			A \cup A = A.
+		]
 
 \end{proof}
 
 \begin{prop}[Idempotência da Interseção]
 
-  Para todo conjunto (A),
+	Para todo conjunto (A),
 
-  [
-    A \cap A = A.
-  ]
+	[
+			A \cap A = A.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Análoga à demonstração anterior.
+	Análoga à demonstração anterior.
 
 \end{proof}
 
 \begin{prop}[Comutatividade da União]
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    A \cup B = B \cup A.
-  ]
+	[
+			A \cup B = B \cup A.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (x).
+	Seja (x).
 
-  Então
+	Então
 
-  [
-    x \in A \cup B
-    \Leftrightarrow
-    (x \in A \lor x \in B).
-  ]
+	[
+	x \in A \cup B
+	\Leftrightarrow
+	(x \in A \lor x \in B).
+	]
 
-  Pela comutatividade da disjunção,
+	Pela comutatividade da disjunção,
 
-  [
-    x \in A \cup B
-    \Leftrightarrow
-    (x \in B \lor x \in A).
-  ]
+	[
+			x \in A \cup B
+			\Leftrightarrow
+			(x \in B \lor x \in A).
+		]
 
-  Portanto
+	Portanto
 
-  [
-    x \in A \cup B
-    \Leftrightarrow
-    x \in B \cup A.
-  ]
+		[
+			x \in A \cup B
+			\Leftrightarrow
+			x \in B \cup A.
+		]
 
-  Pela extensionalidade,
+	Pela extensionalidade,
 
-  [
-    A \cup B = B \cup A.
-  ]
+	[
+			A \cup B = B \cup A.
+		]
 
 \end{proof}
 
 \begin{prop}[Comutatividade da Interseção]
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    A \cap B = B \cap A.
-  ]
+	[
+			A \cap B = B \cap A.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Análoga à demonstração anterior.
+	Análoga à demonstração anterior.
 
 \end{proof}
 
 \begin{prop}[Associatividade da União]
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    (A \cup B)\cup C
-    =
-    A\cup(B\cup C).
-  ]
+	[
+			(A \cup B)\cup C
+			=
+			A\cup(B\cup C).
+		]
 
 \end{prop}
 
 \begin{prop}[Associatividade da Interseção]
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    (A \cap B)\cap C
-    =
-    A\cap(B\cap C).
-  ]
+	[
+			(A \cap B)\cap C
+			=
+			A\cap(B\cap C).
+		]
 
 \end{prop}
 
 \begin{prop}[Distributividade da União]
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    A \cup (B \cap C)
-    =
-    (A \cup B)
-    \cap
-    (A \cup C).
-  ]
+	[
+			A \cup (B \cap C)
+			=
+			(A \cup B)
+			\cap
+			(A \cup C).
+		]
 
 \end{prop}
 
 \begin{prop}[Distributividade da Interseção]
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    A \cap (B \cup C)
-    =
-    (A \cap B)
-    \cup
-    (A \cap C).
-  ]
+	[
+			A \cap (B \cup C)
+			=
+			(A \cap B)
+			\cup
+			(A \cap C).
+		]
 
 \end{prop}
 
 \begin{prop}[Leis do Conjunto Vazio]
 
-  Para todo conjunto (A),
+	Para todo conjunto (A),
 
-  [
-    A \cup \varnothing = A,
-  ]
+	[
+			A \cup \varnothing = A,
+		]
 
-  e
+	e
 
-  [
-    A \cap \varnothing = \varnothing.
-  ]
+		[
+			A \cap \varnothing = \varnothing.
+		]
 
 \end{prop}
 
 \begin{prop}[Leis do Complemento]
 
-  Para todo conjunto (A \subseteq U),
+	Para todo conjunto (A \subseteq U),
 
-  [
-    A \cup A^{c}
-    =
-    U,
-  ]
+	[
+			A \cup A^{c}
+			=
+			U,
+		]
 
-  e
+	e
 
-  [
-    A \cap A^{c}
-    =
-    \varnothing.
-  ]
+		[
+			A \cap A^{c}
+			=
+			\varnothing.
+		]
 
 \end{prop}
 
 \begin{prop}[Primeira Lei de De Morgan]
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    (A \cup B)^c
-    =
-    A^c \cap B^c.
-  ]
+	[
+			(A \cup B)^c
+			=
+			A^c \cap B^c.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (x\in U).
+	Seja (x\in U).
 
-  Então
+	Então
 
-  [
-    x \in (A\cup B)^c
-  ]
+	[
+	x \in (A\cup B)^c
+	]
 
-  se, e somente se,
+	se, e somente se,
 
-  [
-    x \notin A\cup B.
-  ]
+	[
+			x \notin A\cup B.
+		]
 
-  Pela definição de união,
+	Pela definição de união,
 
-  [
-    \neg(x\in A \lor x\in B).
-  ]
+	[
+			\neg(x\in A \lor x\in B).
+		]
 
-  Pela Lei de De Morgan da lógica proposicional,
+	Pela Lei de De Morgan da lógica proposicional,
 
-  [
-    (x\notin A)
-    \land
-    (x\notin B).
-  ]
+	[
+			(x\notin A)
+			\land
+			(x\notin B).
+		]
 
-  Logo,
+	Logo,
 
-  [
-    x \in A^c \cap B^c.
-  ]
+	[
+			x \in A^c \cap B^c.
+		]
 
-  Portanto,
+	Portanto,
 
-  [
-    (A\cup B)^c
-    =
-    A^c\cap B^c.
-  ]
+	[
+			(A\cup B)^c
+			=
+			A^c\cap B^c.
+		]
 
 \end{proof}
 
 \begin{prop}[Segunda Lei de De Morgan]
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    (A \cap B)^c
-    =
-    A^c \cup B^c.
-  ]
+	[
+			(A \cap B)^c
+			=
+			A^c \cup B^c.
+		]
 
 \end{prop}
 

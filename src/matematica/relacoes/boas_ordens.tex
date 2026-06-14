@@ -6,164 +6,164 @@
 \label{sec:matematica:relacoes:boas-ordens}
 
 \begin{defn}[Boa Ordem]
-  \label{def:matematica:relacoes:boa-ordem}
+	\label{def:matematica:relacoes:boa-ordem}
 
-  Seja ((A,\le)) um conjunto totalmente ordenado.
+	Seja ((A,\le)) um conjunto totalmente ordenado.
 
-  Dizemos que (\le) é uma boa ordem quando todo subconjunto não vazio
-  de (A) possui um menor elemento.
+	Dizemos que (\le) é uma boa ordem quando todo subconjunto não vazio
+	de (A) possui um menor elemento.
 
-  Formalmente,
+	Formalmente,
 
-  [
-    (\forall B\subseteq A)
-    \Bigl(
-      B\neq\varnothing
-      \Rightarrow
-      (\exists m\in B)
-      (\forall x\in B)
-      (m\le x)
-    \Bigr).
-  ]
+	[
+			(\forall B\subseteq A)
+			\Bigl(
+			B\neq\varnothing
+			\Rightarrow
+				(\exists m\in B)
+				(\forall x\in B)
+				(m\le x)
+			\Bigr).
+		]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:boa-ordem-menor-unico}
+	\label{prop:matematica:relacoes:boa-ordem-menor-unico}
 
-  Em uma boa ordem, todo subconjunto não vazio possui um único menor
-  elemento.
+	Em uma boa ordem, todo subconjunto não vazio possui um único menor
+	elemento.
 
 \end{prop}
 
 \begin{proof}
 
-  A existência decorre da definição.
+	A existência decorre da definição.
 
-  A unicidade segue da antissimetria.
+	A unicidade segue da antissimetria.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:boa-ordem-bem-fundada}
+	\label{prop:matematica:relacoes:boa-ordem-bem-fundada}
 
-  Toda boa ordem é uma relação bem-fundada.
+	Toda boa ordem é uma relação bem-fundada.
 \end{prop}
 
 \begin{proof}
 
-  Seja (B\neq\varnothing).
+	Seja (B\neq\varnothing).
 
-  Como ((A,\le)) é uma boa ordem, existe um menor elemento
-  (m\in B).
+	Como ((A,\le)) é uma boa ordem, existe um menor elemento
+	(m\in B).
 
-  Logo não existe elemento de (B) estritamente menor que (m).
+	Logo não existe elemento de (B) estritamente menor que (m).
 
-  Portanto (m) é minimal.
+	Portanto (m) é minimal.
 
 \end{proof}
 
 \begin{prop}[Princípio da Boa Ordem]
-  \label{prop:matematica:relacoes:principio-boa-ordem}
+	\label{prop:matematica:relacoes:principio-boa-ordem}
 
-  Todo subconjunto não vazio de uma boa ordem possui um menor elemento.
+	Todo subconjunto não vazio de uma boa ordem possui um menor elemento.
 
 \end{prop}
 
 \begin{proof}
 
-  Trata-se da própria definição de boa ordem.
+	Trata-se da própria definição de boa ordem.
 
 \end{proof}
 
 \begin{prop}[Indução em Boas Ordens]
-  \label{prop:matematica:relacoes:inducao-boa-ordem}
+	\label{prop:matematica:relacoes:inducao-boa-ordem}
 
-  Seja ((A,\le)) uma boa ordem.
+	Seja ((A,\le)) uma boa ordem.
 
-  Seja (P(x)) uma proposição definida para todo (x\in A).
+	Seja (P(x)) uma proposição definida para todo (x\in A).
 
-  Se
+	Se
 
-  [
-    (\forall x\in A)
-    \Bigl(
-      (\forall y<x)
-      P(y)
-      \Rightarrow
-      P(x)
-    \Bigr),
-  ]
+		[
+			(\forall x\in A)
+			\Bigl(
+			(\forall y<x)
+			P(y)
+			\Rightarrow
+			P(x)
+			\Bigr),
+		]
 
-  então
+	então
 
-  [
-    (\forall x\in A)
-    P(x).
-  ]
+	[
+	(\forall x\in A)
+	P(x).
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Suponha que exista um elemento para o qual (P) seja falsa.
+	Suponha que exista um elemento para o qual (P) seja falsa.
 
-  Considere
+	Considere
 
-  [
-    S
-    =
-    {
-      x\in A
-      \mid
-      \neg P(x)
-    }.
-  ]
+		[
+			S
+				=
+				{
+					x\in A
+					\mid
+					\neg P(x)
+				}.
+		]
 
-  Como (S\neq\varnothing), pela boa ordem existe um menor elemento
-  (m\in S).
+	Como (S\neq\varnothing), pela boa ordem existe um menor elemento
+	(m\in S).
 
-  Pela minimalidade de (m), todo elemento (y<m) satisfaz (P(y)).
+	Pela minimalidade de (m), todo elemento (y<m) satisfaz (P(y)).
 
-  Pela hipótese,
+	Pela hipótese,
 
-  [
-    P(m).
-  ]
+	[
+			P(m).
+		]
 
-  Contradição.
+	Contradição.
 
-  Logo,
+	Logo,
 
-  [
-    (\forall x\in A)
-    P(x).
-  ]
+	[
+			(\forall x\in A)
+			P(x).
+		]
 
 \end{proof}
 
 \begin{ex}
 
-  O conjunto
+	O conjunto
 
-  [
-    \mathbb N
-  ]
+		[
+			\mathbb N
+		]
 
-  munido da ordem usual
+	munido da ordem usual
 
-  [
-    \le
-  ]
+		[
+			\le
+		]
 
-  é uma boa ordem.
+	é uma boa ordem.
 
 \end{ex}
 
 \begin{obs}
 
-  O princípio da indução matemática pode ser interpretado como um caso
-  particular do princípio da indução sobre boas ordens.
+	O princípio da indução matemática pode ser interpretado como um caso
+	particular do princípio da indução sobre boas ordens.
 
 \end{obs}
 

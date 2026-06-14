@@ -6,525 +6,525 @@
 \label{sec:matematica:funcoes:composicao}
 
 \begin{defn}[Composição de Funções]
-  \label{def:matematica:funcoes:composicao:composicao}
+	\label{def:matematica:funcoes:composicao:composicao}
 
-  Sejam
+	Sejam
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:B\to C.
-  ]
+		[
+			g:B\to C.
+		]
 
-  A composição de (g) com (f) é a função
+	A composição de (g) com (f) é a função
 
-  [
-    g\circ f:A\to C
-  ]
+	[
+	g\circ f:A\to C
+	]
 
-  definida por
+	definida por
 
-  [
-    (g\circ f)(x)
-    =
-    g(f(x))
-  ]
+		[
+			(g\circ f)(x)
+			=
+			g(f(x))
+		]
 
-  para todo (x\in A).
+	para todo (x\in A).
 
 \end{defn}
 
 \begin{obs}
 
-  Na expressão
+	Na expressão
 
-  [
-    g\circ f,
-  ]
+	[
+	g\circ f,
+	]
 
-  a função (f) é aplicada primeiro e a função (g) é aplicada em
-  seguida.
+	a função (f) é aplicada primeiro e a função (g) é aplicada em
+	seguida.
 
 \end{obs}
 
 \begin{prop}[Boa Definição]
-  \label{prop:matematica:funcoes:composicao:boa-definicao}
+	\label{prop:matematica:funcoes:composicao:boa-definicao}
 
-  Se
+	Se
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:B\to C,
-  ]
+		[
+			g:B\to C,
+		]
 
-  então
+	então
 
-  [
-    g\circ f
-  ]
+	[
+	g\circ f
+	]
 
-  é uma função de (A) em (C).
+	é uma função de (A) em (C).
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (x\in A).
+	Seja (x\in A).
 
-  Como
+	Como
 
-  [
-    f:A\to B,
-  ]
+		[
+			f:A\to B,
+		]
 
-  temos
+	temos
 
-  [
-    f(x)\in B.
-  ]
+		[
+			f(x)\in B.
+		]
 
-  Como
+	Como
 
-  [
-    g:B\to C,
-  ]
+		[
+			g:B\to C,
+		]
 
-  existe um único elemento
+	existe um único elemento
 
-  [
-    g(f(x))
-    \in
-    C.
-  ]
+		[
+			g(f(x))
+			\in
+			C.
+		]
 
-  Portanto
+	Portanto
 
-  [
-    g\circ f:A\to C
-  ]
+		[
+			g\circ f:A\to C
+		]
 
-  satisfaz as propriedades de existência e unicidade da imagem.
+	satisfaz as propriedades de existência e unicidade da imagem.
 
 \end{proof}
 
 \begin{prop}[Associatividade]
-  \label{prop:matematica:funcoes:composicao:associatividade}
+	\label{prop:matematica:funcoes:composicao:associatividade}
 
-  Sejam
+	Sejam
 
-  [
-    f:A\to B,
-  ]
+		[
+			f:A\to B,
+		]
 
-  [
-    g:B\to C
-  ]
+		[
+			g:B\to C
+		]
 
-  e
+	e
 
-  [
-    h:C\to D.
-  ]
+		[
+			h:C\to D.
+		]
 
-  Então
+	Então
 
-  [
-    h\circ(g\circ f)
-    =
-    (h\circ g)\circ f.
-  ]
+	[
+	h\circ(g\circ f)
+	=
+	(h\circ g)\circ f.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo (x\in A),
+	Para todo (x\in A),
 
-  [
-    (h\circ(g\circ f))(x)
-    =
-    h((g\circ f)(x))
-  ]
+	[
+			(h\circ(g\circ f))(x)
+			=
+			h((g\circ f)(x))
+		]
 
-  [
-    =
-    h(g(f(x))).
-  ]
+		[
+			=
+			h(g(f(x))).
+		]
 
-  Por outro lado,
+	Por outro lado,
 
-  [
-    ((h\circ g)\circ f)(x)
-    =
-    (h\circ g)(f(x))
-  ]
+	[
+			((h\circ g)\circ f)(x)
+			=
+			(h\circ g)(f(x))
+		]
 
-  [
-    =
-    h(g(f(x))).
-  ]
+		[
+			=
+			h(g(f(x))).
+		]
 
-  Portanto as duas funções coincidem em todos os elementos do domínio.
+	Portanto as duas funções coincidem em todos os elementos do domínio.
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    h\circ(g\circ f)
-    =
-    (h\circ g)\circ f.
-  ]
+	[
+			h\circ(g\circ f)
+			=
+			(h\circ g)\circ f.
+		]
 
 \end{proof}
 
 \subsection{Funções Identidade}
 
 \begin{defn}[Função Identidade]
-  \label{def:matematica:funcoes:composicao:identidade}
+	\label{def:matematica:funcoes:composicao:identidade}
 
-  Seja (A) um conjunto.
+	Seja (A) um conjunto.
 
-  A função identidade de (A) é a função
+	A função identidade de (A) é a função
 
-  [
-    \operatorname{id}_A:A\to A
-  ]
+	[
+	\operatorname{id}_A:A\to A
+	]
 
-  definida por
+	definida por
 
-  [
-    \operatorname{id}_A(x)=x
-  ]
+		[
+			\operatorname{id}_A(x)=x
+		]
 
-  para todo (x\in A).
+	para todo (x\in A).
 
 \end{defn}
 
 \begin{prop}[Neutro à Esquerda]
-  \label{prop:matematica:funcoes:composicao:neutro-esquerda}
+	\label{prop:matematica:funcoes:composicao:neutro-esquerda}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Então
+	Então
 
-  [
-    \operatorname{id}_B
-    \circ
-    f
-    =
-    f.
-  ]
+	[
+	\operatorname{id}_B
+	\circ
+	f
+	=
+	f.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo (x\in A),
+	Para todo (x\in A),
 
-  [
-    (\operatorname{id}_B\circ f)(x)
-    =
-    \operatorname{id}_B(f(x))
-    =
-    f(x).
-  ]
+	[
+			(\operatorname{id}_B\circ f)(x)
+			=
+			\operatorname{id}_B(f(x))
+			=
+			f(x).
+		]
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    \operatorname{id}_B\circ f=f.
-  ]
+	[
+			\operatorname{id}_B\circ f=f.
+		]
 
 \end{proof}
 
 \begin{prop}[Neutro à Direita]
-  \label{prop:matematica:funcoes:composicao:neutro-direita}
+	\label{prop:matematica:funcoes:composicao:neutro-direita}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Então
+	Então
 
-  [
-    f
-    \circ
-    \operatorname{id}_A
-    =
-    f.
-  ]
+	[
+	f
+	\circ
+	\operatorname{id}_A
+	=
+	f.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo (x\in A),
+	Para todo (x\in A),
 
-  [
-    (f\circ\operatorname{id}_A)(x)
-    =
-    f(\operatorname{id}_A(x))
-    =
-    f(x).
-  ]
+	[
+			(f\circ\operatorname{id}_A)(x)
+			=
+			f(\operatorname{id}_A(x))
+			=
+			f(x).
+		]
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    f\circ\operatorname{id}_A=f.
-  ]
+	[
+			f\circ\operatorname{id}_A=f.
+		]
 
 \end{proof}
 
 \subsection{Potências de Endofunções}
 
 \begin{defn}[Potência de uma Endofunção]
-  \label{def:matematica:funcoes:composicao:potencia}
+	\label{def:matematica:funcoes:composicao:potencia}
 
-  Seja
+	Seja
 
-  [
-    f:A\to A.
-  ]
+		[
+			f:A\to A.
+		]
 
-  Define-se recursivamente
+	Define-se recursivamente
 
-  [
-    f^0
-    =
-    \operatorname{id}_A,
-  ]
+		[
+			f^0
+			=
+			\operatorname{id}_A,
+		]
 
-  e
+	e
 
-  [
-    f^{n+1}
-    =
-    f\circ f^n.
-  ]
+		[
+			f^{n+1}
+			=
+			f\circ f^n.
+		]
 
 \end{defn}
 
 \begin{ex}
 
-  [
-    f^1=f,
-  ]
+	[
+		f^1=f,
+	]
 
-  [
-    f^2=f\circ f,
-  ]
+	[
+		f^2=f\circ f,
+	]
 
-  [
-    f^3=f\circ f\circ f.
-  ]
+	[
+		f^3=f\circ f\circ f.
+	]
 
 \end{ex}
 
 \begin{prop}[Lei das Potências]
-  \label{prop:matematica:funcoes:composicao:lei-potencias}
+	\label{prop:matematica:funcoes:composicao:lei-potencias}
 
-  Para quaisquer
+	Para quaisquer
 
-  [
-    m,n\in\mathbb N,
-  ]
+		[
+			m,n\in\mathbb N,
+		]
 
-  vale
+	vale
 
-  [
-    f^m\circ f^n
-    =
-    f^{m+n}.
-  ]
+		[
+			f^m\circ f^n
+			=
+			f^{m+n}.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Procedemos por indução em (m).
+	Procedemos por indução em (m).
 
-  Para (m=0),
+	Para (m=0),
 
-  [
-    f^0\circ f^n
-    =
-    \operatorname{id}_A\circ f^n
-    =
-    f^n.
-  ]
+	[
+			f^0\circ f^n
+			=
+			\operatorname{id}_A\circ f^n
+			=
+			f^n.
+		]
 
-  Portanto
+	Portanto
 
-  [
-    f^0\circ f^n
-    =
-    f^{0+n}.
-  ]
+		[
+			f^0\circ f^n
+			=
+			f^{0+n}.
+		]
 
-  Suponha
+	Suponha
 
-  [
-    f^m\circ f^n
-    =
-    f^{m+n}.
-  ]
+		[
+			f^m\circ f^n
+			=
+			f^{m+n}.
+		]
 
-  Então
+	Então
 
-  [
-    f^{m+1}\circ f^n
-    =
-    (f\circ f^m)\circ f^n.
-  ]
+	[
+	f^{m+1}\circ f^n
+	=
+	(f\circ f^m)\circ f^n.
+	]
 
-  Pela associatividade,
+	Pela associatividade,
 
-  [
-    =
-    f\circ(f^m\circ f^n).
-  ]
+	[
+			=
+			f\circ(f^m\circ f^n).
+		]
 
-  Pela hipótese de indução,
+	Pela hipótese de indução,
 
-  [
-    =
-    f\circ f^{m+n}.
-  ]
+	[
+			=
+			f\circ f^{m+n}.
+		]
 
-  Logo
+	Logo
 
-  [
-    =
-    f^{m+n+1}
-    =
-    f^{(m+1)+n}.
-  ]
+		[
+			=
+			f^{m+n+1}
+			=
+			f^{(m+1)+n}.
+		]
 
 \end{proof}
 
 \subsection{Cancelamento}
 
 \begin{prop}[Cancelamento à Esquerda]
-  \label{prop:matematica:funcoes:composicao:cancelamento-esquerda}
+	\label{prop:matematica:funcoes:composicao:cancelamento-esquerda}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  uma função injetiva.
+	uma função injetiva.
 
-  Se
+	Se
 
-  [
-    f\circ g
-    =
-    f\circ h,
-  ]
+		[
+			f\circ g
+			=
+			f\circ h,
+		]
 
-  então
+	então
 
-  [
-    g=h.
-  ]
+	[
+	g=h.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo elemento (x),
+	Para todo elemento (x),
 
-  [
-    f(g(x))
-    =
-    f(h(x)).
-  ]
+	[
+			f(g(x))
+			=
+			f(h(x)).
+		]
 
-  Como (f) é injetiva,
+	Como (f) é injetiva,
 
-  [
-    g(x)=h(x).
-  ]
+	[
+			g(x)=h(x).
+		]
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    g=h.
-  ]
+	[
+			g=h.
+		]
 
 \end{proof}
 
 \begin{prop}[Cancelamento à Direita]
-  \label{prop:matematica:funcoes:composicao:cancelamento-direita}
+	\label{prop:matematica:funcoes:composicao:cancelamento-direita}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  uma função sobrejetiva.
+	uma função sobrejetiva.
 
-  Se
+	Se
 
-  [
-    g\circ f
-    =
-    h\circ f,
-  ]
+		[
+			g\circ f
+			=
+			h\circ f,
+		]
 
-  então
+	então
 
-  [
-    g=h.
-  ]
+	[
+	g=h.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (y\in B).
+	Seja (y\in B).
 
-  Como (f) é sobrejetiva, existe
-  (x\in A) tal que
+	Como (f) é sobrejetiva, existe
+	(x\in A) tal que
 
-  [
-    f(x)=y.
-  ]
+		[
+			f(x)=y.
+		]
 
-  Logo
+	Logo
 
-  [
-    g(y)
-    =
-    g(f(x))
-    =
-    h(f(x))
-    =
-    h(y).
-  ]
+		[
+			g(y)
+			=
+			g(f(x))
+			=
+			h(f(x))
+			=
+			h(y).
+		]
 
-  Pelo princípio da extensionalidade,
+	Pelo princípio da extensionalidade,
 
-  [
-    g=h.
-  ]
+	[
+			g=h.
+		]
 
 \end{proof}
 

@@ -6,365 +6,365 @@
 \label{sec:matematica:funcoes:tipos-de-funcoes}
 
 \begin{defn}[Função Injetiva]
-  \label{def:matematica:funcoes:tipos-de-funcoes:injetiva}
+	\label{def:matematica:funcoes:tipos-de-funcoes:injetiva}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Diz-se que (f) é injetiva quando
+	Diz-se que (f) é injetiva quando
 
-  [
-    (\forall x,y\in A)
-    \bigl(
-      f(x)=f(y)
-      \Rightarrow
-      x=y
-    \bigr).
-  ]
+		[
+			(\forall x,y\in A)
+			\bigl(
+			f(x)=f(y)
+			\Rightarrow
+			x=y
+			\bigr).
+		]
 
 \end{defn}
 
 \begin{obs}
 
-  Uma função injetiva nunca identifica dois elementos distintos do
-  domínio.
+	Uma função injetiva nunca identifica dois elementos distintos do
+	domínio.
 
 \end{obs}
 
 \begin{ex}
 
-  A função
+	A função
 
-  [
-    f:\mathbb R\to\mathbb R,
-    \qquad
-    f(x)=2x+1
-  ]
+	[
+	f:\mathbb R\to\mathbb R,
+	\qquad
+	f(x)=2x+1
+	]
 
-  é injetiva.
+	é injetiva.
 
 \end{ex}
 
 \begin{prop}[Caracterização da Injetividade]
-  \label{prop:matematica:funcoes:tipos-de-funcoes:caracterizacao-injetiva}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:caracterizacao-injetiva}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Então (f) é injetiva se, e somente se,
+	Então (f) é injetiva se, e somente se,
 
-  [
-    (\forall x,y\in A)
-    \bigl(
-      x\neq y
-      \Rightarrow
-      f(x)\neq f(y)
-    \bigr).
-  ]
+	[
+			(\forall x,y\in A)
+			\bigl(
+			x\neq y
+			\Rightarrow
+			f(x)\neq f(y)
+			\bigr).
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  A afirmação é a contrapositiva da definição de injetividade.
+	A afirmação é a contrapositiva da definição de injetividade.
 
 \end{proof}
 
 \begin{defn}[Função Sobrejetiva]
-  \label{def:matematica:funcoes:tipos-de-funcoes:sobrejetiva}
+	\label{def:matematica:funcoes:tipos-de-funcoes:sobrejetiva}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Diz-se que (f) é sobrejetiva quando
+	Diz-se que (f) é sobrejetiva quando
 
-  [
-    (\forall y\in B)
-    (\exists x\in A)
-    \bigl(
-      f(x)=y
-    \bigr).
-  ]
+		[
+			(\forall y\in B)
+			(\exists x\in A)
+			\bigl(
+			f(x)=y
+			\bigr).
+		]
 
 \end{defn}
 
 \begin{obs}
 
-  Uma função é sobrejetiva quando sua imagem coincide com seu
-  contradomínio.
+	Uma função é sobrejetiva quando sua imagem coincide com seu
+	contradomínio.
 
 \end{obs}
 
 \begin{prop}[Caracterização da Sobrejetividade]
-  \label{prop:matematica:funcoes:tipos-de-funcoes:caracterizacao-sobrejetiva}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:caracterizacao-sobrejetiva}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Então
+	Então
 
-  [
-    f
-    \text{ é sobrejetiva}
-    \iff
-    \operatorname{Im}(f)=B.
-  ]
+	[
+	f
+	\text{ é sobrejetiva}
+	\iff
+	\operatorname{Im}(f)=B.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente das definições de imagem e sobrejetividade.
+	Segue diretamente das definições de imagem e sobrejetividade.
 
 \end{proof}
 
 \begin{ex}
 
-  A função
+	A função
 
-  [
-    f:\mathbb R\to\mathbb R,
-    \qquad
-    f(x)=x^3
-  ]
+	[
+	f:\mathbb R\to\mathbb R,
+	\qquad
+	f(x)=x^3
+	]
 
-  é sobrejetiva.
+	é sobrejetiva.
 
 \end{ex}
 
 \begin{defn}[Função Bijetiva]
-  \label{def:matematica:funcoes:tipos-de-funcoes:bijetiva}
+	\label{def:matematica:funcoes:tipos-de-funcoes:bijetiva}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Diz-se que (f) é bijetiva quando é simultaneamente injetiva e
-  sobrejetiva.
+	Diz-se que (f) é bijetiva quando é simultaneamente injetiva e
+	sobrejetiva.
 
 \end{defn}
 
 \begin{ex}
 
-  A função
+	A função
 
-  [
-    f:\mathbb R\to\mathbb R,
-    \qquad
-    f(x)=x+1
-  ]
+	[
+	f:\mathbb R\to\mathbb R,
+	\qquad
+	f(x)=x+1
+	]
 
-  é bijetiva.
+	é bijetiva.
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:tipos-de-funcoes:bijetiva-unica}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:bijetiva-unica}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Se (f) é bijetiva, então para cada
-  (y\in B) existe um único elemento
-  (x\in A) tal que
+	Se (f) é bijetiva, então para cada
+	(y\in B) existe um único elemento
+	(x\in A) tal que
 
-  [
-    f(x)=y.
-  ]
+		[
+			f(x)=y.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  A existência decorre da sobrejetividade.
+	A existência decorre da sobrejetividade.
 
-  A unicidade decorre da injetividade.
+	A unicidade decorre da injetividade.
 
 \end{proof}
 
 \subsection{Composição}
 
 \begin{prop}[Composição de Injetivas]
-  \label{prop:matematica:funcoes:tipos-de-funcoes:composicao-injetiva}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:composicao-injetiva}
 
-  Se
+	Se
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:B\to C
-  ]
+		[
+			g:B\to C
+		]
 
-  são injetivas, então
+	são injetivas, então
 
-  [
-    g\circ f
-  ]
+	[
+	g\circ f
+	]
 
-  é injetiva.
+	é injetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Suponha
+	Suponha
 
-  [
-    (g\circ f)(x)
-    =
-    (g\circ f)(y).
-  ]
+	[
+	(g\circ f)(x)
+	=
+	(g\circ f)(y).
+	]
 
-  Então
+	Então
 
-  [
-    g(f(x))
-    =
-    g(f(y)).
-  ]
+	[
+	g(f(x))
+	=
+	g(f(y)).
+	]
 
-  Como (g) é injetiva,
+	Como (g) é injetiva,
 
-  [
-    f(x)=f(y).
-  ]
+	[
+			f(x)=f(y).
+		]
 
-  Como (f) é injetiva,
+	Como (f) é injetiva,
 
-  [
-    x=y.
-  ]
+	[
+			x=y.
+		]
 
 \end{proof}
 
 \begin{prop}[Composição de Sobrejetivas]
-  \label{prop:matematica:funcoes:tipos-de-funcoes:composicao-sobrejetiva}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:composicao-sobrejetiva}
 
-  Se
+	Se
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:B\to C
-  ]
+		[
+			g:B\to C
+		]
 
-  são sobrejetivas, então
+	são sobrejetivas, então
 
-  [
-    g\circ f
-  ]
+	[
+	g\circ f
+	]
 
-  é sobrejetiva.
+	é sobrejetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (c\in C).
+	Seja (c\in C).
 
-  Como (g) é sobrejetiva, existe
-  (b\in B) tal que
+	Como (g) é sobrejetiva, existe
+	(b\in B) tal que
 
-  [
-    g(b)=c.
-  ]
+		[
+			g(b)=c.
+		]
 
-  Como (f) é sobrejetiva, existe
-  (a\in A) tal que
+	Como (f) é sobrejetiva, existe
+	(a\in A) tal que
 
-  [
-    f(a)=b.
-  ]
+		[
+			f(a)=b.
+		]
 
-  Logo
+	Logo
 
-  [
-    (g\circ f)(a)
-    =
-    c.
-  ]
+		[
+			(g\circ f)(a)
+			=
+			c.
+		]
 
 \end{proof}
 
 \begin{prop}[Composição de Bijetivas]
-  \label{prop:matematica:funcoes:tipos-de-funcoes:composicao-bijetiva}
+	\label{prop:matematica:funcoes:tipos-de-funcoes:composicao-bijetiva}
 
-  A composição de funções bijetivas é bijetiva.
+	A composição de funções bijetivas é bijetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Segue das duas proposições anteriores.
+	Segue das duas proposições anteriores.
 
 \end{proof}
 
 \subsection{Endofunções}
 
 \begin{defn}[Endofunção]
-  \label{def:matematica:funcoes:tipos-de-funcoes:endofuncao}
+	\label{def:matematica:funcoes:tipos-de-funcoes:endofuncao}
 
-  Uma endofunção é uma função
+	Uma endofunção é uma função
 
-  [
-    f:A\to A.
-  ]
+	[
+	f:A\to A.
+	]
 
 \end{defn}
 
 \begin{ex}
 
-  A função identidade
+	A função identidade
 
-  [
-    \operatorname{id}_A:A\to A
-  ]
+		[
+			\operatorname{id}_A:A\to A
+		]
 
-  é uma endofunção.
+	é uma endofunção.
 
 \end{ex}
 
 \begin{defn}[Permutação]
-  \label{def:matematica:funcoes:tipos-de-funcoes:permutacao}
+	\label{def:matematica:funcoes:tipos-de-funcoes:permutacao}
 
-  Uma permutação de um conjunto (A) é uma bijeção
+	Uma permutação de um conjunto (A) é uma bijeção
 
-  [
-    f:A\to A.
-  ]
+	[
+	f:A\to A.
+	]
 
 \end{defn}
 
 \begin{obs}
 
-  O conjunto de todas as permutações de (A) será importante
-  posteriormente em Álgebra Abstrata, onde forma um grupo sob a
-  operação de composição.
+	O conjunto de todas as permutações de (A) será importante
+	posteriormente em Álgebra Abstrata, onde forma um grupo sob a
+	operação de composição.
 
 \end{obs}
 

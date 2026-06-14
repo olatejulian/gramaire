@@ -6,392 +6,392 @@
 \label{sec:matematica:relacoes:fechos-de-relacoes}
 
 \begin{defn}[Fecho]
-  \label{def:matematica:relacoes:fechos:fecho}
+	\label{def:matematica:relacoes:fechos:fecho}
 
-  Seja \(R\) uma relação binária sobre um conjunto \(A\).
+	Seja \(R\) uma relação binária sobre um conjunto \(A\).
 
-  Seja \(P\) uma propriedade de relações.
+	Seja \(P\) uma propriedade de relações.
 
-  O fecho de \(R\) com respeito à propriedade \(P\) é a menor relação
-  \(S\) sobre \(A\) tal que
+	O fecho de \(R\) com respeito à propriedade \(P\) é a menor relação
+	\(S\) sobre \(A\) tal que
 
-  \[
-    R \subseteq S
-  \]
+	\[
+		R \subseteq S
+	\]
 
-  e \(S\) satisfaz a propriedade \(P\).
+	e \(S\) satisfaz a propriedade \(P\).
 
 \end{defn}
 
 \begin{obs}
 
-  A expressão ``menor relação'' significa que, para qualquer relação
-  \(T\) que contenha \(R\) e satisfaça a propriedade considerada,
+	A expressão ``menor relação'' significa que, para qualquer relação
+	\(T\) que contenha \(R\) e satisfaça a propriedade considerada,
 
-  \[
-    S \subseteq T.
-  \]
+	\[
+		S \subseteq T.
+	\]
 
 \end{obs}
 
 \subsection{Fecho Reflexivo}
 
 \begin{defn}[Fecho Reflexivo]
-  \label{def:matematica:relacoes:fechos:fecho-reflexivo}
+	\label{def:matematica:relacoes:fechos:fecho-reflexivo}
 
-  Seja \(R\) uma relação sobre \(A\).
+	Seja \(R\) uma relação sobre \(A\).
 
-  O fecho reflexivo de \(R\) é a relação
+	O fecho reflexivo de \(R\) é a relação
 
-  \[
-    R_r
-    =
-    R
-    \cup
-    \{
-      (a,a)
-      \mid
-      a \in A
-    \}.
-  \]
+	\[
+		R_r
+		=
+		R
+		\cup
+		\{
+		(a,a)
+		\mid
+		a \in A
+		\}.
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:fecho-reflexivo-reflexivo}
+	\label{prop:matematica:relacoes:fechos:fecho-reflexivo-reflexivo}
 
-  O fecho reflexivo de uma relação é reflexivo.
+	O fecho reflexivo de uma relação é reflexivo.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja \(a \in A\).
+	Seja \(a \in A\).
 
-  Pela definição,
+	Pela definição,
 
-  \[
-    (a,a)
-    \in
-    \{
-      (x,x)
-      \mid
-      x \in A
-    \}.
-  \]
+	\[
+		(a,a)
+		\in
+		\{
+		(x,x)
+		\mid
+		x \in A
+		\}.
+	\]
 
-  Portanto,
+	Portanto,
 
-  \[
-    (a,a)\in R_r.
-  \]
+	\[
+		(a,a)\in R_r.
+	\]
 
-  Logo \(R_r\) é reflexiva.
+	Logo \(R_r\) é reflexiva.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:minimalidade-fecho-reflexivo}
+	\label{prop:matematica:relacoes:fechos:minimalidade-fecho-reflexivo}
 
-  O fecho reflexivo é a menor relação reflexiva que contém \(R\).
+	O fecho reflexivo é a menor relação reflexiva que contém \(R\).
 
 \end{prop}
 
 \begin{proof}
 
-  Seja \(T\) uma relação reflexiva tal que
+	Seja \(T\) uma relação reflexiva tal que
 
-  \[
-    R \subseteq T.
-  \]
+	\[
+		R \subseteq T.
+	\]
 
-  Como \(T\) é reflexiva,
+	Como \(T\) é reflexiva,
 
-  \[
-    (a,a)\in T
-  \]
+	\[
+		(a,a)\in T
+	\]
 
-  para todo \(a\in A\).
+	para todo \(a\in A\).
 
-  Portanto,
+	Portanto,
 
-  \[
-    R_r \subseteq T.
-  \]
+	\[
+		R_r \subseteq T.
+	\]
 
 \end{proof}
 
 \subsection{Fecho Simétrico}
 
 \begin{defn}[Relação Inversa]
-  \label{def:matematica:relacoes:fechos:relacao-inversa}
+	\label{def:matematica:relacoes:fechos:relacao-inversa}
 
-  Seja \(R\) uma relação sobre \(A\).
+	Seja \(R\) uma relação sobre \(A\).
 
-  Define-se a relação inversa de \(R\) por
+	Define-se a relação inversa de \(R\) por
 
-  \[
-    R^{-1}
-    =
-    \{
-      (b,a)
-      \mid
-      (a,b)\in R
-    \}.
-  \]
+	\[
+		R^{-1}
+		=
+		\{
+		(b,a)
+		\mid
+		(a,b)\in R
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Fecho Simétrico]
-  \label{def:matematica:relacoes:fechos:fecho-simetrico}
+	\label{def:matematica:relacoes:fechos:fecho-simetrico}
 
-  O fecho simétrico de \(R\) é a relação
+	O fecho simétrico de \(R\) é a relação
 
-  \[
-    R_s
-    =
-    R
-    \cup
-    R^{-1}.
-  \]
+	\[
+		R_s
+		=
+		R
+		\cup
+		R^{-1}.
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:fecho-simetrico-simetrico}
+	\label{prop:matematica:relacoes:fechos:fecho-simetrico-simetrico}
 
-  O fecho simétrico de uma relação é simétrico.
+	O fecho simétrico de uma relação é simétrico.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    (a,b)\in R_s.
-  \]
+	\[
+		(a,b)\in R_s.
+	\]
 
-  Então
+	Então
 
-  \[
-    (a,b)\in R
-  \]
+	\[
+		(a,b)\in R
+	\]
 
-  ou
+	ou
 
-  \[
-    (a,b)\in R^{-1}.
-  \]
+	\[
+		(a,b)\in R^{-1}.
+	\]
 
-  Em ambos os casos,
+	Em ambos os casos,
 
-  \[
-    (b,a)\in R_s.
-  \]
+	\[
+		(b,a)\in R_s.
+	\]
 
-  Portanto \(R_s\) é simétrica.
+	Portanto \(R_s\) é simétrica.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:minimalidade-fecho-simetrico}
+	\label{prop:matematica:relacoes:fechos:minimalidade-fecho-simetrico}
 
-  O fecho simétrico é a menor relação simétrica que contém \(R\).
+	O fecho simétrico é a menor relação simétrica que contém \(R\).
 
 \end{prop}
 
 \begin{proof}
 
-  Seja \(T\) uma relação simétrica contendo \(R\).
+	Seja \(T\) uma relação simétrica contendo \(R\).
 
-  Como \(T\) é simétrica,
+	Como \(T\) é simétrica,
 
-  \[
-    R^{-1}\subseteq T.
-  \]
+	\[
+		R^{-1}\subseteq T.
+	\]
 
-  Portanto,
+	Portanto,
 
-  \[
-    R_s
-    =
-    R\cup R^{-1}
-    \subseteq T.
-  \]
+	\[
+		R_s
+		=
+		R\cup R^{-1}
+		\subseteq T.
+	\]
 
 \end{proof}
 
 \subsection{Fecho Transitivo}
 
 \begin{defn}[Potência de uma Relação]
-  \label{def:matematica:relacoes:fechos:potencia-relacao}
+	\label{def:matematica:relacoes:fechos:potencia-relacao}
 
-  Seja \(R\) uma relação sobre \(A\).
+	Seja \(R\) uma relação sobre \(A\).
 
-  Define-se
+	Define-se
 
-  \[
-    R^1 = R
-  \]
+	\[
+		R^1 = R
+	\]
 
-  e, para \(n\ge 1\),
+	e, para \(n\ge 1\),
 
-  \[
-    R^{n+1}
-    =
-    R^n \circ R,
-  \]
+	\[
+		R^{n+1}
+		=
+		R^n \circ R,
+	\]
 
-  onde \(\circ\) denota a composição de relações.
+	onde \(\circ\) denota a composição de relações.
 
 \end{defn}
 
 \begin{defn}[Fecho Transitivo]
-  \label{def:matematica:relacoes:fechos:fecho-transitivo}
+	\label{def:matematica:relacoes:fechos:fecho-transitivo}
 
-  O fecho transitivo de \(R\) é a relação
+	O fecho transitivo de \(R\) é a relação
 
-  \[
-    R_t
-    =
-    \bigcup_{n=1}^{\infty} R^n.
-  \]
+	\[
+		R_t
+		=
+		\bigcup_{n=1}^{\infty} R^n.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Um par
+	Um par
 
-  \[
-    (a,b)\in R_t
-  \]
+	\[
+		(a,b)\in R_t
+	\]
 
-  quando existe um caminho finito ligando \(a\) a \(b\) por elementos de
-  \(R\).
+	quando existe um caminho finito ligando \(a\) a \(b\) por elementos de
+	\(R\).
 
 \end{obs}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:fecho-transitivo-transitivo}
+	\label{prop:matematica:relacoes:fechos:fecho-transitivo-transitivo}
 
-  O fecho transitivo de uma relação é transitivo.
+	O fecho transitivo de uma relação é transitivo.
 
 \end{prop}
 
 \begin{proof}
 
-  Se
+	Se
 
-  \[
-    (a,b)\in R^m
-  \]
+	\[
+		(a,b)\in R^m
+	\]
 
-  e
+	e
 
-  \[
-    (b,c)\in R^n,
-  \]
+	\[
+		(b,c)\in R^n,
+	\]
 
-  então
+	então
 
-  \[
-    (a,c)\in R^{m+n}.
-  \]
+	\[
+		(a,c)\in R^{m+n}.
+	\]
 
-  Como
+	Como
 
-  \[
-    R^{m+n}
-    \subseteq
-    R_t,
-  \]
+	\[
+		R^{m+n}
+		\subseteq
+		R_t,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    (a,c)\in R_t.
-  \]
+	\[
+		(a,c)\in R_t.
+	\]
 
-  Portanto \(R_t\) é transitiva.
+	Portanto \(R_t\) é transitiva.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:fechos:minimalidade-fecho-transitivo}
+	\label{prop:matematica:relacoes:fechos:minimalidade-fecho-transitivo}
 
-  O fecho transitivo é a menor relação transitiva que contém \(R\).
+	O fecho transitivo é a menor relação transitiva que contém \(R\).
 
 \end{prop}
 
 \begin{proof}
 
-  Seja \(T\) uma relação transitiva contendo \(R\).
+	Seja \(T\) uma relação transitiva contendo \(R\).
 
-  Por indução sobre \(n\), obtém-se
+	Por indução sobre \(n\), obtém-se
 
-  \[
-    R^n \subseteq T
-  \]
+	\[
+		R^n \subseteq T
+	\]
 
-  para todo \(n\ge 1\).
+	para todo \(n\ge 1\).
 
-  Portanto,
+	Portanto,
 
-  \[
-    R_t
-    =
-    \bigcup_{n=1}^{\infty}R^n
-    \subseteq T.
-  \]
+	\[
+		R_t
+		=
+		\bigcup_{n=1}^{\infty}R^n
+		\subseteq T.
+	\]
 
 \end{proof}
 
 \begin{ex}
 
-  Seja
+	Seja
 
-  \[
-    A=\{1,2,3\}
-  \]
+	\[
+		A=\{1,2,3\}
+	\]
 
-  e
+	e
 
-  \[
-    R
-    =
-    \{
-      (1,2),
-      (2,3)
-    \}.
-  \]
+	\[
+		R
+		=
+		\{
+		(1,2),
+		(2,3)
+		\}.
+	\]
 
-  Como
+	Como
 
-  \[
-    (1,2)\in R
-    \quad\text{e}\quad
-    (2,3)\in R,
-  \]
+	\[
+		(1,2)\in R
+		\quad\text{e}\quad
+		(2,3)\in R,
+	\]
 
-  o fecho transitivo deve conter
+	o fecho transitivo deve conter
 
-  \[
-    (1,3).
-  \]
+	\[
+		(1,3).
+	\]
 
-  Assim,
+	Assim,
 
-  \[
-    R_t
-    =
-    \{
-      (1,2),
-      (2,3),
-      (1,3)
-    \}.
-  \]
+	\[
+		R_t
+		=
+		\{
+		(1,2),
+		(2,3),
+		(1,3)
+		\}.
+	\]
 
 \end{ex}
 

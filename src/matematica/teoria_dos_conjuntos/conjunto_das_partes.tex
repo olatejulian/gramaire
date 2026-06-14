@@ -6,231 +6,231 @@
 \label{sec:matematica:teoria-conjuntos:conjunto-das-partes}
 
 \begin{defn}[Conjunto das Partes]
-  \label{def:matematica:teoria-conjuntos:conjunto-das-partes:conjunto-das-partes}
+	\label{def:matematica:teoria-conjuntos:conjunto-das-partes:conjunto-das-partes}
 
-  Seja (A) um conjunto.
+	Seja (A) um conjunto.
 
-  O conjunto das partes de (A), denotado por
+	O conjunto das partes de (A), denotado por
 
-  [
-    \mathcal{P}(A),
-  ]
+		[
+			\mathcal{P}(A),
+		]
 
-  é o conjunto formado por todos os subconjuntos de (A).
+	é o conjunto formado por todos os subconjuntos de (A).
 
-  Formalmente,
+	Formalmente,
 
-  [
-    \mathcal{P}(A)
-    =
-    {
-      X
-      \mid
-      X\subseteq A
-    }.
-  ]
+	[
+			\mathcal{P}(A)
+				=
+				{
+					X
+					\mid
+					X\subseteq A
+				}.
+		]
 
 \end{defn}
 
 \begin{prop}[Caracterização do Conjunto das Partes]
-  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:caracterizacao}
+	\label{prop:matematica:teoria-conjuntos:conjunto-das-partes:caracterizacao}
 
-  Para quaisquer conjuntos (A) e (X),
+	Para quaisquer conjuntos (A) e (X),
 
-  [
-    X\in\mathcal{P}(A)
-    \Leftrightarrow
-    X\subseteq A.
-  ]
+	[
+			X\in\mathcal{P}(A)
+			\Leftrightarrow
+			X\subseteq A.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  A equivalência segue diretamente da definição.
+	A equivalência segue diretamente da definição.
 
 \end{proof}
 
 \begin{ex}
 
-  Seja
+	Seja
 
-  [
-    A={1,2}.
-  ]
+	[
+	A={1,2}.
+	]
 
-  Então
+	Então
 
-  [
-    \mathcal{P}(A)
-    =
-    {
-      \varnothing,
-      {1},
-      {2},
-      {1,2}
-    }.
-  ]
+	[
+	\mathcal{P}(A)
+		=
+		{
+			\varnothing,
+			{1},
+			{2},
+			{1,2}
+		}.
+	]
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:vazio}
+	\label{prop:matematica:teoria-conjuntos:conjunto-das-partes:vazio}
 
-  Para todo conjunto (A),
+	Para todo conjunto (A),
 
-  [
-    \varnothing
-    \in
-    \mathcal{P}(A).
-  ]
+	[
+			\varnothing
+			\in
+			\mathcal{P}(A).
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Como
+	Como
 
-  [
-    \varnothing\subseteq A,
-  ]
+	[
+	\varnothing\subseteq A,
+	]
 
-  segue pela definição que
+	segue pela definição que
 
-  [
-    \varnothing\in\mathcal{P}(A).
-  ]
+		[
+			\varnothing\in\mathcal{P}(A).
+		]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:proprio}
+	\label{prop:matematica:teoria-conjuntos:conjunto-das-partes:proprio}
 
-  Para todo conjunto (A),
+	Para todo conjunto (A),
 
-  [
-    A
-    \in
-    \mathcal{P}(A).
-  ]
+	[
+			A
+			\in
+			\mathcal{P}(A).
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Todo conjunto é subconjunto de si próprio.
+	Todo conjunto é subconjunto de si próprio.
 
-  Portanto
+	Portanto
 
-  [
-    A\subseteq A.
-  ]
+		[
+			A\subseteq A.
+		]
 
-  Logo
+	Logo
 
-  [
-    A\in\mathcal{P}(A).
-  ]
+		[
+			A\in\mathcal{P}(A).
+		]
 
 \end{proof}
 
 \begin{prop}[Monotonicidade]
-  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:monotonicidade}
+	\label{prop:matematica:teoria-conjuntos:conjunto-das-partes:monotonicidade}
 
-  Se
+	Se
 
-  [
-    A\subseteq B,
-  ]
+		[
+			A\subseteq B,
+		]
 
-  então
+	então
 
-  [
-    \mathcal{P}(A)
-    \subseteq
-    \mathcal{P}(B).
-  ]
+	[
+	\mathcal{P}(A)
+	\subseteq
+	\mathcal{P}(B).
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  [
-    X\in\mathcal{P}(A).
-  ]
+	[
+	X\in\mathcal{P}(A).
+	]
 
-  Então
+	Então
 
-  [
-    X\subseteq A.
-  ]
+	[
+	X\subseteq A.
+	]
 
-  Como
+	Como
 
-  [
-    A\subseteq B,
-  ]
+		[
+			A\subseteq B,
+		]
 
-  segue que
+	segue que
 
-  [
-    X\subseteq B.
-  ]
+		[
+			X\subseteq B.
+		]
 
-  Portanto
+	Portanto
 
-  [
-    X\in\mathcal{P}(B).
-  ]
+		[
+			X\in\mathcal{P}(B).
+		]
 
 \end{proof}
 
 \begin{prop}[Caracterização da Inclusão]
-  \label{prop:matematica:teoria-conjuntos:conjunto-das-partes:inclusao}
+	\label{prop:matematica:teoria-conjuntos:conjunto-das-partes:inclusao}
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    A\subseteq B
-    \Leftrightarrow
-    \mathcal{P}(A)
-    \subseteq
-    \mathcal{P}(B).
-  ]
+	[
+			A\subseteq B
+			\Leftrightarrow
+			\mathcal{P}(A)
+			\subseteq
+			\mathcal{P}(B).
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Já foi demonstrada a implicação direta.
+	Já foi demonstrada a implicação direta.
 
-  Para a recíproca, suponha
+	Para a recíproca, suponha
 
-  [
-    \mathcal{P}(A)
-    \subseteq
-    \mathcal{P}(B).
-  ]
+		[
+			\mathcal{P}(A)
+			\subseteq
+			\mathcal{P}(B).
+		]
 
-  Como
+	Como
 
-  [
-    A\in\mathcal{P}(A),
-  ]
+		[
+			A\in\mathcal{P}(A),
+		]
 
-  segue que
+	segue que
 
-  [
-    A\in\mathcal{P}(B).
-  ]
+		[
+			A\in\mathcal{P}(B).
+		]
 
-  Portanto
+	Portanto
 
-  [
-    A\subseteq B.
-  ]
+		[
+			A\subseteq B.
+		]
 
 \end{proof}
 

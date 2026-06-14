@@ -4,415 +4,415 @@
 \subsection{Restrições}
 
 \begin{defn}[Restrição de uma Função]
-  \label{def:matematica:funcoes:restricoes-e-extensoes:restricao}
+	\label{def:matematica:funcoes:restricoes-e-extensoes:restricao}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e seja
+	e seja
 
-  [
-    X\subseteq A.
-  ]
+		[
+			X\subseteq A.
+		]
 
-  A restrição de (f) a (X) é a função
+	A restrição de (f) a (X) é a função
 
-  [
-    f|_X:X\to B
-  ]
+	[
+	f|_X:X\to B
+	]
 
-  definida por
+	definida por
 
-  [
-    f|_X(x)=f(x)
-  ]
+		[
+			f|_X(x)=f(x)
+		]
 
-  para todo (x\in X).
+	para todo (x\in X).
 
 \end{defn}
 
 \begin{obs}
 
-  A restrição preserva a regra de correspondência da função original,
-  alterando apenas o seu domínio.
+	A restrição preserva a regra de correspondência da função original,
+	alterando apenas o seu domínio.
 
 \end{obs}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-funcao}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-funcao}
 
-  A restrição de uma função é uma função.
+	A restrição de uma função é uma função.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja (x\in X).
+	Seja (x\in X).
 
-  Como (X\subseteq A) e
+	Como (X\subseteq A) e
 
-  [
-    f:A\to B,
-  ]
+		[
+			f:A\to B,
+		]
 
-  existe um único elemento (f(x)\in B).
+	existe um único elemento (f(x)\in B).
 
-  Logo (f|_X) satisfaz as propriedades de existência e unicidade da
-  imagem.
+	Logo (f|_X) satisfaz as propriedades de existência e unicidade da
+	imagem.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-imagem}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-imagem}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    X\subseteq A.
-  ]
+		[
+			X\subseteq A.
+		]
 
-  Então
+	Então
 
-  [
-    \operatorname{Im}(f|_X)
-    =
-    {
-      f(x)
-      \mid
-      x\in X
-    }.
-  ]
+	[
+	\operatorname{Im}(f|_X)
+		=
+		{
+			f(x)
+			\mid
+			x\in X
+		}.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente da definição de imagem.
+	Segue diretamente da definição de imagem.
 
 \end{proof}
 
 \begin{prop}[Restrições Sucessivas]
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:restricoes-sucessivas}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:restricoes-sucessivas}
 
-  Se
+	Se
 
-  [
-    Y\subseteq X\subseteq A,
-  ]
+		[
+			Y\subseteq X\subseteq A,
+		]
 
-  então
+	então
 
-  [
-    (f|_X)|_Y
-    =
-    f|_Y.
-  ]
+	[
+	(f|_X)|_Y
+	=
+	f|_Y.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo (y\in Y),
+	Para todo (y\in Y),
 
-  [
-    ((f|_X)|_Y)(y)
-    =
-    f|_X(y)
-    =
-    f(y).
-  ]
+	[
+			((f|_X)|_Y)(y)
+			=
+			f|_X(y)
+			=
+			f(y).
+		]
 
-  Pelo princípio da extensionalidade das funções,
+	Pelo princípio da extensionalidade das funções,
 
-  [
-    (f|_X)|_Y
-    =
-    f|_Y.
-  ]
+	[
+			(f|_X)|_Y
+			=
+			f|_Y.
+		]
 
 \end{proof}
 
 \subsection{Extensões}
 
 \begin{defn}[Extensão de uma Função]
-  \label{def:matematica:funcoes:restricoes-e-extensoes:extensao}
+	\label{def:matematica:funcoes:restricoes-e-extensoes:extensao}
 
-  Sejam
+	Sejam
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:C\to B
-  ]
+		[
+			g:C\to B
+		]
 
-  tais que
+	tais que
 
-  [
-    A\subseteq C.
-  ]
+		[
+			A\subseteq C.
+		]
 
-  Diz-se que (g) é uma extensão de (f) quando
+	Diz-se que (g) é uma extensão de (f) quando
 
-  [
-    g|_A=f.
-  ]
+		[
+			g|_A=f.
+		]
 
 \end{defn}
 
 \begin{obs}
 
-  Uma extensão preserva completamente o comportamento da função
-  original em seu domínio original.
+	Uma extensão preserva completamente o comportamento da função
+	original em seu domínio original.
 
 \end{obs}
 
 \begin{ex}
 
-  Considere
+	Considere
 
-  [
-    f:\mathbb N\to\mathbb N,
-    \qquad
-    f(n)=n^2.
-  ]
+	[
+	f:\mathbb N\to\mathbb N,
+	\qquad
+	f(n)=n^2.
+	]
 
-  A função
+	A função
 
-  [
-    g:\mathbb Z\to\mathbb Z,
-    \qquad
-    g(z)=z^2
-  ]
+	[
+	g:\mathbb Z\to\mathbb Z,
+	\qquad
+	g(z)=z^2
+	]
 
-  é uma extensão de (f).
+	é uma extensão de (f).
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:extensao-determina}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:extensao-determina}
 
-  Seja
+	Seja
 
-  [
-    g:C\to B
-  ]
+		[
+			g:C\to B
+		]
 
-  uma extensão de
+	uma extensão de
 
-  [
-    f:A\to B.
-  ]
+		[
+			f:A\to B.
+		]
 
-  Então
+	Então
 
-  [
-    g(a)=f(a)
-  ]
+	[
+	g(a)=f(a)
+	]
 
-  para todo (a\in A).
+	para todo (a\in A).
 
 \end{prop}
 
 \begin{proof}
 
-  Como
+	Como
 
-  [
-    g|_A=f,
-  ]
+	[
+	g|_A=f,
+	]
 
-  segue da definição de restrição que
+	segue da definição de restrição que
 
-  [
-    g(a)=f(a)
-  ]
+		[
+			g(a)=f(a)
+		]
 
-  para todo (a\in A).
+	para todo (a\in A).
 
 \end{proof}
 
 \subsection{Inclusão entre Funções}
 
 \begin{defn}[Inclusão de Funções]
-  \label{def:matematica:funcoes:restricoes-e-extensoes:inclusao}
+	\label{def:matematica:funcoes:restricoes-e-extensoes:inclusao}
 
-  Sejam
+	Sejam
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    g:C\to D.
-  ]
+		[
+			g:C\to D.
+		]
 
-  Diz-se que
+	Diz-se que
 
-  [
-    f\subseteq g
-  ]
+		[
+			f\subseteq g
+		]
 
-  quando, considerados como relações,
+	quando, considerados como relações,
 
-  [
-    f
-    \subseteq
-    g.
-  ]
+	[
+			f
+			\subseteq
+			g.
+		]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:inclusao-caracterizacao}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:inclusao-caracterizacao}
 
-  Para funções (f) e (g),
+	Para funções (f) e (g),
 
-  [
-    f\subseteq g
-  ]
+	[
+			f\subseteq g
+		]
 
-  se, e somente se,
+	se, e somente se,
 
-  \begin{enumerate}
+	\begin{enumerate}
 
-      ```
-    \item
-      \[
-        \operatorname{Dom}(f)
-        \subseteq
-        \operatorname{Dom}(g);
-      \]
+		```
+		\item
+		      \[
+			      \operatorname{Dom}(f)
+			      \subseteq
+			      \operatorname{Dom}(g);
+		      \]
 
-    \item para todo
-      \(x\in\operatorname{Dom}(f)\),
+		\item para todo
+		      \(x\in\operatorname{Dom}(f)\),
 
-      \[
-        f(x)=g(x).
-      \]
-      ```
+		      \[
+			      f(x)=g(x).
+		      \]
+		      ```
 
-  \end{enumerate}
+	\end{enumerate}
 
 \end{prop}
 
 \begin{proof}
 
-  Segue imediatamente da definição de inclusão entre relações e da
-  definição de função.
+	Segue imediatamente da definição de inclusão entre relações e da
+	definição de função.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:ordem-parcial}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:ordem-parcial}
 
-  A relação de inclusão entre funções é uma ordem parcial.
+	A relação de inclusão entre funções é uma ordem parcial.
 
 \end{prop}
 
 \begin{proof}
 
-  A inclusão entre relações é reflexiva, antissimétrica e transitiva.
+	A inclusão entre relações é reflexiva, antissimétrica e transitiva.
 
-  Como funções são relações, as mesmas propriedades permanecem válidas.
+	Como funções são relações, as mesmas propriedades permanecem válidas.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-inclusao}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:restricao-inclusao}
 
-  Seja
+	Seja
 
-  [
-    f:A\to B
-  ]
+		[
+			f:A\to B
+		]
 
-  e
+	e
 
-  [
-    X\subseteq A.
-  ]
+		[
+			X\subseteq A.
+		]
 
-  Então
+	Então
 
-  [
-    f|_X
-    \subseteq
-    f.
-  ]
+	[
+	f|_X
+	\subseteq
+	f.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Para todo (x\in X),
+	Para todo (x\in X),
 
-  [
-    f|_X(x)
-    =
-    f(x).
-  ]
+	[
+			f|_X(x)
+			=
+			f(x).
+		]
 
-  Logo o gráfico de (f|_X) é subconjunto do gráfico de (f).
+	Logo o gráfico de (f|_X) é subconjunto do gráfico de (f).
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:restricoes-e-extensoes:extensao-inclusao}
+	\label{prop:matematica:funcoes:restricoes-e-extensoes:extensao-inclusao}
 
-  Seja
+	Seja
 
-  [
-    g
-  ]
+		[
+			g
+		]
 
-  uma extensão de
+	uma extensão de
 
-  [
-    f.
-  ]
+		[
+			f.
+		]
 
-  Então
+	Então
 
-  [
-    f
-    \subseteq
-    g.
-  ]
+	[
+	f
+	\subseteq
+	g.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Como
+	Como
 
-  [
-    g|_{\operatorname{Dom}(f)}
-    =
-    f,
-  ]
+	[
+	g|_{\operatorname{Dom}(f)}
+	=
+	f,
+	]
 
-  todo par ordenado pertencente a (f) também pertence a (g).
+	todo par ordenado pertencente a (f) também pertence a (g).
 
-  Portanto
+	Portanto
 
-  [
-    f\subseteq g.
-  ]
+		[
+			f\subseteq g.
+		]
 
 \end{proof}
 

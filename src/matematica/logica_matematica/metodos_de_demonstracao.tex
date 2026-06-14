@@ -5,166 +5,166 @@
 \label{sec:matematica:logica-matematica:metodos-de-demonstracao}
 
 \begin{defn}[Método de Demonstração]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:metodo-de-demonstracao}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:metodo-de-demonstracao}
 
-  Um método de demonstração é um procedimento lógico utilizado para
-  estabelecer a validade de uma proposição a partir de axiomas,
-  definições e proposições previamente demonstradas.
+	Um método de demonstração é um procedimento lógico utilizado para
+	estabelecer a validade de uma proposição a partir de axiomas,
+	definições e proposições previamente demonstradas.
 \end{defn}
 
 \begin{defn}[Demonstração Direta]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:demonstracao-direta}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:demonstracao-direta}
 
-  Seja uma proposição da forma
+	Seja uma proposição da forma
 
-  \[
-    P \Rightarrow Q.
-  \]
+	\[
+		P \Rightarrow Q.
+	\]
 
-  Uma demonstração direta consiste em assumir \(P\) como verdadeira e,
-  por meio de uma sequência finita de inferências válidas, concluir \(Q\).
+	Uma demonstração direta consiste em assumir \(P\) como verdadeira e,
+	por meio de uma sequência finita de inferências válidas, concluir \(Q\).
 \end{defn}
 
 \begin{ex}
-  Se \(n\) é um número par, então \(n^2\) é par.
+	Se \(n\) é um número par, então \(n^2\) é par.
 
-  Assuma
+	Assuma
 
-  \[
-    n = 2k,
-    \quad
-    k \in \mathbb{Z}.
-  \]
+	\[
+		n = 2k,
+		\quad
+		k \in \mathbb{Z}.
+	\]
 
-  Então
+	Então
 
-  \[
-    n^2 = (2k)^2 = 4k^2 = 2(2k^2),
-  \]
+	\[
+		n^2 = (2k)^2 = 4k^2 = 2(2k^2),
+	\]
 
-  logo \(n^2\) é par.
+	logo \(n^2\) é par.
 \end{ex}
 
 \begin{defn}[Demonstração por Contraposição]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:contraposicao}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:contraposicao}
 
-  Seja uma proposição da forma
+	Seja uma proposição da forma
 
-  \[
-    P \Rightarrow Q.
-  \]
+	\[
+		P \Rightarrow Q.
+	\]
 
-  Uma demonstração por contraposição consiste em demonstrar a
-  proposição logicamente equivalente
+	Uma demonstração por contraposição consiste em demonstrar a
+	proposição logicamente equivalente
 
-  \[
-    \neg Q \Rightarrow \neg P.
-  \]
+	\[
+		\neg Q \Rightarrow \neg P.
+	\]
 \end{defn}
 
 \begin{prop}[Equivalência da Contraposição]
-  \label{prop:matematica:logica-matematica:metodos-de-demonstracao:equivalencia-contraposicao}
+	\label{prop:matematica:logica-matematica:metodos-de-demonstracao:equivalencia-contraposicao}
 
-  Para quaisquer proposições \(P\) e \(Q\),
+	Para quaisquer proposições \(P\) e \(Q\),
 
-  \[
-    (P \Rightarrow Q)
-    \Leftrightarrow
-    (\neg Q \Rightarrow \neg P).
-  \]
+	\[
+		(P \Rightarrow Q)
+		\Leftrightarrow
+		(\neg Q \Rightarrow \neg P).
+	\]
 \end{prop}
 
 \begin{proof}
 
-  Considere a tabela-verdade das duas expressões.
+	Considere a tabela-verdade das duas expressões.
 
-  Verifica-se que possuem os mesmos valores de verdade para todas as
-  atribuições possíveis.
+	Verifica-se que possuem os mesmos valores de verdade para todas as
+	atribuições possíveis.
 
-  Portanto são logicamente equivalentes.
+	Portanto são logicamente equivalentes.
 
 \end{proof}
 
 \begin{defn}[Demonstração por Contradição]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:contradicao}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:contradicao}
 
-  Seja \(P\) uma proposição.
+	Seja \(P\) uma proposição.
 
-  Uma demonstração por contradição consiste em assumir
-  temporariamente a falsidade de \(P\), isto é,
+	Uma demonstração por contradição consiste em assumir
+	temporariamente a falsidade de \(P\), isto é,
 
-  \[
-    \neg P,
-  \]
+	\[
+		\neg P,
+	\]
 
-  e deduzir uma contradição.
+	e deduzir uma contradição.
 
-  Pelo princípio da não contradição conclui-se então que \(P\) é
-  verdadeira.
+	Pelo princípio da não contradição conclui-se então que \(P\) é
+	verdadeira.
 \end{defn}
 
 \begin{ex}
 
-  A irracionalidade de \(\sqrt{2}\) é tradicionalmente demonstrada por
-  contradição.
+	A irracionalidade de \(\sqrt{2}\) é tradicionalmente demonstrada por
+	contradição.
 
 \end{ex}
 
 \begin{defn}[Demonstração por Casos]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:casos}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:casos}
 
-  Uma demonstração por casos consiste em decompor o problema em um
-  conjunto finito de situações mutuamente exclusivas e demonstrar a
-  proposição em cada uma delas.
+	Uma demonstração por casos consiste em decompor o problema em um
+	conjunto finito de situações mutuamente exclusivas e demonstrar a
+	proposição em cada uma delas.
 \end{defn}
 
 \begin{prop}[Princípio da Demonstração por Casos]
-  \label{prop:matematica:logica-matematica:metodos-de-demonstracao:principio-casos}
+	\label{prop:matematica:logica-matematica:metodos-de-demonstracao:principio-casos}
 
-  Se
+	Se
 
-  \[
-    P_1 \lor P_2 \lor \cdots \lor P_n
-  \]
+	\[
+		P_1 \lor P_2 \lor \cdots \lor P_n
+	\]
 
-  é verdadeira e
+	é verdadeira e
 
-  \[
-    P_i \Rightarrow Q
-  \]
+	\[
+		P_i \Rightarrow Q
+	\]
 
-  para todo \(i\), então \(Q\) é verdadeira.
+	para todo \(i\), então \(Q\) é verdadeira.
 \end{prop}
 
 \begin{proof}
 
-  Como pelo menos um dos casos \(P_i\) ocorre e cada um deles implica
-  \(Q\), segue que \(Q\) é verdadeira.
+	Como pelo menos um dos casos \(P_i\) ocorre e cada um deles implica
+	\(Q\), segue que \(Q\) é verdadeira.
 
 \end{proof}
 
 \begin{defn}[Indução Matemática]
-  \label{def:matematica:logica-matematica:metodos-de-demonstracao:inducao-matematica}
+	\label{def:matematica:logica-matematica:metodos-de-demonstracao:inducao-matematica}
 
-  Seja \(P(n)\) uma proposição definida para todo
-  \(n \in \mathbb{N}\).
+	Seja \(P(n)\) uma proposição definida para todo
+	\(n \in \mathbb{N}\).
 
-  O princípio da indução matemática afirma que, se:
+	O princípio da indução matemática afirma que, se:
 
-  \begin{enumerate}
-    \item \(P(0)\) é verdadeira;
+	\begin{enumerate}
+		\item \(P(0)\) é verdadeira;
 
-    \item para todo \(n \in \mathbb{N}\),
+		\item para todo \(n \in \mathbb{N}\),
 
-      \[
-        P(n)
-        \Rightarrow
-        P(n+1),
-      \]
+		      \[
+			      P(n)
+			      \Rightarrow
+			      P(n+1),
+		      \]
 
-      então \(P(n)\) é verdadeira para todo
-      \(n \in \mathbb{N}\).
-  \end{enumerate}
+		      então \(P(n)\) é verdadeira para todo
+		      \(n \in \mathbb{N}\).
+	\end{enumerate}
 
 \end{defn}
 \end{document}

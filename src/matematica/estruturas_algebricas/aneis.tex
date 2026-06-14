@@ -7,15 +7,15 @@
 
 Nesta seção consideramos estruturas algébricas sobre a assinatura
 \[
-  \Sigma = \{+, \cdot : 2\},
+	\Sigma = \{+, \cdot : 2\},
 \]
 isto é, duas operações binárias interpretadas em um mesmo conjunto.
 
 Uma estrutura dessa assinatura consiste em um conjunto não vazio $A$ munido de interpretações
 \[
-  +^A : A \times A \to A
-  \quad \text{e} \quad
-  \cdot^A : A \times A \to A.
+	+^A : A \times A \to A
+	\quad \text{e} \quad
+	\cdot^A : A \times A \to A.
 \]
 
 \subsection{Definição de anel}
@@ -27,59 +27,59 @@ Um anel é um modelo da assinatura $\Sigma = \{+, \cdot : 2\}$ que satisfaz os s
 O par $(A,+)$ é um grupo abeliano, isto é:
 
 \begin{itemize}
-  \item (Associatividade)
-    \[
-      \forall a,b,c \in A,\quad (a+b)+c = a+(b+c);
-    \]
+	\item (Associatividade)
+	      \[
+		      \forall a,b,c \in A,\quad (a+b)+c = a+(b+c);
+	      \]
 
-  \item (Elemento neutro)
-    \[
-      \exists 0 \in A,\quad \forall a \in A,\quad a+0 = 0+a = a;
-    \]
+	\item (Elemento neutro)
+	      \[
+		      \exists 0 \in A,\quad \forall a \in A,\quad a+0 = 0+a = a;
+	      \]
 
-  \item (Inverso aditivo)
-    \[
-      \forall a \in A,\ \exists (-a) \in A,\quad a+(-a)=0;
-    \]
+	\item (Inverso aditivo)
+	      \[
+		      \forall a \in A,\ \exists (-a) \in A,\quad a+(-a)=0;
+	      \]
 
-  \item (Comutatividade)
-    \[
-      \forall a,b \in A,\quad a+b = b+a.
-    \]
+	\item (Comutatividade)
+	      \[
+		      \forall a,b \in A,\quad a+b = b+a.
+	      \]
 \end{itemize}
 
 \subsubsection{Estrutura multiplicativa}
 
 A multiplicação é associativa:
 \[
-  \forall a,b,c \in A,\quad (a \cdot b)\cdot c = a \cdot (b \cdot c).
+	\forall a,b,c \in A,\quad (a \cdot b)\cdot c = a \cdot (b \cdot c).
 \]
 
 \subsubsection{Distributividade}
 
 A multiplicação é distributiva em relação à adição:
 \[
-  \forall a,b,c \in A,
+	\forall a,b,c \in A,
 \]
 \[
-  a \cdot (b+c) = a \cdot b + a \cdot c,
+	a \cdot (b+c) = a \cdot b + a \cdot c,
 \]
 \[
-  (a+b) \cdot c = a \cdot c + b \cdot c.
+	(a+b) \cdot c = a \cdot c + b \cdot c.
 \]
 
 \subsection{Anel com unidade}
 
 Um anel é unitário se existe um elemento $1 \in A$ tal que:
 \[
-  \forall a \in A,\quad a \cdot 1 = 1 \cdot a = a.
+	\forall a \in A,\quad a \cdot 1 = 1 \cdot a = a.
 \]
 
 \subsection{Anel comutativo}
 
 Um anel é comutativo se:
 \[
-  \forall a,b \in A,\quad a \cdot b = b \cdot a.
+	\forall a,b \in A,\quad a \cdot b = b \cdot a.
 \]
 
 \subsection{Observação estrutural}
@@ -87,9 +87,9 @@ Um anel é comutativo se:
 Um anel pode ser visto como a interação de:
 
 \begin{itemize}
-  \item uma estrutura de grupo abeliano $(A,+)$;
-  \item uma operação binária adicional $\cdot$;
-  \item compatibilidade dada pela distributividade.
+	\item uma estrutura de grupo abeliano $(A,+)$;
+	\item uma operação binária adicional $\cdot$;
+	\item compatibilidade dada pela distributividade.
 \end{itemize}
 
 Essa visão será fundamental para a definição de corpos e para a construção de anéis quociente.

@@ -6,138 +6,138 @@
 \label{sec:matematica:relacoes:relacoes-binarias}
 
 \begin{defn}[Relação Binária]
-  \label{def:matematica:relacoes:relacoes-binarias:relacao-binaria}
+	\label{def:matematica:relacoes:relacoes-binarias:relacao-binaria}
 
-  Sejam \(A\) e \(B\) conjuntos.
+	Sejam \(A\) e \(B\) conjuntos.
 
-  Uma relação binária de \(A\) em \(B\) é qualquer subconjunto de
+	Uma relação binária de \(A\) em \(B\) é qualquer subconjunto de
 
-  \[
-    A \times B.
-  \]
+	\[
+		A \times B.
+	\]
 
-  Isto é,
+	Isto é,
 
-  \[
-    R \subseteq A \times B.
-  \]
+	\[
+		R \subseteq A \times B.
+	\]
 
 \end{defn}
 
 \begin{defn}[Elementos Relacionados]
-  \label{def:matematica:relacoes:relacoes-binarias:elementos-relacionados}
+	\label{def:matematica:relacoes:relacoes-binarias:elementos-relacionados}
 
-  Seja \(R\subseteq A\times B\).
+	Seja \(R\subseteq A\times B\).
 
-  Dizemos que \(a\in A\) está relacionado com \(b\in B\) por \(R\)
-  quando
+	Dizemos que \(a\in A\) está relacionado com \(b\in B\) por \(R\)
+	quando
 
-  \[
-    (a,b)\in R.
-  \]
+	\[
+		(a,b)\in R.
+	\]
 
-  Neste caso escrevemos
+	Neste caso escrevemos
 
-  \[
-    aRb.
-  \]
+	\[
+		aRb.
+	\]
 
 \end{defn}
 
 \begin{defn}[Domínio de uma Relação]
-  \label{def:matematica:relacoes:relacoes-binarias:dominio}
+	\label{def:matematica:relacoes:relacoes-binarias:dominio}
 
-  Seja \(R\subseteq A\times B\).
+	Seja \(R\subseteq A\times B\).
 
-  O domínio de \(R\) é o conjunto
+	O domínio de \(R\) é o conjunto
 
-  \[
-    \dom(R)
-    =
-    \{
-      a\in A
-      \mid
-      (\exists b\in B)
-      ((a,b)\in R)
-    \}.
-  \]
+	\[
+		\dom(R)
+		=
+		\{
+		a\in A
+		\mid
+		(\exists b\in B)
+		((a,b)\in R)
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Imagem de uma Relação]
-  \label{def:matematica:relacoes:relacoes-binarias:imagem}
+	\label{def:matematica:relacoes:relacoes-binarias:imagem}
 
-  Seja \(R\subseteq A\times B\).
+	Seja \(R\subseteq A\times B\).
 
-  A imagem de \(R\) é o conjunto
+	A imagem de \(R\) é o conjunto
 
-  \[
-    \operatorname{Im}(R)
-    =
-    \{
-      b\in B
-      \mid
-      (\exists a\in A)
-      ((a,b)\in R)
-    \}.
-  \]
+	\[
+		\operatorname{Im}(R)
+		=
+		\{
+		b\in B
+		\mid
+		(\exists a\in A)
+		((a,b)\in R)
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Relação Identidade]
-  \label{def:matematica:relacoes:relacoes-binarias:identidade}
+	\label{def:matematica:relacoes:relacoes-binarias:identidade}
 
-  Seja \(A\) um conjunto.
+	Seja \(A\) um conjunto.
 
-  A relação identidade em \(A\) é definida por
+	A relação identidade em \(A\) é definida por
 
-  \[
-    \Delta_A
-    =
-    \{
-      (a,a)
-      \mid
-      a\in A
-    \}.
-  \]
+	\[
+		\Delta_A
+		=
+		\{
+		(a,a)
+		\mid
+		a\in A
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Relação Inversa]
-  \label{def:matematica:relacoes:relacoes-binarias:inversa}
+	\label{def:matematica:relacoes:relacoes-binarias:inversa}
 
-  Seja \(R\subseteq A\times B\).
+	Seja \(R\subseteq A\times B\).
 
-  A relação inversa de \(R\) é definida por
+	A relação inversa de \(R\) é definida por
 
-  \[
-    R^{-1}
-    =
-    \{
-      (b,a)
-      \mid
-      (a,b)\in R
-    \}.
-  \]
+	\[
+		R^{-1}
+		=
+		\{
+		(b,a)
+		\mid
+		(a,b)\in R
+		\}.
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:relacoes-binarias:inversa-inversa}
+	\label{prop:matematica:relacoes:relacoes-binarias:inversa-inversa}
 
-  Para toda relação \(R\),
+	Para toda relação \(R\),
 
-  \[
-    (R^{-1})^{-1}
-    =
-    R.
-  \]
+	\[
+		(R^{-1})^{-1}
+		=
+		R.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente da definição de relação inversa.
+	Segue diretamente da definição de relação inversa.
 
 \end{proof}
 

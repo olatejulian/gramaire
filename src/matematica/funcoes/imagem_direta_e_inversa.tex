@@ -8,669 +8,669 @@
 \subsection{Imagem Direta}
 
 \begin{defn}[Imagem Direta]
-  \label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-direta}
+	\label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-direta}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  e seja
+	e seja
 
-  \[
-    X\subseteq A.
-  \]
+	\[
+		X\subseteq A.
+	\]
 
-  A imagem direta de \(X\) por \(f\) é o conjunto
+	A imagem direta de \(X\) por \(f\) é o conjunto
 
-  \[
-    f[X]
-    =
-    \{
-      f(x)
-      \mid
-      x\in X
-    \}.
-  \]
+	\[
+		f[X]
+		=
+		\{
+		f(x)
+		\mid
+		x\in X
+		\}.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Alguns autores utilizam a notação
+	Alguns autores utilizam a notação
 
-  \[
-    f(X)
-  \]
+	\[
+		f(X)
+	\]
 
-  em lugar de
+	em lugar de
 
-  \[
-    f[X].
-  \]
+	\[
+		f[X].
+	\]
 
 \end{obs}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-direta-subconjunto}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-direta-subconjunto}
 
-  Para todo
+	Para todo
 
-  \[
-    X\subseteq A,
-  \]
+	\[
+		X\subseteq A,
+	\]
 
-  vale
+	vale
 
-  \[
-    f[X]
-    \subseteq
-    B.
-  \]
+	\[
+		f[X]
+		\subseteq
+		B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Se
+	Se
 
-  \[
-    y\in f[X],
-  \]
+	\[
+		y\in f[X],
+	\]
 
-  então existe
+	então existe
 
-  \[
-    x\in X
-  \]
+	\[
+		x\in X
+	\]
 
-  tal que
+	tal que
 
-  \[
-    y=f(x).
-  \]
+	\[
+		y=f(x).
+	\]
 
-  Como
+	Como
 
-  \[
-    f:A\to B,
-  \]
+	\[
+		f:A\to B,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    y\in B.
-  \]
+	\[
+		y\in B.
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-direta}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-direta}
 
-  Se
+	Se
 
-  \[
-    X\subseteq Y\subseteq A,
-  \]
+	\[
+		X\subseteq Y\subseteq A,
+	\]
 
-  então
+	então
 
-  \[
-    f[X]
-    \subseteq
-    f[Y].
-  \]
+	\[
+		f[X]
+		\subseteq
+		f[Y].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    z\in f[X].
-  \]
+	\[
+		z\in f[X].
+	\]
 
-  Então existe
+	Então existe
 
-  \[
-    x\in X
-  \]
+	\[
+		x\in X
+	\]
 
-  tal que
+	tal que
 
-  \[
-    z=f(x).
-  \]
+	\[
+		z=f(x).
+	\]
 
-  Como
+	Como
 
-  \[
-    X\subseteq Y,
-  \]
+	\[
+		X\subseteq Y,
+	\]
 
-  temos
+	temos
 
-  \[
-    x\in Y.
-  \]
+	\[
+		x\in Y.
+	\]
 
-  Logo
+	Logo
 
-  \[
-    z\in f[Y].
-  \]
+	\[
+		z\in f[Y].
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-direta}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-direta}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    X,Y\subseteq A,
-  \]
+	\[
+		X,Y\subseteq A,
+	\]
 
-  vale
+	vale
 
-  \[
-    f[X\cup Y]
-    =
-    f[X]
-    \cup
-    f[Y].
-  \]
+	\[
+		f[X\cup Y]
+		=
+		f[X]
+		\cup
+		f[Y].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente das definições.
+	Segue diretamente das definições.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-direta}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-direta}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    X,Y\subseteq A,
-  \]
+	\[
+		X,Y\subseteq A,
+	\]
 
-  vale
+	vale
 
-  \[
-    f[X\cap Y]
-    \subseteq
-    f[X]\cap f[Y].
-  \]
+	\[
+		f[X\cap Y]
+		\subseteq
+		f[X]\cap f[Y].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    z\in f[X\cap Y].
-  \]
+	\[
+		z\in f[X\cap Y].
+	\]
 
-  Então existe
+	Então existe
 
-  \[
-    x\in X\cap Y
-  \]
+	\[
+		x\in X\cap Y
+	\]
 
-  tal que
+	tal que
 
-  \[
-    z=f(x).
-  \]
+	\[
+		z=f(x).
+	\]
 
-  Como
+	Como
 
-  \[
-    x\in X
-  \]
+	\[
+		x\in X
+	\]
 
-  e
+	e
 
-  \[
-    x\in Y,
-  \]
+	\[
+		x\in Y,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    z\in f[X]
-  \]
+	\[
+		z\in f[X]
+	\]
 
-  e
+	e
 
-  \[
-    z\in f[Y].
-  \]
+	\[
+		z\in f[Y].
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    z\in f[X]\cap f[Y].
-  \]
+	\[
+		z\in f[X]\cap f[Y].
+	\]
 
 \end{proof}
 
 \begin{obs}
 
-  Em geral,
+	Em geral,
 
-  \[
-    f[X\cap Y]
-    \neq
-    f[X]\cap f[Y].
-  \]
+	\[
+		f[X\cap Y]
+		\neq
+		f[X]\cap f[Y].
+	\]
 
 \end{obs}
 
 \subsection{Imagem Inversa}
 
 \begin{defn}[Imagem Inversa]
-  \label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa}
+	\label{def:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  e
+	e
 
-  \[
-    Y\subseteq B.
-  \]
+	\[
+		Y\subseteq B.
+	\]
 
-  A imagem inversa de \(Y\) por \(f\) é o conjunto
+	A imagem inversa de \(Y\) por \(f\) é o conjunto
 
-  \[
-    f^{-1}[Y]
-    =
-    \{
-      x\in A
-      \mid
-      f(x)\in Y
-    \}.
-  \]
+	\[
+		f^{-1}[Y]
+		=
+		\{
+		x\in A
+		\mid
+		f(x)\in Y
+		\}.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  A notação
+	A notação
 
-  \[
-    f^{-1}[Y]
-  \]
+	\[
+		f^{-1}[Y]
+	\]
 
-  não pressupõe que \(f\) possua função inversa.
+	não pressupõe que \(f\) possua função inversa.
 
 \end{obs}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa-subconjunto}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:imagem-inversa-subconjunto}
 
-  Para todo
+	Para todo
 
-  \[
-    Y\subseteq B,
-  \]
+	\[
+		Y\subseteq B,
+	\]
 
-  vale
+	vale
 
-  \[
-    f^{-1}[Y]
-    \subseteq
-    A.
-  \]
+	\[
+		f^{-1}[Y]
+		\subseteq
+		A.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue imediatamente da definição.
+	Segue imediatamente da definição.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-inversa}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:monotonicidade-inversa}
 
-  Se
+	Se
 
-  \[
-    Y_1\subseteq Y_2,
-  \]
+	\[
+		Y_1\subseteq Y_2,
+	\]
 
-  então
+	então
 
-  \[
-    f^{-1}[Y_1]
-    \subseteq
-    f^{-1}[Y_2].
-  \]
+	\[
+		f^{-1}[Y_1]
+		\subseteq
+		f^{-1}[Y_2].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    x\in f^{-1}[Y_1].
-  \]
+	\[
+		x\in f^{-1}[Y_1].
+	\]
 
-  Então
+	Então
 
-  \[
-    f(x)\in Y_1.
-  \]
+	\[
+		f(x)\in Y_1.
+	\]
 
-  Como
+	Como
 
-  \[
-    Y_1\subseteq Y_2,
-  \]
+	\[
+		Y_1\subseteq Y_2,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    f(x)\in Y_2.
-  \]
+	\[
+		f(x)\in Y_2.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    x\in f^{-1}[Y_2].
-  \]
+	\[
+		x\in f^{-1}[Y_2].
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-inversa}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:uniao-inversa}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    Y_1,Y_2\subseteq B,
-  \]
+	\[
+		Y_1,Y_2\subseteq B,
+	\]
 
-  vale
+	vale
 
-  \[
-    f^{-1}[Y_1\cup Y_2]
-    =
-    f^{-1}[Y_1]
-    \cup
-    f^{-1}[Y_2].
-  \]
+	\[
+		f^{-1}[Y_1\cup Y_2]
+		=
+		f^{-1}[Y_1]
+		\cup
+		f^{-1}[Y_2].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente da definição.
+	Segue diretamente da definição.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-inversa}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:intersecao-inversa}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    Y_1,Y_2\subseteq B,
-  \]
+	\[
+		Y_1,Y_2\subseteq B,
+	\]
 
-  vale
+	vale
 
-  \[
-    f^{-1}[Y_1\cap Y_2]
-    =
-    f^{-1}[Y_1]
-    \cap
-    f^{-1}[Y_2].
-  \]
+	\[
+		f^{-1}[Y_1\cap Y_2]
+		=
+		f^{-1}[Y_1]
+		\cap
+		f^{-1}[Y_2].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente da definição.
+	Segue diretamente da definição.
 
 \end{proof}
 
 \begin{prop}[Complemento]
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:complemento}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:complemento}
 
-  Para todo
+	Para todo
 
-  \[
-    Y\subseteq B,
-  \]
+	\[
+		Y\subseteq B,
+	\]
 
-  vale
+	vale
 
-  \[
-    f^{-1}[B\setminus Y]
-    =
-    A\setminus f^{-1}[Y].
-  \]
+	\[
+		f^{-1}[B\setminus Y]
+		=
+		A\setminus f^{-1}[Y].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue da definição de imagem inversa.
+	Segue da definição de imagem inversa.
 
 \end{proof}
 
 \subsection{Caracterizações}
 
 \begin{prop}[Caracterização da Injetividade]
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-injetividade}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-injetividade}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Então
+	Então
 
-  \[
-    f
-    \text{ é injetiva}
-  \]
+	\[
+		f
+		\text{ é injetiva}
+	\]
 
-  se, e somente se,
+	se, e somente se,
 
-  \[
-    f^{-1}[f[X]]
-    =
-    X
-  \]
+	\[
+		f^{-1}[f[X]]
+		=
+		X
+	\]
 
-  para todo
+	para todo
 
-  \[
-    X\subseteq A.
-  \]
+	\[
+		X\subseteq A.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  (\(\Rightarrow\))
+	(\(\Rightarrow\))
 
-  Seja
+	Seja
 
-  \[
-    x\in f^{-1}[f[X]].
-  \]
+	\[
+		x\in f^{-1}[f[X]].
+	\]
 
-  Então existe
+	Então existe
 
-  \[
-    y\in X
-  \]
+	\[
+		y\in X
+	\]
 
-  tal que
+	tal que
 
-  \[
-    f(x)=f(y).
-  \]
+	\[
+		f(x)=f(y).
+	\]
 
-  Pela injetividade,
+	Pela injetividade,
 
-  \[
-    x=y.
-  \]
+	\[
+		x=y.
+	\]
 
-  Logo
+	Logo
 
-  \[
-    x\in X.
-  \]
+	\[
+		x\in X.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    f^{-1}[f[X]]
-    \subseteq
-    X.
-  \]
+	\[
+		f^{-1}[f[X]]
+		\subseteq
+		X.
+	\]
 
-  A inclusão oposta é sempre válida.
+	A inclusão oposta é sempre válida.
 
-  Logo há igualdade.
+	Logo há igualdade.
 
-  (\(\Leftarrow\))
+	(\(\Leftarrow\))
 
-  Aplicar a hipótese ao conjunto
+	Aplicar a hipótese ao conjunto
 
-  \[
-    X=\{x\}.
-  \]
+	\[
+		X=\{x\}.
+	\]
 
-  A demonstração segue imediatamente.
+	A demonstração segue imediatamente.
 
 \end{proof}
 
 \begin{prop}[Caracterização da Sobrejetividade]
-  \label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-sobrejetividade}
+	\label{prop:matematica:funcoes:imagem-direta-e-inversa:caracterizacao-sobrejetividade}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Então
+	Então
 
-  \[
-    f
-    \text{ é sobrejetiva}
-  \]
+	\[
+		f
+		\text{ é sobrejetiva}
+	\]
 
-  se, e somente se,
+	se, e somente se,
 
-  \[
-    f[f^{-1}[Y]]
-    =
-    Y
-  \]
+	\[
+		f[f^{-1}[Y]]
+		=
+		Y
+	\]
 
-  para todo
+	para todo
 
-  \[
-    Y\subseteq B.
-  \]
+	\[
+		Y\subseteq B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  (\(\Rightarrow\))
+	(\(\Rightarrow\))
 
-  Seja
+	Seja
 
-  \[
-    y\in Y.
-  \]
+	\[
+		y\in Y.
+	\]
 
-  Pela sobrejetividade existe
+	Pela sobrejetividade existe
 
-  \[
-    x\in A
-  \]
+	\[
+		x\in A
+	\]
 
-  tal que
+	tal que
 
-  \[
-    f(x)=y.
-  \]
+	\[
+		f(x)=y.
+	\]
 
-  Então
+	Então
 
-  \[
-    x\in f^{-1}[Y].
-  \]
+	\[
+		x\in f^{-1}[Y].
+	\]
 
-  Consequentemente
+	Consequentemente
 
-  \[
-    y\in f[f^{-1}[Y]].
-  \]
+	\[
+		y\in f[f^{-1}[Y]].
+	\]
 
-  Logo
+	Logo
 
-  \[
-    Y
-    \subseteq
-    f[f^{-1}[Y]].
-  \]
+	\[
+		Y
+		\subseteq
+		f[f^{-1}[Y]].
+	\]
 
-  A inclusão oposta é sempre válida.
+	A inclusão oposta é sempre válida.
 
-  (\(\Leftarrow\))
+	(\(\Leftarrow\))
 
-  Tomando
+	Tomando
 
-  \[
-    Y=B,
-  \]
+	\[
+		Y=B,
+	\]
 
-  obtemos
+	obtemos
 
-  \[
-    f[f^{-1}[B]]
-    =
-    B.
-  \]
+	\[
+		f[f^{-1}[B]]
+		=
+		B.
+	\]
 
-  Como
+	Como
 
-  \[
-    f^{-1}[B]=A,
-  \]
+	\[
+		f^{-1}[B]=A,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    f[A]=B.
-  \]
+	\[
+		f[A]=B.
+	\]
 
-  Portanto \(f\) é sobrejetiva.
+	Portanto \(f\) é sobrejetiva.
 
 \end{proof}
 

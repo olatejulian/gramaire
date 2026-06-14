@@ -8,443 +8,443 @@
 \subsection{Definição}
 
 \begin{defn}[Função Característica]
-  \label{def:matematica:funcoes:caracteristicas:funcao-caracteristica}
+	\label{def:matematica:funcoes:caracteristicas:funcao-caracteristica}
 
-  Seja \(X\) um conjunto e seja
+	Seja \(X\) um conjunto e seja
 
-  \[
-    A\subseteq X.
-  \]
+	\[
+		A\subseteq X.
+	\]
 
-  A função característica de \(A\) é a função
+	A função característica de \(A\) é a função
 
-  \[
-    \chi_A:X\to\{0,1\}
-  \]
+	\[
+		\chi_A:X\to\{0,1\}
+	\]
 
-  definida por
+	definida por
 
-  \[
-    \chi_A(x)
-    =
-    \begin{cases}
-      1, & \text{se } x\in A,\\
-      0, & \text{se } x\notin A.
-    \end{cases}
-  \]
+	\[
+		\chi_A(x)
+		=
+		\begin{cases}
+			1, & \text{se } x\in A,    \\
+			0, & \text{se } x\notin A.
+		\end{cases}
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Alguns autores utilizam a notação
+	Alguns autores utilizam a notação
 
-  \[
-    \mathbf 1_A
-  \]
+	\[
+		\mathbf 1_A
+	\]
 
-  em lugar de
+	em lugar de
 
-  \[
-    \chi_A.
-  \]
+	\[
+		\chi_A.
+	\]
 
 \end{obs}
 
 \begin{ex}
 
-  Seja
+	Seja
 
-  \[
-    X=\mathbb Z
-  \]
+	\[
+		X=\mathbb Z
+	\]
 
-  e
+	e
 
-  \[
-    P
-    =
-    \{
-      n\in\mathbb Z
-      \mid
-      n \text{ é par}
-    \}.
-  \]
+	\[
+		P
+		=
+		\{
+		n\in\mathbb Z
+		\mid
+		n \text{ é par}
+		\}.
+	\]
 
-  Então
+	Então
 
-  \[
-    \chi_P(n)
-    =
-    \begin{cases}
-      1, & \text{se } n \text{ é par},\\
-      0, & \text{caso contrário}.
-    \end{cases}
-  \]
+	\[
+		\chi_P(n)
+		=
+		\begin{cases}
+			1, & \text{se } n \text{ é par}, \\
+			0, & \text{caso contrário}.
+		\end{cases}
+	\]
 
 \end{ex}
 
 \subsection{Correspondência com Subconjuntos}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:recuperacao}
+	\label{prop:matematica:funcoes:caracteristicas:recuperacao}
 
-  Seja
+	Seja
 
-  \[
-    A\subseteq X.
-  \]
+	\[
+		A\subseteq X.
+	\]
 
-  Então
+	Então
 
-  \[
-    A
-    =
-    \chi_A^{-1}[\{1\}].
-  \]
+	\[
+		A
+		=
+		\chi_A^{-1}[\{1\}].
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja \(x\in X\).
+	Seja \(x\in X\).
 
-  Temos
+	Temos
 
-  \[
-    x\in\chi_A^{-1}[\{1\}]
-  \]
+	\[
+		x\in\chi_A^{-1}[\{1\}]
+	\]
 
-  se, e somente se,
+	se, e somente se,
 
-  \[
-    \chi_A(x)=1.
-  \]
+	\[
+		\chi_A(x)=1.
+	\]
 
-  Pela definição de função característica,
+	Pela definição de função característica,
 
-  \[
-    \chi_A(x)=1
-  \]
+	\[
+		\chi_A(x)=1
+	\]
 
-  se, e somente se,
+	se, e somente se,
 
-  \[
-    x\in A.
-  \]
+	\[
+		x\in A.
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:bijeccao}
+	\label{prop:matematica:funcoes:caracteristicas:bijeccao}
 
-  Seja \(X\) um conjunto.
+	Seja \(X\) um conjunto.
 
-  A aplicação
+	A aplicação
 
-  \[
-    \Phi
-    :
-    \mathcal P(X)
-    \to
-    \{0,1\}^X
-  \]
+	\[
+		\Phi
+		:
+		\mathcal P(X)
+		\to
+		\{0,1\}^X
+	\]
 
-  definida por
+	definida por
 
-  \[
-    \Phi(A)=\chi_A
-  \]
+	\[
+		\Phi(A)=\chi_A
+	\]
 
-  é uma bijeção.
+	é uma bijeção.
 
 \end{prop}
 
 \begin{proof}
 
-  Injetividade:
+	Injetividade:
 
-  Se
+	Se
 
-  \[
-    \chi_A=\chi_B,
-  \]
+	\[
+		\chi_A=\chi_B,
+	\]
 
-  então para todo \(x\in X\),
+	então para todo \(x\in X\),
 
-  \[
-    x\in A
-    \iff
-    \chi_A(x)=1
-    \iff
-    \chi_B(x)=1
-    \iff
-    x\in B.
-  \]
+	\[
+		x\in A
+		\iff
+		\chi_A(x)=1
+		\iff
+		\chi_B(x)=1
+		\iff
+		x\in B.
+	\]
 
-  Logo
+	Logo
 
-  \[
-    A=B.
-  \]
+	\[
+		A=B.
+	\]
 
-  Sobrejetividade:
+	Sobrejetividade:
 
-  Seja
+	Seja
 
-  \[
-    f:X\to\{0,1\}.
-  \]
+	\[
+		f:X\to\{0,1\}.
+	\]
 
-  Defina
+	Defina
 
-  \[
-    A=f^{-1}[\{1\}].
-  \]
+	\[
+		A=f^{-1}[\{1\}].
+	\]
 
-  Então
+	Então
 
-  \[
-    f=\chi_A.
-  \]
+	\[
+		f=\chi_A.
+	\]
 
 \end{proof}
 
 \begin{cor}
 
-  Para todo conjunto \(X\),
+	Para todo conjunto \(X\),
 
-  \[
-    |\mathcal P(X)|
-    =
-    |\{0,1\}^X|.
-  \]
+	\[
+		|\mathcal P(X)|
+		=
+		|\{0,1\}^X|.
+	\]
 
 \end{cor}
 
 \subsection{Caracterização da Igualdade}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:igualdade}
+	\label{prop:matematica:funcoes:caracteristicas:igualdade}
 
-  Sejam
+	Sejam
 
-  \[
-    A,B\subseteq X.
-  \]
+	\[
+		A,B\subseteq X.
+	\]
 
-  Então
+	Então
 
-  \[
-    A=B
-    \iff
-    \chi_A=\chi_B.
-  \]
+	\[
+		A=B
+		\iff
+		\chi_A=\chi_B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Consequência imediata da injetividade de \(\Phi\).
+	Consequência imediata da injetividade de \(\Phi\).
 
 \end{proof}
 
 \subsection{Operações Conjuntistas}
 
 \begin{prop}[Complemento]
-  \label{prop:matematica:funcoes:caracteristicas:complemento}
+	\label{prop:matematica:funcoes:caracteristicas:complemento}
 
-  Para todo
+	Para todo
 
-  \[
-    A\subseteq X,
-  \]
+	\[
+		A\subseteq X,
+	\]
 
-  vale
+	vale
 
-  \[
-    \chi_{X\setminus A}
-    =
-    1-\chi_A.
-  \]
+	\[
+		\chi_{X\setminus A}
+		=
+		1-\chi_A.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Verificação ponto a ponto.
+	Verificação ponto a ponto.
 
 \end{proof}
 
 \begin{prop}[Interseção]
-  \label{prop:matematica:funcoes:caracteristicas:intersecao}
+	\label{prop:matematica:funcoes:caracteristicas:intersecao}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    A,B\subseteq X,
-  \]
+	\[
+		A,B\subseteq X,
+	\]
 
-  vale
+	vale
 
-  \[
-    \chi_{A\cap B}
-    =
-    \chi_A\chi_B.
-  \]
+	\[
+		\chi_{A\cap B}
+		=
+		\chi_A\chi_B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Verificação ponto a ponto.
+	Verificação ponto a ponto.
 
 \end{proof}
 
 \begin{prop}[União]
-  \label{prop:matematica:funcoes:caracteristicas:uniao}
+	\label{prop:matematica:funcoes:caracteristicas:uniao}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    A,B\subseteq X,
-  \]
+	\[
+		A,B\subseteq X,
+	\]
 
-  vale
+	vale
 
-  \[
-    \chi_{A\cup B}
-    =
-    \chi_A+\chi_B-\chi_A\chi_B.
-  \]
+	\[
+		\chi_{A\cup B}
+		=
+		\chi_A+\chi_B-\chi_A\chi_B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Verificação ponto a ponto.
+	Verificação ponto a ponto.
 
 \end{proof}
 
 \begin{prop}[Diferença]
-  \label{prop:matematica:funcoes:caracteristicas:diferenca}
+	\label{prop:matematica:funcoes:caracteristicas:diferenca}
 
-  Para quaisquer
+	Para quaisquer
 
-  \[
-    A,B\subseteq X,
-  \]
+	\[
+		A,B\subseteq X,
+	\]
 
-  vale
+	vale
 
-  \[
-    \chi_{A\setminus B}
-    =
-    \chi_A(1-\chi_B).
-  \]
+	\[
+		\chi_{A\setminus B}
+		=
+		\chi_A(1-\chi_B).
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Verificação ponto a ponto.
+	Verificação ponto a ponto.
 
 \end{proof}
 
 \subsection{Famílias de Conjuntos}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:intersecao-familia}
+	\label{prop:matematica:funcoes:caracteristicas:intersecao-familia}
 
-  Seja
+	Seja
 
-  \[
-    (A_i)_{i\in I}
-  \]
+	\[
+		(A_i)_{i\in I}
+	\]
 
-  uma família de subconjuntos de \(X\).
+	uma família de subconjuntos de \(X\).
 
-  Então
+	Então
 
-  \[
-    \chi_{\bigcap_{i\in I}A_i}
-    =
-    \prod_{i\in I}\chi_{A_i},
-  \]
+	\[
+		\chi_{\bigcap_{i\in I}A_i}
+		=
+		\prod_{i\in I}\chi_{A_i},
+	\]
 
-  sempre que o produto faça sentido.
+	sempre que o produto faça sentido.
 
 \end{prop}
 
 \begin{proof}
 
-  Um elemento pertence à interseção precisamente quando pertence a
-  todos os conjuntos da família.
+	Um elemento pertence à interseção precisamente quando pertence a
+	todos os conjuntos da família.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:uniao-familia}
+	\label{prop:matematica:funcoes:caracteristicas:uniao-familia}
 
-  Seja
+	Seja
 
-  \[
-    (A_i)_{i\in I}
-  \]
+	\[
+		(A_i)_{i\in I}
+	\]
 
-  uma família de subconjuntos de \(X\).
+	uma família de subconjuntos de \(X\).
 
-  Então
+	Então
 
-  \[
-    \chi_{\bigcup_{i\in I}A_i}(x)
-    =
-    \sup_{i\in I}
-    \chi_{A_i}(x).
-  \]
+	\[
+		\chi_{\bigcup_{i\in I}A_i}(x)
+		=
+		\sup_{i\in I}
+		\chi_{A_i}(x).
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue da definição de união.
+	Segue da definição de união.
 
 \end{proof}
 
 \subsection{Partições}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:caracteristicas:particao}
+	\label{prop:matematica:funcoes:caracteristicas:particao}
 
-  Seja
+	Seja
 
-  \[
-    (A_i)_{i\in I}
-  \]
+	\[
+		(A_i)_{i\in I}
+	\]
 
-  uma partição de \(X\).
+	uma partição de \(X\).
 
-  Então
+	Então
 
-  \[
-    \sum_{i\in I}
-    \chi_{A_i}(x)
-    =
-    1
-  \]
+	\[
+		\sum_{i\in I}
+		\chi_{A_i}(x)
+		=
+		1
+	\]
 
-  para todo
+	para todo
 
-  \[
-    x\in X.
-  \]
+	\[
+		x\in X.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Cada elemento de \(X\) pertence a exatamente um conjunto da
-  partição.
+	Cada elemento de \(X\) pertence a exatamente um conjunto da
+	partição.
 
 \end{proof}
 

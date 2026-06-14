@@ -6,176 +6,176 @@
 \label{sec:matematica:relacoes:relacoes-de-ordem}
 
 \begin{defn}[Pré-Ordem]
-  \label{def:matematica:relacoes:pre-ordem}
+	\label{def:matematica:relacoes:pre-ordem}
 
-  Uma relação (R) sobre um conjunto (A) é uma pré-ordem quando é
+	Uma relação (R) sobre um conjunto (A) é uma pré-ordem quando é
 
-  \begin{enumerate}
-    \item reflexiva;
-    \item transitiva.
-  \end{enumerate}
+	\begin{enumerate}
+		\item reflexiva;
+		\item transitiva.
+	\end{enumerate}
 
 \end{defn}
 
 \begin{defn}[Ordem Parcial]
-  \label{def:matematica:relacoes:ordem-parcial}
+	\label{def:matematica:relacoes:ordem-parcial}
 
-  Uma relação (R) sobre um conjunto (A) é uma ordem parcial quando
-  é
+	Uma relação (R) sobre um conjunto (A) é uma ordem parcial quando
+	é
 
-  \begin{enumerate}
-    \item reflexiva;
-    \item antissimétrica;
-    \item transitiva.
-  \end{enumerate}
+	\begin{enumerate}
+		\item reflexiva;
+		\item antissimétrica;
+		\item transitiva.
+	\end{enumerate}
 
 \end{defn}
 
 \begin{defn}[Conjunto Parcialmente Ordenado]
-  \label{def:matematica:relacoes:poset}
+	\label{def:matematica:relacoes:poset}
 
-  Um conjunto parcialmente ordenado é um par
+	Um conjunto parcialmente ordenado é um par
 
-  [
-    (A,R),
-  ]
+		[
+			(A,R),
+		]
 
-  onde (R) é uma ordem parcial sobre (A).
+	onde (R) é uma ordem parcial sobre (A).
 
 \end{defn}
 
 \begin{defn}[Elementos Comparáveis]
-  \label{def:matematica:relacoes:comparaveis}
+	\label{def:matematica:relacoes:comparaveis}
 
-  Dois elementos (a,b\in A) são comparáveis quando
+	Dois elementos (a,b\in A) são comparáveis quando
 
-  [
-    aRb
-  ]
+		[
+			aRb
+		]
 
-  ou
+	ou
 
-  [
-    bRa.
-  ]
+		[
+			bRa.
+		]
 
 \end{defn}
 
 \begin{defn}[Ordem Total]
-  \label{def:matematica:relacoes:ordem-total}
+	\label{def:matematica:relacoes:ordem-total}
 
-  Uma ordem parcial (R) é denominada ordem total quando quaisquer
-  dois elementos de (A) são comparáveis.
+	Uma ordem parcial (R) é denominada ordem total quando quaisquer
+	dois elementos de (A) são comparáveis.
 
-  Isto é,
+	Isto é,
 
-  [
-    (\forall a,b\in A)
-    (aRb \lor bRa).
-  ]
+	[
+			(\forall a,b\in A)
+			(aRb \lor bRa).
+		]
 
 \end{defn}
 
 \begin{defn}[Elemento Minimal]
-  \label{def:matematica:relacoes:minimal}
+	\label{def:matematica:relacoes:minimal}
 
-  Seja (B\subseteq A).
+	Seja (B\subseteq A).
 
-  Um elemento (m\in B) é minimal quando
+	Um elemento (m\in B) é minimal quando
 
-  [
-    (\forall x\in B)
-    (xRm \Rightarrow x=m).
-  ]
+		[
+			(\forall x\in B)
+			(xRm \Rightarrow x=m).
+		]
 
 \end{defn}
 
 \begin{defn}[Elemento Maximal]
-  \label{def:matematica:relacoes:maximal}
+	\label{def:matematica:relacoes:maximal}
 
-  Um elemento (m\in B) é maximal quando
+	Um elemento (m\in B) é maximal quando
 
-  [
-    (\forall x\in B)
-    (mRx \Rightarrow x=m).
-  ]
+		[
+			(\forall x\in B)
+			(mRx \Rightarrow x=m).
+		]
 
 \end{defn}
 
 \begin{defn}[Menor Elemento]
-  \label{def:matematica:relacoes:menor-elemento}
+	\label{def:matematica:relacoes:menor-elemento}
 
-  Um elemento (m\in B) é o menor elemento de (B) quando
+	Um elemento (m\in B) é o menor elemento de (B) quando
 
-  [
-    (\forall x\in B)
-    (mRx).
-  ]
+		[
+			(\forall x\in B)
+			(mRx).
+		]
 
 \end{defn}
 
 \begin{defn}[Maior Elemento]
-  \label{def:matematica:relacoes:maior-elemento}
+	\label{def:matematica:relacoes:maior-elemento}
 
-  Um elemento (m\in B) é o maior elemento de (B) quando
+	Um elemento (m\in B) é o maior elemento de (B) quando
 
-  [
-    (\forall x\in B)
-    (xRm).
-  ]
+		[
+			(\forall x\in B)
+			(xRm).
+		]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:menor-implica-minimal}
+	\label{prop:matematica:relacoes:menor-implica-minimal}
 
-  Todo menor elemento é minimal.
+	Todo menor elemento é minimal.
 
 \end{prop}
 
 \begin{proof}
 
-  Imediato pela definição.
+	Imediato pela definição.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:maior-implica-maximal}
+	\label{prop:matematica:relacoes:maior-implica-maximal}
 
-  Todo maior elemento é maximal.
+	Todo maior elemento é maximal.
 
 \end{prop}
 
 \begin{proof}
 
-  Imediato pela definição.
+	Imediato pela definição.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:unicidade-menor}
+	\label{prop:matematica:relacoes:unicidade-menor}
 
-  Se existir um menor elemento, então ele é único.
+	Se existir um menor elemento, então ele é único.
 
 \end{prop}
 
 \begin{proof}
 
-  Sejam (a) e (b) menores elementos.
+	Sejam (a) e (b) menores elementos.
 
-  Então
+	Então
 
-  [
-    aRb
-    \quad\text{e}\quad
-    bRa.
-  ]
+	[
+	aRb
+	\quad\text{e}\quad
+	bRa.
+	]
 
-  Pela antissimetria,
+	Pela antissimetria,
 
-  [
-    a=b.
-  ]
+	[
+			a=b.
+		]
 
 \end{proof}
 

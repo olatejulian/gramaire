@@ -6,283 +6,283 @@
 \label{sec:matematica:relacoes:diagramas-de-hasse}
 
 \begin{defn}[Diagrama de Hasse]
-  \label{def:matematica:relacoes:diagramas-de-hasse:diagrama-de-hasse}
+	\label{def:matematica:relacoes:diagramas-de-hasse:diagrama-de-hasse}
 
-  Seja \((P,\preceq)\) um conjunto parcialmente ordenado.
+	Seja \((P,\preceq)\) um conjunto parcialmente ordenado.
 
-  Um diagrama de Hasse é uma representação gráfica da relação de ordem
-  que exibe apenas as relações de cobertura entre elementos de \(P\).
+	Um diagrama de Hasse é uma representação gráfica da relação de ordem
+	que exibe apenas as relações de cobertura entre elementos de \(P\).
 
 \end{defn}
 
 \begin{defn}[Relação de Cobertura]
-  \label{def:matematica:relacoes:diagramas-de-hasse:cobertura}
+	\label{def:matematica:relacoes:diagramas-de-hasse:cobertura}
 
-  Sejam \(a,b\in P\).
+	Sejam \(a,b\in P\).
 
-  Dizemos que \(b\) cobre \(a\), e escrevemos
+	Dizemos que \(b\) cobre \(a\), e escrevemos
 
-  \[
-    a \prec\!\!\cdot\, b,
-  \]
+	\[
+		a \prec\!\!\cdot\, b,
+	\]
 
-  quando
+	quando
 
-  \[
-    a \prec b
-  \]
+	\[
+		a \prec b
+	\]
 
-  e não existe \(c\in P\) tal que
+	e não existe \(c\in P\) tal que
 
-  \[
-    a \prec c \prec b.
-  \]
+	\[
+		a \prec c \prec b.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Em um diagrama de Hasse:
+	Em um diagrama de Hasse:
 
-  \begin{enumerate}
-    \item os elementos são representados por vértices;
+	\begin{enumerate}
+		\item os elementos são representados por vértices;
 
-    \item as relações de cobertura são representadas por segmentos;
+		\item as relações de cobertura são representadas por segmentos;
 
-    \item relações reflexivas não são desenhadas;
+		\item relações reflexivas não são desenhadas;
 
-    \item relações transitivas são omitidas;
+		\item relações transitivas são omitidas;
 
-    \item elementos maiores são colocados acima dos menores.
-  \end{enumerate}
+		\item elementos maiores são colocados acima dos menores.
+	\end{enumerate}
 
 \end{obs}
 
 \begin{ex}
 
-  Considere o conjunto
+	Considere o conjunto
 
-  \[
-    P=\{1,2,3,6\}
-  \]
+	\[
+		P=\{1,2,3,6\}
+	\]
 
-  munido da relação de divisibilidade.
+	munido da relação de divisibilidade.
 
-  As relações de cobertura são
+	As relações de cobertura são
 
-  \[
-    1 \prec\!\!\cdot\, 2,
-  \]
+	\[
+		1 \prec\!\!\cdot\, 2,
+	\]
 
-  \[
-    1 \prec\!\!\cdot\, 3,
-  \]
+	\[
+		1 \prec\!\!\cdot\, 3,
+	\]
 
-  \[
-    2 \prec\!\!\cdot\, 6,
-  \]
+	\[
+		2 \prec\!\!\cdot\, 6,
+	\]
 
-  \[
-    3 \prec\!\!\cdot\, 6.
-  \]
+	\[
+		3 \prec\!\!\cdot\, 6.
+	\]
 
-  O diagrama correspondente possui a forma
+	O diagrama correspondente possui a forma
 
-  \[
-    \begin{array}{c}
-      6 \\[0.3em]
-      / \backslash \\[0.3em]
-      2 \quad 3 \\[0.3em]
-      \backslash / \\[0.3em]
-      1
-    \end{array}
-  \]
+	\[
+		\begin{array}{c}
+			6            \\[0.3em]
+			/ \backslash \\[0.3em]
+			2 \quad 3    \\[0.3em]
+			\backslash / \\[0.3em]
+			1
+		\end{array}
+	\]
 
 \end{ex}
 
 \begin{defn}[Elemento Minimal]
-  \label{def:matematica:relacoes:diagramas-de-hasse:elemento-minimal}
+	\label{def:matematica:relacoes:diagramas-de-hasse:elemento-minimal}
 
-  Seja \((P,\preceq)\) um conjunto parcialmente ordenado.
+	Seja \((P,\preceq)\) um conjunto parcialmente ordenado.
 
-  Um elemento \(m\in P\) é denominado minimal quando
+	Um elemento \(m\in P\) é denominado minimal quando
 
-  \[
-    x \preceq m
-    \Rightarrow
-    x=m
-  \]
+	\[
+		x \preceq m
+		\Rightarrow
+		x=m
+	\]
 
-  para todo \(x\in P\).
+	para todo \(x\in P\).
 
 \end{defn}
 
 \begin{defn}[Elemento Maximal]
-  \label{def:matematica:relacoes:diagramas-de-hasse:elemento-maximal}
+	\label{def:matematica:relacoes:diagramas-de-hasse:elemento-maximal}
 
-  Seja \((P,\preceq)\).
+	Seja \((P,\preceq)\).
 
-  Um elemento \(M\in P\) é denominado maximal quando
+	Um elemento \(M\in P\) é denominado maximal quando
 
-  \[
-    M \preceq x
-    \Rightarrow
-    x=M
-  \]
+	\[
+		M \preceq x
+		\Rightarrow
+		x=M
+	\]
 
-  para todo \(x\in P\).
+	para todo \(x\in P\).
 
 \end{defn}
 
 \begin{defn}[Menor Elemento]
-  \label{def:matematica:relacoes:diagramas-de-hasse:menor-elemento}
+	\label{def:matematica:relacoes:diagramas-de-hasse:menor-elemento}
 
-  Seja \((P,\preceq)\).
+	Seja \((P,\preceq)\).
 
-  Um elemento \(m\in P\) é denominado menor elemento quando
+	Um elemento \(m\in P\) é denominado menor elemento quando
 
-  \[
-    m \preceq x
-  \]
+	\[
+		m \preceq x
+	\]
 
-  para todo \(x\in P\).
+	para todo \(x\in P\).
 
 \end{defn}
 
 \begin{defn}[Maior Elemento]
-  \label{def:matematica:relacoes:diagramas-de-hasse:maior-elemento}
+	\label{def:matematica:relacoes:diagramas-de-hasse:maior-elemento}
 
-  Seja \((P,\preceq)\).
+	Seja \((P,\preceq)\).
 
-  Um elemento \(M\in P\) é denominado maior elemento quando
+	Um elemento \(M\in P\) é denominado maior elemento quando
 
-  \[
-    x \preceq M
-  \]
+	\[
+		x \preceq M
+	\]
 
-  para todo \(x\in P\).
+	para todo \(x\in P\).
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:diagramas-de-hasse:menor-unico}
+	\label{prop:matematica:relacoes:diagramas-de-hasse:menor-unico}
 
-  Se um conjunto parcialmente ordenado possui menor elemento, então ele
-  é único.
+	Se um conjunto parcialmente ordenado possui menor elemento, então ele
+	é único.
 
 \end{prop}
 
 \begin{proof}
 
-  Sejam \(m_1\) e \(m_2\) menores elementos.
+	Sejam \(m_1\) e \(m_2\) menores elementos.
 
-  Então
+	Então
 
-  \[
-    m_1\preceq m_2
-  \]
+	\[
+		m_1\preceq m_2
+	\]
 
-  e
+	e
 
-  \[
-    m_2\preceq m_1.
-  \]
+	\[
+		m_2\preceq m_1.
+	\]
 
-  Pela antissimetria,
+	Pela antissimetria,
 
-  \[
-    m_1=m_2.
-  \]
+	\[
+		m_1=m_2.
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:diagramas-de-hasse:maior-unico}
+	\label{prop:matematica:relacoes:diagramas-de-hasse:maior-unico}
 
-  Se um conjunto parcialmente ordenado possui maior elemento, então ele
-  é único.
+	Se um conjunto parcialmente ordenado possui maior elemento, então ele
+	é único.
 
 \end{prop}
 
 \begin{proof}
 
-  Análoga à proposição anterior.
+	Análoga à proposição anterior.
 
 \end{proof}
 
 \begin{defn}[Cota Superior]
-  \label{def:matematica:relacoes:diagramas-de-hasse:cota-superior}
+	\label{def:matematica:relacoes:diagramas-de-hasse:cota-superior}
 
-  Seja \(A\subseteq P\).
+	Seja \(A\subseteq P\).
 
-  Um elemento \(u\in P\) é uma cota superior de \(A\) quando
+	Um elemento \(u\in P\) é uma cota superior de \(A\) quando
 
-  \[
-    a\preceq u
-  \]
+	\[
+		a\preceq u
+	\]
 
-  para todo \(a\in A\).
+	para todo \(a\in A\).
 
 \end{defn}
 
 \begin{defn}[Cota Inferior]
-  \label{def:matematica:relacoes:diagramas-de-hasse:cota-inferior}
+	\label{def:matematica:relacoes:diagramas-de-hasse:cota-inferior}
 
-  Seja \(A\subseteq P\).
+	Seja \(A\subseteq P\).
 
-  Um elemento \(l\in P\) é uma cota inferior de \(A\) quando
+	Um elemento \(l\in P\) é uma cota inferior de \(A\) quando
 
-  \[
-    l\preceq a
-  \]
+	\[
+		l\preceq a
+	\]
 
-  para todo \(a\in A\).
+	para todo \(a\in A\).
 
 \end{defn}
 
 \begin{defn}[Supremo]
-  \label{def:matematica:relacoes:diagramas-de-hasse:supremo}
+	\label{def:matematica:relacoes:diagramas-de-hasse:supremo}
 
-  Seja \(A\subseteq P\).
+	Seja \(A\subseteq P\).
 
-  O supremo de \(A\), quando existe, é a menor das cotas superiores de
-  \(A\).
+	O supremo de \(A\), quando existe, é a menor das cotas superiores de
+	\(A\).
 
-  É denotado por
+	É denotado por
 
-  \[
-    \sup(A).
-  \]
+	\[
+		\sup(A).
+	\]
 
 \end{defn}
 
 \begin{defn}[Ínfimo]
-  \label{def:matematica:relacoes:diagramas-de-hasse:infimo}
+	\label{def:matematica:relacoes:diagramas-de-hasse:infimo}
 
-  Seja \(A\subseteq P\).
+	Seja \(A\subseteq P\).
 
-  O ínfimo de \(A\), quando existe, é a maior das cotas inferiores de
-  \(A\).
+	O ínfimo de \(A\), quando existe, é a maior das cotas inferiores de
+	\(A\).
 
-  É denotado por
+	É denotado por
 
-  \[
-    \inf(A).
-  \]
+	\[
+		\inf(A).
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Em diagramas de Hasse, elementos minimais aparecem sem vértices abaixo
-  deles.
+	Em diagramas de Hasse, elementos minimais aparecem sem vértices abaixo
+	deles.
 
-  Elementos maximais aparecem sem vértices acima deles.
+	Elementos maximais aparecem sem vértices acima deles.
 
-  O menor elemento, quando existe, encontra-se abaixo de todos os
-  demais.
+	O menor elemento, quando existe, encontra-se abaixo de todos os
+	demais.
 
-  O maior elemento, quando existe, encontra-se acima de todos os demais.
+	O maior elemento, quando existe, encontra-se acima de todos os demais.
 
 \end{obs}
 

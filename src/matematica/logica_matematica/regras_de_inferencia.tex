@@ -5,255 +5,255 @@
 \label{sec:matematica:logica-matematica:regras-de-inferencia}
 
 \begin{defn}[Regra de Inferência]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:regra-de-inferencia}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:regra-de-inferencia}
 
-  Uma regra de inferência é um esquema lógico que permite obter uma
-  conclusão a partir de um conjunto de premissas de modo que a verdade
-  das premissas implique necessariamente a verdade da conclusão.
+	Uma regra de inferência é um esquema lógico que permite obter uma
+	conclusão a partir de um conjunto de premissas de modo que a verdade
+	das premissas implique necessariamente a verdade da conclusão.
 \end{defn}
 
 \begin{defn}[Modus Ponens]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:modus-ponens}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:modus-ponens}
 
-  Sejam \(P\) e \(Q\) proposições.
+	Sejam \(P\) e \(Q\) proposições.
 
-  O esquema
+	O esquema
 
-  \[
-    P,
-  \]
+	\[
+		P,
+	\]
 
-  \[
-    P \Rightarrow Q
-  \]
+	\[
+		P \Rightarrow Q
+	\]
 
-  implica
+	implica
 
-  \[
-    Q.
-  \]
+	\[
+		Q.
+	\]
 
 \end{defn}
 
 \begin{prop}[Validade do Modus Ponens]
-  \label{prop:matematica:logica-matematica:regras-de-inferencia:validade-modus-ponens}
+	\label{prop:matematica:logica-matematica:regras-de-inferencia:validade-modus-ponens}
 
-  O Modus Ponens é uma regra de inferência válida.
+	O Modus Ponens é uma regra de inferência válida.
 \end{prop}
 
 \begin{proof}
 
-  Considere a implicação
+	Considere a implicação
 
-  \[
-    \bigl(
-      P
-      \land
-      (P \Rightarrow Q)
-    \bigr)
-    \Rightarrow
-    Q.
-  \]
+	\[
+		\bigl(
+		P
+		\land
+			(P \Rightarrow Q)
+		\bigr)
+		\Rightarrow
+		Q.
+	\]
 
-  Sua tabela-verdade possui valor verdadeiro para toda atribuição de
-  valores de verdade.
+	Sua tabela-verdade possui valor verdadeiro para toda atribuição de
+	valores de verdade.
 
-  Logo, trata-se de uma tautologia.
+	Logo, trata-se de uma tautologia.
 
-  Portanto, o Modus Ponens é válido.
+	Portanto, o Modus Ponens é válido.
 
 \end{proof}
 
 \begin{defn}[Modus Tollens]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:modus-tollens}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:modus-tollens}
 
-  Sejam \(P\) e \(Q\) proposições.
+	Sejam \(P\) e \(Q\) proposições.
 
-  O esquema
+	O esquema
 
-  \[
-    P \Rightarrow Q,
-  \]
+	\[
+		P \Rightarrow Q,
+	\]
 
-  \[
-    \neg Q
-  \]
+	\[
+		\neg Q
+	\]
 
-  implica
+	implica
 
-  \[
-    \neg P.
-  \]
+	\[
+		\neg P.
+	\]
 
 \end{defn}
 
 \begin{prop}[Validade do Modus Tollens]
-  \label{prop:matematica:logica-matematica:regras-de-inferencia:validade-modus-tollens}
+	\label{prop:matematica:logica-matematica:regras-de-inferencia:validade-modus-tollens}
 
-  O Modus Tollens é uma regra de inferência válida.
+	O Modus Tollens é uma regra de inferência válida.
 \end{prop}
 
 \begin{proof}
 
-  Considere
+	Considere
 
-  \[
-    \bigl(
-      (P \Rightarrow Q)
-      \land
-      \neg Q
-    \bigr)
-    \Rightarrow
-    \neg P.
-  \]
+	\[
+		\bigl(
+		(P \Rightarrow Q)
+		\land
+		\neg Q
+		\bigr)
+		\Rightarrow
+		\neg P.
+	\]
 
-  Verifica-se por tabela-verdade que a expressão é uma tautologia.
+	Verifica-se por tabela-verdade que a expressão é uma tautologia.
 
-  Portanto, o Modus Tollens é válido.
+	Portanto, o Modus Tollens é válido.
 
 \end{proof}
 
 \begin{defn}[Silogismo Hipotético]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:silogismo-hipotetico}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:silogismo-hipotetico}
 
-  Sejam \(P\), \(Q\) e \(R\) proposições.
+	Sejam \(P\), \(Q\) e \(R\) proposições.
 
-  O esquema
+	O esquema
 
-  \[
-    P \Rightarrow Q,
-  \]
+	\[
+		P \Rightarrow Q,
+	\]
 
-  \[
-    Q \Rightarrow R
-  \]
+	\[
+		Q \Rightarrow R
+	\]
 
-  implica
+	implica
 
-  \[
-    P \Rightarrow R.
-  \]
+	\[
+		P \Rightarrow R.
+	\]
 
 \end{defn}
 
 \begin{prop}[Validade do Silogismo Hipotético]
-  \label{prop:matematica:logica-matematica:regras-de-inferencia:validade-silogismo-hipotetico}
+	\label{prop:matematica:logica-matematica:regras-de-inferencia:validade-silogismo-hipotetico}
 
-  O Silogismo Hipotético é uma regra de inferência válida.
+	O Silogismo Hipotético é uma regra de inferência válida.
 \end{prop}
 
 \begin{proof}
 
-  Considere
+	Considere
 
-  \[
-    \Bigl(
-      (P \Rightarrow Q)
-      \land
-      (Q \Rightarrow R)
-    \Bigr)
-    \Rightarrow
-    (P \Rightarrow R).
-  \]
+	\[
+		\Bigl(
+		(P \Rightarrow Q)
+		\land
+		(Q \Rightarrow R)
+		\Bigr)
+		\Rightarrow
+		(P \Rightarrow R).
+	\]
 
-  A expressão é uma tautologia.
+	A expressão é uma tautologia.
 
-  Portanto, o Silogismo Hipotético é válido.
+	Portanto, o Silogismo Hipotético é válido.
 
 \end{proof}
 
 \begin{defn}[Silogismo Disjuntivo]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:silogismo-disjuntivo}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:silogismo-disjuntivo}
 
-  Sejam \(P\) e \(Q\) proposições.
+	Sejam \(P\) e \(Q\) proposições.
 
-  O esquema
+	O esquema
 
-  \[
-    P \lor Q,
-  \]
+	\[
+		P \lor Q,
+	\]
 
-  \[
-    \neg P
-  \]
+	\[
+		\neg P
+	\]
 
-  implica
+	implica
 
-  \[
-    Q.
-  \]
+	\[
+		Q.
+	\]
 
 \end{defn}
 
 \begin{prop}[Validade do Silogismo Disjuntivo]
-  \label{prop:matematica:logica-matematica:regras-de-inferencia:validade-silogismo-disjuntivo}
+	\label{prop:matematica:logica-matematica:regras-de-inferencia:validade-silogismo-disjuntivo}
 
-  O Silogismo Disjuntivo é uma regra de inferência válida.
+	O Silogismo Disjuntivo é uma regra de inferência válida.
 \end{prop}
 
 \begin{proof}
 
-  Considere
+	Considere
 
-  \[
-    \bigl(
-      (P \lor Q)
-      \land
-      \neg P
-    \bigr)
-    \Rightarrow
-    Q.
-  \]
+	\[
+		\bigl(
+		(P \lor Q)
+		\land
+		\neg P
+		\bigr)
+		\Rightarrow
+		Q.
+	\]
 
-  A expressão é uma tautologia.
+	A expressão é uma tautologia.
 
-  Portanto, o Silogismo Disjuntivo é válido.
+	Portanto, o Silogismo Disjuntivo é válido.
 
 \end{proof}
 
 \begin{defn}[Redução ao Absurdo]
-  \label{def:matematica:logica-matematica:regras-de-inferencia:reducao-ao-absurdo}
+	\label{def:matematica:logica-matematica:regras-de-inferencia:reducao-ao-absurdo}
 
-  Seja \(P\) uma proposição.
+	Seja \(P\) uma proposição.
 
-  Se a hipótese \(\neg P\) conduz a uma contradição, então conclui-se
-  que \(P\) é verdadeira.
+	Se a hipótese \(\neg P\) conduz a uma contradição, então conclui-se
+	que \(P\) é verdadeira.
 
-  Simbolicamente,
+	Simbolicamente,
 
-  \[
-    \neg P
-    \Rightarrow
-    \bot
-  \]
+	\[
+		\neg P
+		\Rightarrow
+		\bot
+	\]
 
-  implica
+	implica
 
-  \[
-    P.
-  \]
+	\[
+		P.
+	\]
 
 \end{defn}
 
 \begin{prop}[Validade da Redução ao Absurdo]
-  \label{prop:matematica:logica-matematica:regras-de-inferencia:validade-reducao-ao-absurdo}
+	\label{prop:matematica:logica-matematica:regras-de-inferencia:validade-reducao-ao-absurdo}
 
-  A Redução ao Absurdo é uma regra de inferência válida na lógica
-  clássica.
+	A Redução ao Absurdo é uma regra de inferência válida na lógica
+	clássica.
 \end{prop}
 
 \begin{proof}
 
-  Pela Lei da Dupla Negação e pelo Princípio do Terceiro Excluído,
-  demonstrados anteriormente, segue que
+	Pela Lei da Dupla Negação e pelo Princípio do Terceiro Excluído,
+	demonstrados anteriormente, segue que
 
-  \[
-    (\neg P \Rightarrow \bot)
-    \Rightarrow
-    P.
-  \]
+	\[
+		(\neg P \Rightarrow \bot)
+		\Rightarrow
+		P.
+	\]
 
-  Portanto, a regra é válida na lógica clássica.
+	Portanto, a regra é válida na lógica clássica.
 
 \end{proof}
 \end{document}

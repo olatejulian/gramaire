@@ -6,348 +6,348 @@
 \label{sec:matematica:teoria-conjuntos:produto-cartesiano}
 
 \begin{defn}[Par Ordenado]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:par-ordenado}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:par-ordenado}
 
-  Um par ordenado é uma coleção de dois objetos na qual a ordem dos
-  componentes é relevante.
+	Um par ordenado é uma coleção de dois objetos na qual a ordem dos
+	componentes é relevante.
 
-  Um par ordenado cujos componentes são (a) e (b) é denotado por
+	Um par ordenado cujos componentes são (a) e (b) é denotado por
 
-  [
-    (a,b).
-  ]
+		[
+			(a,b).
+		]
 
 \end{defn}
 
 \begin{prop}[Igualdade de Pares Ordenados]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:igualdade-pares}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:igualdade-pares}
 
-  Para quaisquer objetos (a), (b), (c) e (d),
+	Para quaisquer objetos (a), (b), (c) e (d),
 
-  [
-    (a,b)=(c,d)
-  ]
+	[
+			(a,b)=(c,d)
+		]
 
-  se, e somente se,
+	se, e somente se,
 
-  [
-    a=c
-    \quad\text{e}\quad
-    b=d.
-  ]
+	[
+			a=c
+			\quad\text{e}\quad
+			b=d.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  A igualdade de pares ordenados ocorre exatamente quando seus
-  componentes correspondentes são iguais.
+	A igualdade de pares ordenados ocorre exatamente quando seus
+	componentes correspondentes são iguais.
 
 \end{proof}
 
 \begin{defn}[Primeira Projeção]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:primeira-projecao}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:primeira-projecao}
 
-  Seja
+	Seja
 
-  [
-    (a,b)
-  ]
+		[
+			(a,b)
+		]
 
-  um par ordenado.
+	um par ordenado.
 
-  Define-se sua primeira projeção por
+	Define-se sua primeira projeção por
 
-  [
-    \pi_1(a,b)=a.
-  ]
+		[
+			\pi_1(a,b)=a.
+		]
 
 \end{defn}
 
 \begin{defn}[Segunda Projeção]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:segunda-projecao}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:segunda-projecao}
 
-  Seja
+	Seja
 
-  [
-    (a,b).
-  ]
+		[
+			(a,b).
+		]
 
-  Define-se sua segunda projeção por
+	Define-se sua segunda projeção por
 
-  [
-    \pi_2(a,b)=b.
-  ]
+		[
+			\pi_2(a,b)=b.
+		]
 
 \end{defn}
 
 \begin{defn}[Produto Cartesiano]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:produto-cartesiano}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:produto-cartesiano}
 
-  Sejam (A) e (B) conjuntos.
+	Sejam (A) e (B) conjuntos.
 
-  O produto cartesiano de (A) por (B), denotado por
+	O produto cartesiano de (A) por (B), denotado por
 
-  [
-    A\times B,
-  ]
+		[
+			A\times B,
+		]
 
-  é definido por
+	é definido por
 
-  [
-    A\times B
-    =
-    {
-      (a,b)
-      \mid
-      a\in A
-      \land
-      b\in B
-    }.
-  ]
+	[
+	A\times B
+	=
+	{
+	(a,b)
+	\mid
+	a\in A
+	\land
+	b\in B
+	}.
+	]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  [
-    A={1,2}
-    \quad\text{e}\quad
-    B={a,b},
-  ]
+	[
+	A={1,2}
+	\quad\text{e}\quad
+	B={a,b},
+	]
 
-  então
+	então
 
-  [
-    A\times B
-    =
-    {
-      (1,a),
-      (1,b),
-      (2,a),
-      (2,b)
-    }.
-  ]
+	[
+	A\times B
+	=
+	{
+	(1,a),
+	(1,b),
+	(2,a),
+	(2,b)
+	}.
+	]
 
 \end{ex}
 
 \begin{prop}[Caracterização do Produto Cartesiano]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:caracterizacao}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:caracterizacao}
 
-  Para quaisquer conjuntos (A) e (B),
+	Para quaisquer conjuntos (A) e (B),
 
-  [
-    (x,y)\in A\times B
-  ]
+	[
+			(x,y)\in A\times B
+		]
 
-  se, e somente se,
+	se, e somente se,
 
-  [
-    x\in A
-    \quad\text{e}\quad
-    y\in B.
-  ]
+	[
+			x\in A
+			\quad\text{e}\quad
+			y\in B.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  A equivalência segue diretamente da definição.
+	A equivalência segue diretamente da definição.
 
 \end{proof}
 
 \begin{prop}[Produto Cartesiano com o Conjunto Vazio]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:vazio}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:vazio}
 
-  Para qualquer conjunto (A),
+	Para qualquer conjunto (A),
 
-  [
-    A\times\varnothing
-    =
-    \varnothing
-  ]
+	[
+			A\times\varnothing
+			=
+			\varnothing
+		]
 
-  e
+	e
 
-  [
-    \varnothing\times A
-    =
-    \varnothing.
-  ]
+		[
+			\varnothing\times A
+			=
+			\varnothing.
+		]
 
 \end{prop}
 
 \begin{proof}
 
-  Não existem pares ordenados cujos componentes pertençam
-  simultaneamente aos conjuntos considerados.
+	Não existem pares ordenados cujos componentes pertençam
+	simultaneamente aos conjuntos considerados.
 
 \end{proof}
 
 \begin{prop}[Monotonicidade do Produto Cartesiano]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:monotonicidade}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:monotonicidade}
 
-  Se
+	Se
 
-  [
-    A\subseteq C
-    \quad\text{e}\quad
-    B\subseteq D,
-  ]
+		[
+			A\subseteq C
+			\quad\text{e}\quad
+			B\subseteq D,
+		]
 
-  então
+	então
 
-  [
-    A\times B
-    \subseteq
-    C\times D.
-  ]
+	[
+	A\times B
+	\subseteq
+	C\times D.
+	]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  [
-    (x,y)\in A\times B.
-  ]
+	[
+	(x,y)\in A\times B.
+	]
 
-  Então
+	Então
 
-  [
-    x\in A
-    \quad\text{e}\quad
-    y\in B.
-  ]
+	[
+	x\in A
+	\quad\text{e}\quad
+	y\in B.
+	]
 
-  Como
+	Como
 
-  [
-    A\subseteq C
-    \quad\text{e}\quad
-    B\subseteq D,
-  ]
+		[
+			A\subseteq C
+			\quad\text{e}\quad
+			B\subseteq D,
+		]
 
-  segue que
+	segue que
 
-  [
-    x\in C
-    \quad\text{e}\quad
-    y\in D.
-  ]
+		[
+			x\in C
+			\quad\text{e}\quad
+			y\in D.
+		]
 
-  Portanto
+	Portanto
 
-  [
-    (x,y)\in C\times D.
-  ]
+		[
+			(x,y)\in C\times D.
+		]
 
 \end{proof}
 
 \begin{prop}[Distribuição sobre a União]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:distribuicao-uniao}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:distribuicao-uniao}
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    A\times(B\cup C)
-    =
-    (A\times B)
-    \cup
-    (A\times C).
-  ]
+	[
+			A\times(B\cup C)
+			=
+			(A\times B)
+			\cup
+			(A\times C).
+		]
 
 \end{prop}
 
 \begin{prop}[Distribuição sobre a Interseção]
-  \label{prop:matematica:teoria-conjuntos:produto-cartesiano:distribuicao-intersecao}
+	\label{prop:matematica:teoria-conjuntos:produto-cartesiano:distribuicao-intersecao}
 
-  Para quaisquer conjuntos (A), (B) e (C),
+	Para quaisquer conjuntos (A), (B) e (C),
 
-  [
-    A\times(B\cap C)
-    =
-    (A\times B)
-    \cap
-    (A\times C).
-  ]
+	[
+			A\times(B\cap C)
+			=
+			(A\times B)
+			\cap
+			(A\times C).
+		]
 
 \end{prop}
 
 \begin{defn}[Produto Cartesiano Finito]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:produto-finito}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:produto-finito}
 
-  Sejam
+	Sejam
 
-  [
-    A_1,A_2,\dots,A_n
-  ]
+		[
+			A_1,A_2,\dots,A_n
+		]
 
-  conjuntos.
+	conjuntos.
 
-  Define-se
+	Define-se
 
-  [
-    A_1\times A_2\times\cdots\times A_n
-  ]
+	[
+	A_1\times A_2\times\cdots\times A_n
+	]
 
-  como o conjunto de todas as (n)-uplas
+	como o conjunto de todas as (n)-uplas
 
-  [
-    (a_1,a_2,\dots,a_n)
-  ]
+	[
+	(a_1,a_2,\dots,a_n)
+	]
 
-  tais que
+	tais que
 
-  [
-    a_k\in A_k
-  ]
+		[
+			a_k\in A_k
+		]
 
-  para todo
+	para todo
 
-  [
-    k=1,\dots,n.
-  ]
+		[
+			k=1,\dots,n.
+		]
 
 \end{defn}
 
 \begin{defn}[Potência Cartesiana]
-  \label{def:matematica:teoria-conjuntos:produto-cartesiano:potencia-cartesiana}
+	\label{def:matematica:teoria-conjuntos:produto-cartesiano:potencia-cartesiana}
 
-  Seja (A) um conjunto e (n\in\mathbb{N}).
+	Seja (A) um conjunto e (n\in\mathbb{N}).
 
-  Define-se
+	Define-se
 
-  [
-    A^n
-    =
-    \underbrace{
-      A\times A\times\cdots\times A
-    }_{n\text{ fatores}}.
-  ]
+	[
+	A^n
+	=
+	\underbrace{
+		A\times A\times\cdots\times A
+	}_{n\text{ fatores}}.
+	]
 
 \end{defn}
 
 \begin{ex}
 
-  [
-    \mathbb{R}^2
-    =
-    \mathbb{R}\times\mathbb{R}
-  ]
+	[
+		\mathbb{R}^2
+		=
+		\mathbb{R}\times\mathbb{R}
+	]
 
-  é o plano cartesiano.
+	é o plano cartesiano.
 
-  Analogamente,
+	Analogamente,
 
-  [
-    \mathbb{R}^3
-  ]
+	[
+			\mathbb{R}^3
+		]
 
-  representa o espaço tridimensional.
+	representa o espaço tridimensional.
 
 \end{ex}
 

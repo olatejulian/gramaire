@@ -8,456 +8,456 @@
 \subsection{Funções Monótonas}
 
 \begin{defn}[Função Monótona]
-  \label{def:matematica:funcoes:ordem:monotona}
+	\label{def:matematica:funcoes:ordem:monotona}
 
-  Sejam
+	Sejam
 
-  \[
-    (A,\le_A)
-  \]
+	\[
+		(A,\le_A)
+	\]
 
-  e
+	e
 
-  \[
-    (B,\le_B)
-  \]
+	\[
+		(B,\le_B)
+	\]
 
-  conjuntos parcialmente ordenados.
+	conjuntos parcialmente ordenados.
 
-  Uma função
+	Uma função
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  é dita monótona (ou crescente) quando
+	é dita monótona (ou crescente) quando
 
-  \[
-    x\le_A y
-    \implies
-    f(x)\le_B f(y)
-  \]
+	\[
+		x\le_A y
+		\implies
+		f(x)\le_B f(y)
+	\]
 
-  para quaisquer
+	para quaisquer
 
-  \[
-    x,y\in A.
-  \]
+	\[
+		x,y\in A.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  Também se utiliza a expressão
-  \emph{preservadora de ordem}.
+	Também se utiliza a expressão
+	\emph{preservadora de ordem}.
 
 \end{obs}
 
 \begin{ex}
 
-  A função
+	A função
 
-  \[
-    f:\mathbb R\to\mathbb R,
-    \qquad
-    f(x)=2x+1
-  \]
+	\[
+		f:\mathbb R\to\mathbb R,
+		\qquad
+		f(x)=2x+1
+	\]
 
-  é monótona.
+	é monótona.
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:identidade}
+	\label{prop:matematica:funcoes:ordem:identidade}
 
-  A função identidade de qualquer conjunto ordenado é monótona.
+	A função identidade de qualquer conjunto ordenado é monótona.
 
 \end{prop}
 
 \begin{proof}
 
-  Se
+	Se
 
-  \[
-    x\le y,
-  \]
+	\[
+		x\le y,
+	\]
 
-  então
+	então
 
-  \[
-    \operatorname{id}(x)
-    =
-    x
-    \le
-    y
-    =
-    \operatorname{id}(y).
-  \]
+	\[
+		\operatorname{id}(x)
+		=
+		x
+		\le
+		y
+		=
+		\operatorname{id}(y).
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:composicao}
+	\label{prop:matematica:funcoes:ordem:composicao}
 
-  A composição de funções monótonas é monótona.
+	A composição de funções monótonas é monótona.
 
 \end{prop}
 
 \begin{proof}
 
-  Se
+	Se
 
-  \[
-    x\le_A y,
-  \]
+	\[
+		x\le_A y,
+	\]
 
-  então
+	então
 
-  \[
-    f(x)\le_B f(y).
-  \]
+	\[
+		f(x)\le_B f(y).
+	\]
 
-  Como \(g\) é monótona,
+	Como \(g\) é monótona,
 
-  \[
-    g(f(x))
-    \le_C
-    g(f(y)).
-  \]
+	\[
+		g(f(x))
+		\le_C
+		g(f(y)).
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    (g\circ f)(x)
-    \le_C
-    (g\circ f)(y).
-  \]
+	\[
+		(g\circ f)(x)
+		\le_C
+		(g\circ f)(y).
+	\]
 
 \end{proof}
 
 \subsection{Funções Antitônicas}
 
 \begin{defn}[Função Antitônica]
-  \label{def:matematica:funcoes:ordem:antitona}
+	\label{def:matematica:funcoes:ordem:antitona}
 
-  Sejam
+	Sejam
 
-  \[
-    (A,\le_A)
-  \]
+	\[
+		(A,\le_A)
+	\]
 
-  e
+	e
 
-  \[
-    (B,\le_B).
-  \]
+	\[
+		(B,\le_B).
+	\]
 
-  Uma função
+	Uma função
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  é dita antitônica (ou decrescente) quando
+	é dita antitônica (ou decrescente) quando
 
-  \[
-    x\le_A y
-    \implies
-    f(y)\le_B f(x).
-  \]
+	\[
+		x\le_A y
+		\implies
+		f(y)\le_B f(x).
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  A função
+	A função
 
-  \[
-    f:\mathbb R\to\mathbb R,
-    \qquad
-    f(x)=-x
-  \]
+	\[
+		f:\mathbb R\to\mathbb R,
+		\qquad
+		f(x)=-x
+	\]
 
-  é antitônica.
+	é antitônica.
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:antitona-composicao}
+	\label{prop:matematica:funcoes:ordem:antitona-composicao}
 
-  A composição de duas funções antitônicas é monótona.
+	A composição de duas funções antitônicas é monótona.
 
 \end{prop}
 
 \begin{proof}
 
-  A inversão da ordem ocorre duas vezes.
+	A inversão da ordem ocorre duas vezes.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:monotona-antitona}
+	\label{prop:matematica:funcoes:ordem:monotona-antitona}
 
-  A composição de uma função monótona com uma função antitônica é
-  antitônica.
+	A composição de uma função monótona com uma função antitônica é
+	antitônica.
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente das definições.
+	Segue diretamente das definições.
 
 \end{proof}
 
 \subsection{Caracterização por Relações de Ordem}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:caracterizacao}
+	\label{prop:matematica:funcoes:ordem:caracterizacao}
 
-  Uma função
+	Uma função
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  é monótona se, e somente se,
+	é monótona se, e somente se,
 
-  \[
-    (x,y)\in\le_A
-    \implies
-    (f(x),f(y))\in\le_B.
-  \]
+	\[
+		(x,y)\in\le_A
+		\implies
+		(f(x),f(y))\in\le_B.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Trata-se apenas da reescrita da definição usando relações.
+	Trata-se apenas da reescrita da definição usando relações.
 
 \end{proof}
 
 \subsection{Imersões de Ordem}
 
 \begin{defn}[Imersão de Ordem]
-  \label{def:matematica:funcoes:ordem:imersao}
+	\label{def:matematica:funcoes:ordem:imersao}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Diz-se que \(f\) é uma imersão de ordem quando
+	Diz-se que \(f\) é uma imersão de ordem quando
 
-  \[
-    x\le_A y
-    \iff
-    f(x)\le_B f(y).
-  \]
+	\[
+		x\le_A y
+		\iff
+		f(x)\le_B f(y).
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:imersao-injetiva}
+	\label{prop:matematica:funcoes:ordem:imersao-injetiva}
 
-  Toda imersão de ordem é injetiva.
+	Toda imersão de ordem é injetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Suponha
+	Suponha
 
-  \[
-    f(x)=f(y).
-  \]
+	\[
+		f(x)=f(y).
+	\]
 
-  Então
+	Então
 
-  \[
-    f(x)\le f(y)
-  \]
+	\[
+		f(x)\le f(y)
+	\]
 
-  e
+	e
 
-  \[
-    f(y)\le f(x).
-  \]
+	\[
+		f(y)\le f(x).
+	\]
 
-  Pela definição de imersão,
+	Pela definição de imersão,
 
-  \[
-    x\le y
-  \]
+	\[
+		x\le y
+	\]
 
-  e
+	e
 
-  \[
-    y\le x.
-  \]
+	\[
+		y\le x.
+	\]
 
-  Pela antissimetria,
+	Pela antissimetria,
 
-  \[
-    x=y.
-  \]
+	\[
+		x=y.
+	\]
 
 \end{proof}
 
 \subsection{Isomorfismos de Ordem}
 
 \begin{defn}[Isomorfismo de Ordem]
-  \label{def:matematica:funcoes:ordem:isomorfismo}
+	\label{def:matematica:funcoes:ordem:isomorfismo}
 
-  Um isomorfismo de ordem é uma bijeção
+	Um isomorfismo de ordem é uma bijeção
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  tal que
+	tal que
 
-  \[
-    x\le_A y
-    \iff
-    f(x)\le_B f(y).
-  \]
+	\[
+		x\le_A y
+		\iff
+		f(x)\le_B f(y).
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:isomorfismo-inversa}
+	\label{prop:matematica:funcoes:ordem:isomorfismo-inversa}
 
-  A inversa de um isomorfismo de ordem é um isomorfismo de ordem.
+	A inversa de um isomorfismo de ordem é um isomorfismo de ordem.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    y_1\le_B y_2.
-  \]
+	\[
+		y_1\le_B y_2.
+	\]
 
-  Escreva
+	Escreva
 
-  \[
-    y_1=f(x_1),
-    \qquad
-    y_2=f(x_2).
-  \]
+	\[
+		y_1=f(x_1),
+		\qquad
+		y_2=f(x_2).
+	\]
 
-  Como \(f\) preserva e reflete ordem,
+	Como \(f\) preserva e reflete ordem,
 
-  \[
-    x_1\le_A x_2.
-  \]
+	\[
+		x_1\le_A x_2.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    f^{-1}(y_1)
-    \le_A
-    f^{-1}(y_2).
-  \]
+	\[
+		f^{-1}(y_1)
+		\le_A
+		f^{-1}(y_2).
+	\]
 
 \end{proof}
 
 \subsection{Preservação de Supremos}
 
 \begin{defn}[Preservação de Supremo]
-  \label{def:matematica:funcoes:ordem:supremo}
+	\label{def:matematica:funcoes:ordem:supremo}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Diz-se que \(f\) preserva supremos quando
+	Diz-se que \(f\) preserva supremos quando
 
-  \[
-    f(\sup X)
-    =
-    \sup f[X]
-  \]
+	\[
+		f(\sup X)
+		=
+		\sup f[X]
+	\]
 
-  para todo subconjunto
+	para todo subconjunto
 
-  \[
-    X\subseteq A
-  \]
+	\[
+		X\subseteq A
+	\]
 
-  cujo supremo exista.
+	cujo supremo exista.
 
 \end{defn}
 
 \begin{obs}
 
-  Nem toda função monótona preserva supremos.
+	Nem toda função monótona preserva supremos.
 
 \end{obs}
 
 \begin{ex}
 
-  Em reticulados completos, muitas funções importantes preservam
-  supremos arbitrários.
+	Em reticulados completos, muitas funções importantes preservam
+	supremos arbitrários.
 
 \end{ex}
 
 \subsection{Espaço das Funções Monótonas}
 
 \begin{defn}[Espaço das Funções Monótonas]
-  \label{def:matematica:funcoes:ordem:espaco-monotono}
+	\label{def:matematica:funcoes:ordem:espaco-monotono}
 
-  Sejam
+	Sejam
 
-  \[
-    (A,\le_A)
-  \]
+	\[
+		(A,\le_A)
+	\]
 
-  e
+	e
 
-  \[
-    (B,\le_B).
-  \]
+	\[
+		(B,\le_B).
+	\]
 
-  Denota-se por
+	Denota-se por
 
-  \[
-    \operatorname{Mon}(A,B)
-  \]
+	\[
+		\operatorname{Mon}(A,B)
+	\]
 
-  o conjunto de todas as funções monótonas de \(A\) em \(B\).
+	o conjunto de todas as funções monótonas de \(A\) em \(B\).
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:ordem:ordem-ponto-a-ponto}
+	\label{prop:matematica:funcoes:ordem:ordem-ponto-a-ponto}
 
-  A relação
+	A relação
 
-  \[
-    f\le g
-    \iff
-    (\forall x\in A)
-    \;
-    f(x)\le_B g(x)
-  \]
+	\[
+		f\le g
+		\iff
+		(\forall x\in A)
+		\;
+		f(x)\le_B g(x)
+	\]
 
-  define uma ordem parcial em
+	define uma ordem parcial em
 
-  \[
-    \operatorname{Mon}(A,B).
-  \]
+	\[
+		\operatorname{Mon}(A,B).
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Reflexividade, antissimetria e transitividade seguem da ordem
-  ponto a ponto em \(B\).
+	Reflexividade, antissimetria e transitividade seguem da ordem
+	ponto a ponto em \(B\).
 
 \end{proof}
 

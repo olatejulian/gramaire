@@ -6,427 +6,427 @@
 \label{sec:matematica:relacoes:operacoes-sobre-relacoes}
 
 \begin{defn}[União de Relações]
-  \label{def:matematica:relacoes:operacoes:uniao}
+	\label{def:matematica:relacoes:operacoes:uniao}
 
-  Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
+	Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
 
-  Define-se a união de \(R\) e \(S\) por
+	Define-se a união de \(R\) e \(S\) por
 
-  \[
-    R \cup S
-    =
-    \{
-      (a,b)
-      \mid
-      (a,b)\in R
-      \lor
-      (a,b)\in S
-    \}.
-  \]
+	\[
+		R \cup S
+		=
+		\{
+		(a,b)
+		\mid
+		(a,b)\in R
+		\lor
+		(a,b)\in S
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Interseção de Relações]
-  \label{def:matematica:relacoes:operacoes:intersecao}
+	\label{def:matematica:relacoes:operacoes:intersecao}
 
-  Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
+	Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
 
-  Define-se a interseção de \(R\) e \(S\) por
+	Define-se a interseção de \(R\) e \(S\) por
 
-  \[
-    R \cap S
-    =
-    \{
-      (a,b)
-      \mid
-      (a,b)\in R
-      \land
-      (a,b)\in S
-    \}.
-  \]
+	\[
+		R \cap S
+		=
+		\{
+		(a,b)
+		\mid
+		(a,b)\in R
+		\land
+		(a,b)\in S
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Diferença de Relações]
-  \label{def:matematica:relacoes:operacoes:diferenca}
+	\label{def:matematica:relacoes:operacoes:diferenca}
 
-  Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
+	Sejam \(R\) e \(S\) relações sobre um conjunto \(A\).
 
-  Define-se a diferença entre \(R\) e \(S\) por
+	Define-se a diferença entre \(R\) e \(S\) por
 
-  \[
-    R \setminus S
-    =
-    \{
-      (a,b)
-      \mid
-      (a,b)\in R
-      \land
-      (a,b)\notin S
-    \}.
-  \]
+	\[
+		R \setminus S
+		=
+		\{
+		(a,b)
+		\mid
+		(a,b)\in R
+		\land
+		(a,b)\notin S
+		\}.
+	\]
 
 \end{defn}
 
 \begin{defn}[Relação Inversa]
-  \label{def:matematica:relacoes:operacoes:inversa}
+	\label{def:matematica:relacoes:operacoes:inversa}
 
-  Seja \(R\) uma relação de \(A\) em \(B\).
+	Seja \(R\) uma relação de \(A\) em \(B\).
 
-  A relação inversa de \(R\), denotada por
+	A relação inversa de \(R\), denotada por
 
-  \[
-    R^{-1},
-  \]
+	\[
+		R^{-1},
+	\]
 
-  é definida por
+	é definida por
 
-  \[
-    R^{-1}
-    =
-    \{
-      (b,a)
-      \mid
-      (a,b)\in R
-    \}.
-  \]
+	\[
+		R^{-1}
+		=
+		\{
+		(b,a)
+		\mid
+		(a,b)\in R
+		\}.
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  \[
-    R
-    =
-    \{
-      (1,2),
-      (1,3),
-      (2,3)
-    \},
-  \]
+	\[
+		R
+		=
+		\{
+		(1,2),
+		(1,3),
+		(2,3)
+		\},
+	\]
 
-  então
+	então
 
-  \[
-    R^{-1}
-    =
-    \{
-      (2,1),
-      (3,1),
-      (3,2)
-    \}.
-  \]
+	\[
+		R^{-1}
+		=
+		\{
+		(2,1),
+		(3,1),
+		(3,2)
+		\}.
+	\]
 
 \end{ex}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:operacoes:dupla-inversa}
+	\label{prop:matematica:relacoes:operacoes:dupla-inversa}
 
-  Para toda relação \(R\),
+	Para toda relação \(R\),
 
-  \[
-    (R^{-1})^{-1}
-    =
-    R.
-  \]
+	\[
+		(R^{-1})^{-1}
+		=
+		R.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    (a,b)\in (R^{-1})^{-1}.
-  \]
+	\[
+		(a,b)\in (R^{-1})^{-1}.
+	\]
 
-  Pela definição de relação inversa,
+	Pela definição de relação inversa,
 
-  \[
-    (b,a)\in R^{-1}.
-  \]
+	\[
+		(b,a)\in R^{-1}.
+	\]
 
-  Novamente pela definição,
+	Novamente pela definição,
 
-  \[
-    (a,b)\in R.
-  \]
+	\[
+		(a,b)\in R.
+	\]
 
-  A inclusão recíproca é análoga.
+	A inclusão recíproca é análoga.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:operacoes:inversa-uniao}
+	\label{prop:matematica:relacoes:operacoes:inversa-uniao}
 
-  Para quaisquer relações \(R\) e \(S\),
+	Para quaisquer relações \(R\) e \(S\),
 
-  \[
-    (R\cup S)^{-1}
-    =
-    R^{-1}\cup S^{-1}.
-  \]
+	\[
+		(R\cup S)^{-1}
+		=
+		R^{-1}\cup S^{-1}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente das definições de união e inversa.
+	Segue diretamente das definições de união e inversa.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:operacoes:inversa-intersecao}
+	\label{prop:matematica:relacoes:operacoes:inversa-intersecao}
 
-  Para quaisquer relações \(R\) e \(S\),
+	Para quaisquer relações \(R\) e \(S\),
 
-  \[
-    (R\cap S)^{-1}
-    =
-    R^{-1}\cap S^{-1}.
-  \]
+	\[
+		(R\cap S)^{-1}
+		=
+		R^{-1}\cap S^{-1}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Segue diretamente das definições.
+	Segue diretamente das definições.
 
 \end{proof}
 
 \subsection{Composição de Relações}
 
 \begin{defn}[Composição de Relações]
-  \label{def:matematica:relacoes:operacoes:composicao}
+	\label{def:matematica:relacoes:operacoes:composicao}
 
-  Sejam
+	Sejam
 
-  \[
-    R \subseteq A\times B
-  \]
+	\[
+		R \subseteq A\times B
+	\]
 
-  e
+	e
 
-  \[
-    S \subseteq B\times C.
-  \]
+	\[
+		S \subseteq B\times C.
+	\]
 
-  A composição de \(R\) com \(S\), denotada por
+	A composição de \(R\) com \(S\), denotada por
 
-  \[
-    S\circ R,
-  \]
+	\[
+		S\circ R,
+	\]
 
-  é a relação definida por
+	é a relação definida por
 
-  \[
-    S\circ R
-    =
-    \{
-      (a,c)
-      \mid
-      (\exists b\in B)
-      \bigl(
-        (a,b)\in R
-        \land
-        (b,c)\in S
-      \bigr)
-    \}.
-  \]
+	\[
+		S\circ R
+		=
+		\{
+		(a,c)
+		\mid
+		(\exists b\in B)
+		\bigl(
+		(a,b)\in R
+		\land
+		(b,c)\in S
+		\bigr)
+		\}.
+	\]
 
 \end{defn}
 
 \begin{obs}
 
-  A composição relaciona \(a\) com \(c\) sempre que existir um elemento
-  intermediário \(b\) ligando ambas as relações. :contentReference[oaicite:1]{index=1}
+	A composição relaciona \(a\) com \(c\) sempre que existir um elemento
+	intermediário \(b\) ligando ambas as relações. :contentReference[oaicite:1]{index=1}
 
 \end{obs}
 
 \begin{ex}
 
-  Considere
+	Considere
 
-  \[
-    R
-    =
-    \{
-      (1,2),
-      (2,3)
-    \}
-  \]
+	\[
+		R
+		=
+		\{
+		(1,2),
+		(2,3)
+		\}
+	\]
 
-  e
+	e
 
-  \[
-    S
-    =
-    \{
-      (2,a),
-      (3,b)
-    \}.
-  \]
+	\[
+		S
+		=
+		\{
+		(2,a),
+		(3,b)
+		\}.
+	\]
 
-  Então
+	Então
 
-  \[
-    S\circ R
-    =
-    \{
-      (1,a),
-      (2,b)
-    \}.
-  \]
+	\[
+		S\circ R
+		=
+		\{
+		(1,a),
+		(2,b)
+		\}.
+	\]
 
 \end{ex}
 
 \begin{prop}[Associatividade da Composição]
-  \label{prop:matematica:relacoes:operacoes:associatividade-composicao}
+	\label{prop:matematica:relacoes:operacoes:associatividade-composicao}
 
-  Sejam \(R\), \(S\) e \(T\) relações compatíveis.
+	Sejam \(R\), \(S\) e \(T\) relações compatíveis.
 
-  Então
+	Então
 
-  \[
-    T\circ(S\circ R)
-    =
-    (T\circ S)\circ R.
-  \]
+	\[
+		T\circ(S\circ R)
+		=
+		(T\circ S)\circ R.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    (a,d)\in T\circ(S\circ R).
-  \]
+	\[
+		(a,d)\in T\circ(S\circ R).
+	\]
 
-  Então existem \(b\) e \(c\) tais que
+	Então existem \(b\) e \(c\) tais que
 
-  \[
-    (a,b)\in R,
-  \]
+	\[
+		(a,b)\in R,
+	\]
 
-  \[
-    (b,c)\in S,
-  \]
+	\[
+		(b,c)\in S,
+	\]
 
-  e
+	e
 
-  \[
-    (c,d)\in T.
-  \]
+	\[
+		(c,d)\in T.
+	\]
 
-  Essas mesmas condições caracterizam
+	Essas mesmas condições caracterizam
 
-  \[
-    (a,d)\in (T\circ S)\circ R.
-  \]
+	\[
+		(a,d)\in (T\circ S)\circ R.
+	\]
 
-  Portanto as relações são iguais. :contentReference[oaicite:2]{index=2}
+	Portanto as relações são iguais. :contentReference[oaicite:2]{index=2}
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:relacoes:operacoes:inversa-composicao}
+	\label{prop:matematica:relacoes:operacoes:inversa-composicao}
 
-  Para relações compatíveis \(R\) e \(S\),
+	Para relações compatíveis \(R\) e \(S\),
 
-  \[
-    (S\circ R)^{-1}
-    =
-    R^{-1}\circ S^{-1}.
-  \]
+	\[
+		(S\circ R)^{-1}
+		=
+		R^{-1}\circ S^{-1}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    (c,a)\in (S\circ R)^{-1}.
-  \]
+	\[
+		(c,a)\in (S\circ R)^{-1}.
+	\]
 
-  Então
+	Então
 
-  \[
-    (a,c)\in S\circ R.
-  \]
+	\[
+		(a,c)\in S\circ R.
+	\]
 
-  Existe \(b\) tal que
+	Existe \(b\) tal que
 
-  \[
-    (a,b)\in R
-    \quad\text{e}\quad
-    (b,c)\in S.
-  \]
+	\[
+		(a,b)\in R
+		\quad\text{e}\quad
+		(b,c)\in S.
+	\]
 
-  Logo
+	Logo
 
-  \[
-    (b,a)\in R^{-1}
-    \quad\text{e}\quad
-    (c,b)\in S^{-1}.
-  \]
+	\[
+		(b,a)\in R^{-1}
+		\quad\text{e}\quad
+		(c,b)\in S^{-1}.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    (c,a)\in R^{-1}\circ S^{-1}.
-  \]
+	\[
+		(c,a)\in R^{-1}\circ S^{-1}.
+	\]
 
-  A inclusão recíproca é análoga.
+	A inclusão recíproca é análoga.
 
 \end{proof}
 
 \begin{defn}[Potência de uma Relação]
-  \label{def:matematica:relacoes:operacoes:potencia}
+	\label{def:matematica:relacoes:operacoes:potencia}
 
-  Seja \(R\) uma relação sobre um conjunto \(A\).
+	Seja \(R\) uma relação sobre um conjunto \(A\).
 
-  Define-se
+	Define-se
 
-  \[
-    R^1 = R
-  \]
+	\[
+		R^1 = R
+	\]
 
-  e, para todo \(n\ge 1\),
+	e, para todo \(n\ge 1\),
 
-  \[
-    R^{n+1}
-    =
-    R^n \circ R.
-  \]
+	\[
+		R^{n+1}
+		=
+		R^n \circ R.
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  \[
-    R
-    =
-    \{
-      (1,2),
-      (2,3)
-    \},
-  \]
+	\[
+		R
+		=
+		\{
+		(1,2),
+		(2,3)
+		\},
+	\]
 
-  então
+	então
 
-  \[
-    R^2
-    =
-    \{
-      (1,3)
-    \}.
-  \]
+	\[
+		R^2
+		=
+		\{
+		(1,3)
+		\}.
+	\]
 
 \end{ex}
 

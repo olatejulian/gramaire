@@ -8,422 +8,422 @@
 \subsection{Operações Induzidas}
 
 \begin{defn}[Operação Induzida]
-  \label{def:matematica:funcoes:operacoes:induzida}
+	\label{def:matematica:funcoes:operacoes:induzida}
 
-  Sejam
+	Sejam
 
-  \[
-    A
-  \]
+	\[
+		A
+	\]
 
-  um conjunto e
+	um conjunto e
 
-  \[
-    (B,\star)
-  \]
+	\[
+		(B,\star)
+	\]
 
-  um conjunto munido de uma operação binária.
+	um conjunto munido de uma operação binária.
 
-  Define-se a operação induzida em
+	Define-se a operação induzida em
 
-  \[
-    B^A
-  \]
+	\[
+		B^A
+	\]
 
-  por
+	por
 
-  \[
-    (f\star g)(x)
-    =
-    f(x)\star g(x)
-  \]
+	\[
+		(f\star g)(x)
+		=
+		f(x)\star g(x)
+	\]
 
-  para todo
+	para todo
 
-  \[
-    x\in A.
-  \]
+	\[
+		x\in A.
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:operacoes:boa-definicao}
+	\label{prop:matematica:funcoes:operacoes:boa-definicao}
 
-  A operação induzida está bem definida.
+	A operação induzida está bem definida.
 
 \end{prop}
 
 \begin{proof}
 
-  Para cada
+	Para cada
 
-  \[
-    x\in A,
-  \]
+	\[
+		x\in A,
+	\]
 
-  temos
+	temos
 
-  \[
-    f(x),g(x)\in B.
-  \]
+	\[
+		f(x),g(x)\in B.
+	\]
 
-  Como
+	Como
 
-  \[
-    \star:B\times B\to B,
-  \]
+	\[
+		\star:B\times B\to B,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    f(x)\star g(x)\in B.
-  \]
+	\[
+		f(x)\star g(x)\in B.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    f\star g:A\to B.
-  \]
+	\[
+		f\star g:A\to B.
+	\]
 
 \end{proof}
 
 \subsection{Igualdade Ponto a Ponto}
 
 \begin{prop}[Princípio da Extensionalidade]
-  \label{prop:matematica:funcoes:operacoes:extensionalidade}
+	\label{prop:matematica:funcoes:operacoes:extensionalidade}
 
-  Sejam
+	Sejam
 
-  \[
-    f,g:A\to B.
-  \]
+	\[
+		f,g:A\to B.
+	\]
 
-  Então
+	Então
 
-  \[
-    f=g
-  \]
+	\[
+		f=g
+	\]
 
-  se, e somente se,
+	se, e somente se,
 
-  \[
-    (\forall x\in A)
-    \;
-    f(x)=g(x).
-  \]
+	\[
+		(\forall x\in A)
+		\;
+		f(x)=g(x).
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Trata-se da definição de igualdade de funções.
+	Trata-se da definição de igualdade de funções.
 
 \end{proof}
 
 \subsection{Soma de Funções}
 
 \begin{defn}[Soma]
-  \label{def:matematica:funcoes:operacoes:soma}
+	\label{def:matematica:funcoes:operacoes:soma}
 
-  Seja
+	Seja
 
-  \[
-    (B,+)
-  \]
+	\[
+		(B,+)
+	\]
 
-  um conjunto com operação de soma.
+	um conjunto com operação de soma.
 
-  Para
+	Para
 
-  \[
-    f,g\in B^A,
-  \]
+	\[
+		f,g\in B^A,
+	\]
 
-  define-se
+	define-se
 
-  \[
-    f+g
-  \]
+	\[
+		f+g
+	\]
 
-  por
+	por
 
-  \[
-    (f+g)(x)
-    =
-    f(x)+g(x).
-  \]
+	\[
+		(f+g)(x)
+		=
+		f(x)+g(x).
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  \[
-    f(x)=x
-  \]
+	\[
+		f(x)=x
+	\]
 
-  e
+	e
 
-  \[
-    g(x)=x^2,
-  \]
+	\[
+		g(x)=x^2,
+	\]
 
-  então
+	então
 
-  \[
-    (f+g)(x)
-    =
-    x+x^2.
-  \]
+	\[
+		(f+g)(x)
+		=
+		x+x^2.
+	\]
 
 \end{ex}
 
 \subsection{Produto de Funções}
 
 \begin{defn}[Produto]
-  \label{def:matematica:funcoes:operacoes:produto}
+	\label{def:matematica:funcoes:operacoes:produto}
 
-  Seja
+	Seja
 
-  \[
-    (B,\cdot)
-  \]
+	\[
+		(B,\cdot)
+	\]
 
-  um conjunto com operação multiplicativa.
+	um conjunto com operação multiplicativa.
 
-  Define-se
+	Define-se
 
-  \[
-    (fg)(x)
-    =
-    f(x)g(x).
-  \]
+	\[
+		(fg)(x)
+		=
+		f(x)g(x).
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  \[
-    f(x)=x
-  \]
+	\[
+		f(x)=x
+	\]
 
-  e
+	e
 
-  \[
-    g(x)=x^2,
-  \]
+	\[
+		g(x)=x^2,
+	\]
 
-  então
+	então
 
-  \[
-    (fg)(x)
-    =
-    x^3.
-  \]
+	\[
+		(fg)(x)
+		=
+		x^3.
+	\]
 
 \end{ex}
 
 \subsection{Multiplicação por Escalar}
 
 \begin{defn}[Multiplicação por Escalar]
-  \label{def:matematica:funcoes:operacoes:escalar}
+	\label{def:matematica:funcoes:operacoes:escalar}
 
-  Seja
+	Seja
 
-  \[
-    K
-  \]
+	\[
+		K
+	\]
 
-  um corpo.
+	um corpo.
 
-  Para
+	Para
 
-  \[
-    \lambda\in K
-  \]
+	\[
+		\lambda\in K
+	\]
 
-  e
+	e
 
-  \[
-    f:A\to K,
-  \]
+	\[
+		f:A\to K,
+	\]
 
-  define-se
+	define-se
 
-  \[
-    \lambda f
-  \]
+	\[
+		\lambda f
+	\]
 
-  por
+	por
 
-  \[
-    (\lambda f)(x)
-    =
-    \lambda\,f(x).
-  \]
+	\[
+		(\lambda f)(x)
+		=
+		\lambda\,f(x).
+	\]
 
 \end{defn}
 
 \begin{ex}
 
-  Se
+	Se
 
-  \[
-    f(x)=x^2,
-  \]
+	\[
+		f(x)=x^2,
+	\]
 
-  então
+	então
 
-  \[
-    (3f)(x)
-    =
-    3x^2.
-  \]
+	\[
+		(3f)(x)
+		=
+		3x^2.
+	\]
 
 \end{ex}
 
 \subsection{Ordem Ponto a Ponto}
 
 \begin{defn}[Ordem Ponto a Ponto]
-  \label{def:matematica:funcoes:operacoes:ordem}
+	\label{def:matematica:funcoes:operacoes:ordem}
 
-  Seja
+	Seja
 
-  \[
-    (B,\le)
-  \]
+	\[
+		(B,\le)
+	\]
 
-  um conjunto ordenado.
+	um conjunto ordenado.
 
-  Para
+	Para
 
-  \[
-    f,g\in B^A,
-  \]
+	\[
+		f,g\in B^A,
+	\]
 
-  define-se
+	define-se
 
-  \[
-    f\le g
-  \]
+	\[
+		f\le g
+	\]
 
-  quando
+	quando
 
-  \[
-    f(x)\le g(x)
-  \]
+	\[
+		f(x)\le g(x)
+	\]
 
-  para todo
+	para todo
 
-  \[
-    x\in A.
-  \]
+	\[
+		x\in A.
+	\]
 
 \end{defn}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:operacoes:ordem-parcial}
+	\label{prop:matematica:funcoes:operacoes:ordem-parcial}
 
-  Se
+	Se
 
-  \[
-    (B,\le)
-  \]
+	\[
+		(B,\le)
+	\]
 
-  é um conjunto parcialmente ordenado, então
+	é um conjunto parcialmente ordenado, então
 
-  \[
-    (B^A,\le)
-  \]
+	\[
+		(B^A,\le)
+	\]
 
-  também é parcialmente ordenado.
+	também é parcialmente ordenado.
 
 \end{prop}
 
 \begin{proof}
 
-  As propriedades de reflexividade, antissimetria e transitividade são
-  verificadas ponto a ponto.
+	As propriedades de reflexividade, antissimetria e transitividade são
+	verificadas ponto a ponto.
 
 \end{proof}
 
 \subsection{Herança de Estruturas}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:operacoes:grupo}
+	\label{prop:matematica:funcoes:operacoes:grupo}
 
-  Se
+	Se
 
-  \[
-    (B,\star)
-  \]
+	\[
+		(B,\star)
+	\]
 
-  é um grupo, então
+	é um grupo, então
 
-  \[
-    (B^A,\star)
-  \]
+	\[
+		(B^A,\star)
+	\]
 
-  também é um grupo.
+	também é um grupo.
 
 \end{prop}
 
 \begin{proof}
 
-  Todas as propriedades são herdadas ponto a ponto.
+	Todas as propriedades são herdadas ponto a ponto.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:operacoes:anel}
+	\label{prop:matematica:funcoes:operacoes:anel}
 
-  Se
+	Se
 
-  \[
-    B
-  \]
+	\[
+		B
+	\]
 
-  é um anel, então
+	é um anel, então
 
-  \[
-    B^A
-  \]
+	\[
+		B^A
+	\]
 
-  é um anel com as operações ponto a ponto.
+	é um anel com as operações ponto a ponto.
 
 \end{prop}
 
 \begin{proof}
 
-  As propriedades seguem diretamente das propriedades de \(B\).
+	As propriedades seguem diretamente das propriedades de \(B\).
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:operacoes:espaco-vetorial}
+	\label{prop:matematica:funcoes:operacoes:espaco-vetorial}
 
-  Se
+	Se
 
-  \[
-    K
-  \]
+	\[
+		K
+	\]
 
-  é um corpo, então
+	é um corpo, então
 
-  \[
-    K^A
-  \]
+	\[
+		K^A
+	\]
 
-  é um espaço vetorial.
+	é um espaço vetorial.
 
 \end{prop}
 
 \begin{proof}
 
-  Os axiomas de espaço vetorial são satisfeitos ponto a ponto.
+	Os axiomas de espaço vetorial são satisfeitos ponto a ponto.
 
 \end{proof}
 

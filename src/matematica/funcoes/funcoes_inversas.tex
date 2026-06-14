@@ -8,484 +8,484 @@
 \subsection{Funções Invertíveis}
 
 \begin{defn}[Função Invertível]
-  \label{def:matematica:funcoes:funcoes-inversas:invertivel}
+	\label{def:matematica:funcoes:funcoes-inversas:invertivel}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Diz-se que \(f\) é invertível quando existe uma função
+	Diz-se que \(f\) é invertível quando existe uma função
 
-  \[
-    g:B\to A
-  \]
+	\[
+		g:B\to A
+	\]
 
-  tal que
+	tal que
 
-  \[
-    g\circ f
-    =
-    \operatorname{id}_A
-  \]
+	\[
+		g\circ f
+		=
+		\operatorname{id}_A
+	\]
 
-  e
+	e
 
-  \[
-    f\circ g
-    =
-    \operatorname{id}_B.
-  \]
+	\[
+		f\circ g
+		=
+		\operatorname{id}_B.
+	\]
 
 \end{defn}
 
 \begin{defn}[Função Inversa]
-  \label{def:matematica:funcoes:funcoes-inversas:funcao-inversa}
+	\label{def:matematica:funcoes:funcoes-inversas:funcao-inversa}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Se \(f\) é invertível, a única função
+	Se \(f\) é invertível, a única função
 
-  \[
-    g:B\to A
-  \]
+	\[
+		g:B\to A
+	\]
 
-  que satisfaz
+	que satisfaz
 
-  \[
-    g\circ f
-    =
-    \operatorname{id}_A
-  \]
+	\[
+		g\circ f
+		=
+		\operatorname{id}_A
+	\]
 
-  e
+	e
 
-  \[
-    f\circ g
-    =
-    \operatorname{id}_B
-  \]
+	\[
+		f\circ g
+		=
+		\operatorname{id}_B
+	\]
 
-  é denominada função inversa de \(f\).
+	é denominada função inversa de \(f\).
 
-  Escreve-se
+	Escreve-se
 
-  \[
-    g=f^{-1}.
-  \]
+	\[
+		g=f^{-1}.
+	\]
 
 \end{defn}
 
 \begin{prop}[Unicidade da Inversa]
-  \label{prop:matematica:funcoes:funcoes-inversas:unicidade}
+	\label{prop:matematica:funcoes:funcoes-inversas:unicidade}
 
-  Uma função invertível possui uma única inversa.
+	Uma função invertível possui uma única inversa.
 
 \end{prop}
 
 \begin{proof}
 
-  Sejam
+	Sejam
 
-  \[
-    g,h:B\to A
-  \]
+	\[
+		g,h:B\to A
+	\]
 
-  inversas de \(f\).
+	inversas de \(f\).
 
-  Então
+	Então
 
-  \[
-    g
-    =
-    g\circ\operatorname{id}_B.
-  \]
+	\[
+		g
+		=
+		g\circ\operatorname{id}_B.
+	\]
 
-  Como
+	Como
 
-  \[
-    \operatorname{id}_B
-    =
-    f\circ h,
-  \]
+	\[
+		\operatorname{id}_B
+		=
+		f\circ h,
+	\]
 
-  segue que
+	segue que
 
-  \[
-    g
-    =
-    g\circ(f\circ h).
-  \]
+	\[
+		g
+		=
+		g\circ(f\circ h).
+	\]
 
-  Pela associatividade,
+	Pela associatividade,
 
-  \[
-    g
-    =
-    (g\circ f)\circ h.
-  \]
+	\[
+		g
+		=
+		(g\circ f)\circ h.
+	\]
 
-  Como
+	Como
 
-  \[
-    g\circ f
-    =
-    \operatorname{id}_A,
-  \]
+	\[
+		g\circ f
+		=
+		\operatorname{id}_A,
+	\]
 
-  temos
+	temos
 
-  \[
-    g
-    =
-    \operatorname{id}_A\circ h.
-  \]
+	\[
+		g
+		=
+		\operatorname{id}_A\circ h.
+	\]
 
-  Logo
+	Logo
 
-  \[
-    g=h.
-  \]
+	\[
+		g=h.
+	\]
 
 \end{proof}
 
 \subsection{Invertibilidade e Bijetividade}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-injetiva}
+	\label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-injetiva}
 
-  Toda função invertível é injetiva.
+	Toda função invertível é injetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    f(x)=f(y).
-  \]
+	\[
+		f(x)=f(y).
+	\]
 
-  Aplicando \(f^{-1}\) em ambos os lados,
+	Aplicando \(f^{-1}\) em ambos os lados,
 
-  \[
-    f^{-1}(f(x))
-    =
-    f^{-1}(f(y)).
-  \]
+	\[
+		f^{-1}(f(x))
+		=
+		f^{-1}(f(y)).
+	\]
 
-  Logo
+	Logo
 
-  \[
-    x=y.
-  \]
+	\[
+		x=y.
+	\]
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-sobrejetiva}
+	\label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-sobrejetiva}
 
-  Toda função invertível é sobrejetiva.
+	Toda função invertível é sobrejetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    y\in B.
-  \]
+	\[
+		y\in B.
+	\]
 
-  Defina
+	Defina
 
-  \[
-    x=f^{-1}(y).
-  \]
+	\[
+		x=f^{-1}(y).
+	\]
 
-  Então
+	Então
 
-  \[
-    f(x)
-    =
-    f(f^{-1}(y))
-    =
-    y.
-  \]
+	\[
+		f(x)
+		=
+		f(f^{-1}(y))
+		=
+		y.
+	\]
 
-  Logo \(f\) é sobrejetiva.
+	Logo \(f\) é sobrejetiva.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-bijetiva}
+	\label{prop:matematica:funcoes:funcoes-inversas:invertivel-implica-bijetiva}
 
-  Toda função invertível é bijetiva.
+	Toda função invertível é bijetiva.
 
 \end{prop}
 
 \begin{proof}
 
-  Segue das duas proposições anteriores.
+	Segue das duas proposições anteriores.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:bijetiva-implica-invertivel}
+	\label{prop:matematica:funcoes:funcoes-inversas:bijetiva-implica-invertivel}
 
-  Toda função bijetiva é invertível.
+	Toda função bijetiva é invertível.
 
 \end{prop}
 
 \begin{proof}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  bijetiva.
+	bijetiva.
 
-  Pela sobrejetividade, para cada
+	Pela sobrejetividade, para cada
 
-  \[
-    y\in B
-  \]
+	\[
+		y\in B
+	\]
 
-  existe ao menos um
+	existe ao menos um
 
-  \[
-    x\in A
-  \]
+	\[
+		x\in A
+	\]
 
-  tal que
+	tal que
 
-  \[
-    f(x)=y.
-  \]
+	\[
+		f(x)=y.
+	\]
 
-  Pela injetividade, esse elemento é único.
+	Pela injetividade, esse elemento é único.
 
-  Definimos
+	Definimos
 
-  \[
-    f^{-1}(y)=x.
-  \]
+	\[
+		f^{-1}(y)=x.
+	\]
 
-  Assim obtemos uma função
+	Assim obtemos uma função
 
-  \[
-    f^{-1}:B\to A.
-  \]
+	\[
+		f^{-1}:B\to A.
+	\]
 
-  Pela construção,
+	Pela construção,
 
-  \[
-    f^{-1}(f(x))
-    =
-    x
-  \]
+	\[
+		f^{-1}(f(x))
+		=
+		x
+	\]
 
-  e
+	e
 
-  \[
-    f(f^{-1}(y))
-    =
-    y.
-  \]
+	\[
+		f(f^{-1}(y))
+		=
+		y.
+	\]
 
-  Portanto
+	Portanto
 
-  \[
-    f^{-1}\circ f
-    =
-    \operatorname{id}_A
-  \]
+	\[
+		f^{-1}\circ f
+		=
+		\operatorname{id}_A
+	\]
 
-  e
+	e
 
-  \[
-    f\circ f^{-1}
-    =
-    \operatorname{id}_B.
-  \]
+	\[
+		f\circ f^{-1}
+		=
+		\operatorname{id}_B.
+	\]
 
 \end{proof}
 
 \begin{thm}[Caracterização Fundamental]
-  \label{thm:matematica:funcoes:funcoes-inversas:caracterizacao}
+	\label{thm:matematica:funcoes:funcoes-inversas:caracterizacao}
 
-  Seja
+	Seja
 
-  \[
-    f:A\to B.
-  \]
+	\[
+		f:A\to B.
+	\]
 
-  Então
+	Então
 
-  \[
-    f
-    \text{ é invertível}
-    \iff
-    f
-    \text{ é bijetiva}.
-  \]
+	\[
+		f
+		\text{ é invertível}
+		\iff
+		f
+		\text{ é bijetiva}.
+	\]
 
 \end{thm}
 
 \begin{proof}
 
-  Combinação das proposições anteriores.
+	Combinação das proposições anteriores.
 
 \end{proof}
 
 \subsection{Propriedades}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:inversa-da-inversa}
+	\label{prop:matematica:funcoes:funcoes-inversas:inversa-da-inversa}
 
-  Se \(f\) é invertível, então
+	Se \(f\) é invertível, então
 
-  \[
-    (f^{-1})^{-1}
-    =
-    f.
-  \]
+	\[
+		(f^{-1})^{-1}
+		=
+		f.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Como
+	Como
 
-  \[
-    f^{-1}\circ f
-    =
-    \operatorname{id}_A
-  \]
+	\[
+		f^{-1}\circ f
+		=
+		\operatorname{id}_A
+	\]
 
-  e
+	e
 
-  \[
-    f\circ f^{-1}
-    =
-    \operatorname{id}_B,
-  \]
+	\[
+		f\circ f^{-1}
+		=
+		\operatorname{id}_B,
+	\]
 
-  segue que \(f\) é inversa de \(f^{-1}\).
+	segue que \(f\) é inversa de \(f^{-1}\).
 
-  Pela unicidade da inversa,
+	Pela unicidade da inversa,
 
-  \[
-    (f^{-1})^{-1}
-    =
-    f.
-  \]
+	\[
+		(f^{-1})^{-1}
+		=
+		f.
+	\]
 
 \end{proof}
 
 \begin{prop}[Inversa da Composição]
-  \label{prop:matematica:funcoes:funcoes-inversas:inversa-composicao}
+	\label{prop:matematica:funcoes:funcoes-inversas:inversa-composicao}
 
-  Se
+	Se
 
-  \[
-    f:A\to B
-  \]
+	\[
+		f:A\to B
+	\]
 
-  e
+	e
 
-  \[
-    g:B\to C
-  \]
+	\[
+		g:B\to C
+	\]
 
-  são invertíveis, então
+	são invertíveis, então
 
-  \[
-    (g\circ f)^{-1}
-    =
-    f^{-1}\circ g^{-1}.
-  \]
+	\[
+		(g\circ f)^{-1}
+		=
+		f^{-1}\circ g^{-1}.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Basta verificar que
+	Basta verificar que
 
-  \[
-    (f^{-1}\circ g^{-1})
-    \circ
-    (g\circ f)
-    =
-    \operatorname{id}_A
-  \]
+	\[
+		(f^{-1}\circ g^{-1})
+		\circ
+		(g\circ f)
+		=
+		\operatorname{id}_A
+	\]
 
-  e
+	e
 
-  \[
-    (g\circ f)
-    \circ
-    (f^{-1}\circ g^{-1})
-    =
-    \operatorname{id}_C.
-  \]
+	\[
+		(g\circ f)
+		\circ
+		(f^{-1}\circ g^{-1})
+		=
+		\operatorname{id}_C.
+	\]
 
-  A demonstração segue da associatividade da composição.
+	A demonstração segue da associatividade da composição.
 
 \end{proof}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:potencia}
+	\label{prop:matematica:funcoes:funcoes-inversas:potencia}
 
-  Se \(f:A\to A\) é invertível, então
+	Se \(f:A\to A\) é invertível, então
 
-  \[
-    (f^n)^{-1}
-    =
-    (f^{-1})^n
-  \]
+	\[
+		(f^n)^{-1}
+		=
+		(f^{-1})^n
+	\]
 
-  para todo
+	para todo
 
-  \[
-    n\in\mathbb N.
-  \]
+	\[
+		n\in\mathbb N.
+	\]
 
 \end{prop}
 
 \begin{proof}
 
-  Por indução em \(n\).
+	Por indução em \(n\).
 
 \end{proof}
 
 \subsection{Permutações}
 
 \begin{prop}
-  \label{prop:matematica:funcoes:funcoes-inversas:permutacao}
+	\label{prop:matematica:funcoes:funcoes-inversas:permutacao}
 
-  Toda permutação possui inversa, que também é uma permutação.
+	Toda permutação possui inversa, que também é uma permutação.
 
 \end{prop}
 
 \begin{proof}
 
-  Uma permutação é uma bijeção
+	Uma permutação é uma bijeção
 
-  \[
-    f:A\to A.
-  \]
+	\[
+		f:A\to A.
+	\]
 
-  Pelo teorema anterior, \(f\) é invertível.
+	Pelo teorema anterior, \(f\) é invertível.
 
-  Sua inversa também é uma bijeção de \(A\) em \(A\).
+	Sua inversa também é uma bijeção de \(A\) em \(A\).
 
 \end{proof}
 
