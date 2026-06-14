@@ -1,0 +1,66 @@
+{
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[tex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/dist/**": true
+  },
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "latexindent",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.fdb_latexmk",
+    "*.fls",
+    "*.log",
+    "*.out",
+    "*.toc",
+    "*.synctex.gz"
+  ],
+  "latex-workshop.latex.outDir": "%WORKDIR%/dist",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (lualatex)",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "args": [
+        "-pdf",
+        "-lualatex",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-outdir=dist",
+        "-auxdir=build",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "name": "latexmk"
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "ltex.completionEnabled": true,
+  "ltex.enabled": true,
+  "ltex.language": "pt-BR",
+  "ltex.latex.commands": {
+    "\\begin": "ignore",
+    "\\cite": "ignore",
+    "\\end": "ignore",
+    "\\ref": "ignore"
+  },
+  "texlab.build.executable": "latexmk",
+  "texlab.build.onSave": false,
+}
