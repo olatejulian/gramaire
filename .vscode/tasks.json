@@ -1,22 +1,28 @@
 {
-    "tasks": [
-        {
-            "command": "./scripts/makepdf.bash",
-            "group": {
-                "isDefault": true,
-                "kind": "build"
-            },
-            "label": "latex: build",
-            "problemMatcher": [],
-            "type": "shell"
-        },
-        {
-            "command": "./scripts/watchpdf.bash",
-            "isBackground": true,
-            "label": "latex: watch",
-            "problemMatcher": [],
-            "type": "shell"
-        }
-    ],
-    "version": "2.0.0"
+  "tasks": [
+    {
+      "command": "./scripts/build.bash",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "label": "latex: build",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "./scripts/watch.bash",
+      "isBackground": true,
+      "label": "latex: watch",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "./scripts/clean.bash",
+      "label": "latex: clean",
+      "problemMatcher": [],
+      "type": "shell"
+    }
+  ],
+  "version": "2.0.0"
 }
